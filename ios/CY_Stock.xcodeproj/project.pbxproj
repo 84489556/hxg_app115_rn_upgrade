@@ -1,0 +1,2255 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* CY_StockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CY_StockTests.m */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1CC5DFA40B9C4BC2A5C5E49A /* libRNGestureHandler-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2762A4D478FE4493B760D717 /* libRNGestureHandler-tvOS.a */; };
+		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* CY_StockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CY_StockTests.m */; };
+		3ECC221474676CB9EC8B7E7F /* libPods-CY_StockTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A2306E680BAB2D2F5CE0F3 /* libPods-CY_StockTests.a */; };
+		8213D6E922DF1F0800359AED /* NativeConfigModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8213D6E722DF1F0800359AED /* NativeConfigModule.m */; };
+		8213D6EC22DF1F1D00359AED /* YDConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8213D6EB22DF1F1D00359AED /* YDConfiguration.m */; };
+		822209A522967ED00057A7F0 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822209A422967ED00057A7F0 /* GLKit.framework */; };
+		822209B4229686850057A7F0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822209B3229686850057A7F0 /* CFNetwork.framework */; };
+		822209B6229687260057A7F0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 822209B5229687260057A7F0 /* libz.tbd */; };
+		822209B8229687380057A7F0 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 822209B7229687380057A7F0 /* libiconv.tbd */; };
+		822209BA229687460057A7F0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 822209B9229687460057A7F0 /* libsqlite3.tbd */; };
+		822209D7229692220057A7F0 /* libFMPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 822209B122967F120057A7F0 /* libFMPlayer.a */; };
+		82220A6E229697C90057A7F0 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 82220A42229697C90057A7F0 /* libresolv.tbd */; };
+		822E30DA22C9A315003F1CC9 /* YDStockManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 822E30D322C9A314003F1CC9 /* YDStockManager.m */; };
+		822E30DB22C9A315003F1CC9 /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 822E30D722C9A315003F1CC9 /* NSString+Extend.m */; };
+		822E30DD22C9A315003F1CC9 /* NSObject+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 822E30D922C9A315003F1CC9 /* NSObject+Extend.m */; };
+		822E30E522C9A343003F1CC9 /* GRPCCall+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 822E30DF22C9A343003F1CC9 /* GRPCCall+Tests.m */; };
+		822E30E622C9A343003F1CC9 /* YDHistoryCandleStick.m in Sources */ = {isa = PBXBuildFile; fileRef = 822E30E122C9A343003F1CC9 /* YDHistoryCandleStick.m */; };
+		822E30E722C9A343003F1CC9 /* YDYunChannelModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 822E30E322C9A343003F1CC9 /* YDYunChannelModule.m */; };
+		823FF767230FCE28007470A0 /* libDzhChart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 823FF748230F8679007470A0 /* libDzhChart.a */; };
+		8255FE0C247FAF6B0049C219 /* UMCommonLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8255FDF3247FAF6A0049C219 /* UMCommonLog.framework */; };
+		8255FE0D247FAF6B0049C219 /* UMCommonLog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8255FDF4247FAF6A0049C219 /* UMCommonLog.bundle */; };
+		8255FE0E247FAF6B0049C219 /* UTDID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8255FDF7247FAF6A0049C219 /* UTDID.framework */; };
+		8255FE0F247FAF6B0049C219 /* UMCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8255FDFB247FAF6A0049C219 /* UMCommon.framework */; };
+		8255FE10247FAF6B0049C219 /* UMSocialSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8255FDFF247FAF6A0049C219 /* UMSocialSDKResources.bundle */; };
+		8255FE11247FAF6B0049C219 /* UShareUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8255FE00247FAF6A0049C219 /* UShareUI.framework */; };
+		8255FE12247FAF6B0049C219 /* UMShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8255FE01247FAF6A0049C219 /* UMShare.framework */; };
+		8255FE13247FAF6B0049C219 /* libSocialWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8255FE04247FAF6A0049C219 /* libSocialWeChat.a */; };
+		8255FE14247FAF6B0049C219 /* libSocialSina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8255FE07247FAF6A0049C219 /* libSocialSina.a */; };
+		8255FE15247FAF6B0049C219 /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8255FE0B247FAF6A0049C219 /* libSocialQQ.a */; };
+		829DCEF5248F8C0300E35587 /* CY_Stock_Dev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 829DCEF4248F8C0300E35587 /* CY_Stock_Dev-Info.plist */; };
+		82C692E92475293000489584 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C692E72475293000489584 /* LaunchScreen.storyboard */; };
+		82F41BB62297E8CB006DBB0F /* libRCTOrientation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F41B982297E896006DBB0F /* libRCTOrientation.a */; };
+		82F79B3F23B788E9003CA7BA /* libRNCustomKeyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F79B3E23B778C9003CA7BA /* libRNCustomKeyboard.a */; };
+		97488DF283CD4FF291599086 /* libRNDeviceInfo-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3126E4482BCB4B9FA9BDFBF4 /* libRNDeviceInfo-tvOS.a */; };
+		A324DAAB9BA14A8D20228994 /* libPods-CY_Stock_Dev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 484103473D5D648CEA947574 /* libPods-CY_Stock_Dev.a */; };
+		B237C38E231F8D6400A828F5 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B237C38D231F8D6400A828F5 /* UserNotifications.framework */; };
+		B237C390231F8D8200A828F5 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B237C38F231F8D8200A828F5 /* libxml2.tbd */; };
+		B237C392231F8D9900A828F5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B237C391231F8D9900A828F5 /* SystemConfiguration.framework */; };
+		B237C394231F8DAB00A828F5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B237C393231F8DAA00A828F5 /* MobileCoreServices.framework */; };
+		B237C396231F8DCA00A828F5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B237C395231F8DCA00A828F5 /* CoreTelephony.framework */; };
+		B237C3A0231FAB4000A828F5 /* libRCTMIPushModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B237C39F231FAB0400A828F5 /* libRCTMIPushModule.a */; };
+		B2678BC12293F857003B84A3 /* CallPhoneModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B2678B962293F857003B84A3 /* CallPhoneModule.m */; };
+		B29A0ABF2316204D007725D1 /* sharemodule.m in Sources */ = {isa = PBXBuildFile; fileRef = B29A0ABC2316204D007725D1 /* sharemodule.m */; };
+		B29A0AE7231620E5007725D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29A0AE6231620E5007725D1 /* CoreGraphics.framework */; };
+		B29A0AE923162222007725D1 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29A0AE823162222007725D1 /* Photos.framework */; };
+		B2B6D51F228D01E100239833 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B6D51E228D01E100239833 /* CoreFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B2B6D521228D023F00239833 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B6D520228D023F00239833 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		ED0764C423CDD6DF001CFB99 /* libRCTHuodePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDBA352423C8424300A5C2AF /* libRCTHuodePlayer.a */; };
+		ED208249241F548100CBD8F0 /* CCBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ED208248241F548100CBD8F0 /* CCBundle.bundle */; };
+		ED25822A241F2A5000E3C045 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED258226241F2A5000E3C045 /* IJKMediaFramework.framework */; };
+		ED25822B241F2A5000E3C045 /* IJKMediaFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED258226241F2A5000E3C045 /* IJKMediaFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ED25822D241F2A5100E3C045 /* DWDrmServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED258228241F2A5000E3C045 /* DWDrmServer.framework */; };
+		ED25822E241F2A5100E3C045 /* DWDrmServer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED258228241F2A5000E3C045 /* DWDrmServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ED25822F241F2A5100E3C045 /* CCSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED258229241F2A5000E3C045 /* CCSDK.framework */; };
+		ED258230241F2A5100E3C045 /* CCSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED258229241F2A5000E3C045 /* CCSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
+		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
+		EDA24E20D8AB1BD717BD53F2 /* libPods-CY_Stock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 036716117BF574A5D49093E4 /* libPods-CY_Stock.a */; };
+		F06C24AB4DFF4376AE8E166C /* libRNSpringScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 636CA808A3024E51B8F8C318 /* libRNSpringScrollView.a */; };
+		FD749DCF248637370011EA0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		FD749DD0248637370011EA0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		FD749DD1248637370011EA0A /* YDConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8213D6EB22DF1F1D00359AED /* YDConfiguration.m */; };
+		FD749DD2248637370011EA0A /* NativeConfigModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8213D6E722DF1F0800359AED /* NativeConfigModule.m */; };
+		FD749DD3248637370011EA0A /* CallPhoneModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B2678B962293F857003B84A3 /* CallPhoneModule.m */; };
+		FD749DD4248637370011EA0A /* GRPCCall+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 822E30DF22C9A343003F1CC9 /* GRPCCall+Tests.m */; };
+		FD749DD5248637370011EA0A /* sharemodule.m in Sources */ = {isa = PBXBuildFile; fileRef = B29A0ABC2316204D007725D1 /* sharemodule.m */; };
+		FD749DD6248637370011EA0A /* NSObject+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 822E30D922C9A315003F1CC9 /* NSObject+Extend.m */; };
+		FD749DD7248637370011EA0A /* YDYunChannelModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 822E30E322C9A343003F1CC9 /* YDYunChannelModule.m */; };
+		FD749DD8248637370011EA0A /* YDHistoryCandleStick.m in Sources */ = {isa = PBXBuildFile; fileRef = 822E30E122C9A343003F1CC9 /* YDHistoryCandleStick.m */; };
+		FD749DD9248637370011EA0A /* YDStockManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 822E30D322C9A314003F1CC9 /* YDStockManager.m */; };
+		FD749DDA248637370011EA0A /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 822E30D722C9A315003F1CC9 /* NSString+Extend.m */; };
+		FD749DDE248637370011EA0A /* UShareUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8255FE00247FAF6A0049C219 /* UShareUI.framework */; };
+		FD749DE2248637370011EA0A /* libDzhChart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 823FF748230F8679007470A0 /* libDzhChart.a */; };
+		FD749DE4248637370011EA0A /* libSocialWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8255FE04247FAF6A0049C219 /* libSocialWeChat.a */; };
+		FD749DE5248637370011EA0A /* libRCTMIPushModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B237C39F231FAB0400A828F5 /* libRCTMIPushModule.a */; };
+		FD749DE6248637370011EA0A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B237C395231F8DCA00A828F5 /* CoreTelephony.framework */; };
+		FD749DE7248637370011EA0A /* libSocialSina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8255FE07247FAF6A0049C219 /* libSocialSina.a */; };
+		FD749DE8248637370011EA0A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822209B3229686850057A7F0 /* CFNetwork.framework */; };
+		FD749DEA248637370011EA0A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B237C393231F8DAA00A828F5 /* MobileCoreServices.framework */; };
+		FD749DEB248637370011EA0A /* UTDID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8255FDF7247FAF6A0049C219 /* UTDID.framework */; };
+		FD749DEC248637370011EA0A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B237C391231F8D9900A828F5 /* SystemConfiguration.framework */; };
+		FD749DED248637370011EA0A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 822209B5229687260057A7F0 /* libz.tbd */; };
+		FD749DEE248637370011EA0A /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B237C38F231F8D8200A828F5 /* libxml2.tbd */; };
+		FD749DEF248637370011EA0A /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 82220A42229697C90057A7F0 /* libresolv.tbd */; };
+		FD749DF0248637370011EA0A /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B237C38D231F8D6400A828F5 /* UserNotifications.framework */; };
+		FD749DF1248637370011EA0A /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29A0AE823162222007725D1 /* Photos.framework */; };
+		FD749DF2248637370011EA0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29A0AE6231620E5007725D1 /* CoreGraphics.framework */; };
+		FD749DF3248637370011EA0A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 822209B9229687460057A7F0 /* libsqlite3.tbd */; };
+		FD749DF4248637370011EA0A /* libRCTOrientation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F41B982297E896006DBB0F /* libRCTOrientation.a */; };
+		FD749DF5248637370011EA0A /* libRCTHuodePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDBA352423C8424300A5C2AF /* libRCTHuodePlayer.a */; };
+		FD749DF6248637370011EA0A /* libFMPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 822209B122967F120057A7F0 /* libFMPlayer.a */; };
+		FD749DF7248637370011EA0A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 822209B7229687380057A7F0 /* libiconv.tbd */; };
+		FD749DF8248637370011EA0A /* UMCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8255FDFB247FAF6A0049C219 /* UMCommon.framework */; };
+		FD749DF9248637370011EA0A /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822209A422967ED00057A7F0 /* GLKit.framework */; };
+		FD749DFA248637370011EA0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B6D520228D023F00239833 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FD749DFB248637370011EA0A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B6D51E228D01E100239833 /* CoreFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FD749DFC248637370011EA0A /* UMShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8255FE01247FAF6A0049C219 /* UMShare.framework */; };
+		FD749DFE248637370011EA0A /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
+		FD749DFF248637370011EA0A /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8255FE0B247FAF6A0049C219 /* libSocialQQ.a */; };
+		FD749E01248637370011EA0A /* UMCommonLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8255FDF3247FAF6A0049C219 /* UMCommonLog.framework */; };
+		FD749E0C248637370011EA0A /* libRNCustomKeyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F79B3E23B778C9003CA7BA /* libRNCustomKeyboard.a */; };
+		FD749E12248637370011EA0A /* libRNSpringScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 636CA808A3024E51B8F8C318 /* libRNSpringScrollView.a */; };
+		FD749E15248637370011EA0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		FD749E17248637370011EA0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C692E72475293000489584 /* LaunchScreen.storyboard */; };
+		FD749E18248637370011EA0A /* UMCommonLog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8255FDF4247FAF6A0049C219 /* UMCommonLog.bundle */; };
+		FD749E19248637370011EA0A /* UMSocialSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8255FDFF247FAF6A0049C219 /* UMSocialSDKResources.bundle */; };
+		FD749E5F2486379B0011EA0A /* libFormulaDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD749E5E2486379B0011EA0A /* libFormulaDB.a */; };
+		FD749E62248637A60011EA0A /* libFormulaDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD749E61248637A60011EA0A /* libFormulaDB.a */; };
+		FD749E71248638770011EA0A /* CCBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FD749E6D248638760011EA0A /* CCBundle.bundle */; };
+		FD749E72248638770011EA0A /* DWDrmServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD749E6E248638760011EA0A /* DWDrmServer.framework */; };
+		FD749E73248638770011EA0A /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD749E6F248638770011EA0A /* IJKMediaFramework.framework */; };
+		FD749E74248638770011EA0A /* CCSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD749E70248638770011EA0A /* CCSDK.framework */; };
+		FD749EAE24864AD80011EA0A /* CCSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD749E70248638770011EA0A /* CCSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD749EE724864ADD0011EA0A /* IJKMediaFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD749E6F248638770011EA0A /* IJKMediaFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD749EE824864AE70011EA0A /* DWDrmServer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD749E6E248638760011EA0A /* DWDrmServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FDCC80BA24AD672200679D35 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDCC80B924AD672200679D35 /* libicucore.tbd */; };
+		FDCC80BC24AD674800679D35 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDCC80B924AD672200679D35 /* libicucore.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = CY_Stock;
+		};
+		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
+			remoteInfo = "CY_Stock-tvOS";
+		};
+		822209B022967F120057A7F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 822209AC22967F120057A7F0 /* FMPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 59CC129C1F4ABF8E00BF18D7;
+			remoteInfo = FMPlayer;
+		};
+		823FF747230F8679007470A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 823FF743230F8679007470A0 /* DzhChart.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3CA25A491C02ECC700A15903;
+			remoteInfo = DzhChart;
+		};
+		82F41B972297E896006DBB0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82F41B852297E896006DBB0F /* RCTOrientation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTOrientation;
+		};
+		82F79B3D23B778C9003CA7BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82F79B3923B778C8003CA7BA /* RNCustomKeyboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNCustomKeyboard;
+		};
+		B237C39E231FAB0400A828F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B237C39A231FAB0300A828F5 /* RCTMIPushModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2BC4EEFB1DBDFDDD00715730;
+			remoteInfo = RCTMIPushModule;
+		};
+		EDBA352323C8424300A5C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDBA351F23C8424100A5C2AF /* RCTHuodePlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EDBA351323C8424100A5C2AF;
+			remoteInfo = RCTHuodePlayer;
+		};
+		EDE980C3239A02200010CC7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDE9808A239A021F0010CC7C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E23D7B471ACEFE2A00C59171;
+			remoteInfo = SQLite;
+		};
+		FD93FB6424D9351000FD5418 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE764C2D3DD646F4B54DBA63 /* RNSpringScrollView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNSpringScrollView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ED258231241F2A5100E3C045 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ED25822E241F2A5100E3C045 /* DWDrmServer.framework in Embed Frameworks */,
+				ED258230241F2A5100E3C045 /* CCSDK.framework in Embed Frameworks */,
+				ED25822B241F2A5000E3C045 /* IJKMediaFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD749E1C248637370011EA0A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FD749EE824864AE70011EA0A /* DWDrmServer.framework in Embed Frameworks */,
+				FD749EE724864ADD0011EA0A /* IJKMediaFramework.framework in Embed Frameworks */,
+				FD749EAE24864AD80011EA0A /* CCSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		00E356EE1AD99517003FC87E /* CY_StockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CY_StockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* CY_StockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CY_StockTests.m; sourceTree = "<group>"; };
+		036716117BF574A5D49093E4 /* libPods-CY_Stock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CY_Stock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		047768826F38422E8BFBD8FB /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		04FABCF252164059B79D6047 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		0B2957C7103140DDA447DD16 /* libRNDeviceInfo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNDeviceInfo.a; sourceTree = "<group>"; };
+		0DEE0FF7A9DD6BFAA5B98FC0 /* Pods-CY_StockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CY_StockTests.release.xcconfig"; path = "Target Support Files/Pods-CY_StockTests/Pods-CY_StockTests.release.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* CY_Stock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CY_Stock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = CY_Stock/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = CY_Stock/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CY_Stock/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CY_Stock/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CY_Stock/main.m; sourceTree = "<group>"; };
+		14C59D5CE0074D4EA4B83801 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		1CDA2C8F174E42CFB46B392F /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		2762A4D478FE4493B760D717 /* libRNGestureHandler-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNGestureHandler-tvOS.a"; sourceTree = "<group>"; };
+		285E9E642F2B4A09B2C7D131 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		28BE08A71C5A2D8B0FFA8F1C /* Pods-CY_StockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CY_StockTests.debug.xcconfig"; path = "Target Support Files/Pods-CY_StockTests/Pods-CY_StockTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* CY_Stock-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CY_Stock-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* CY_Stock-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CY_Stock-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3126E4482BCB4B9FA9BDFBF4 /* libRNDeviceInfo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNDeviceInfo-tvOS.a"; sourceTree = "<group>"; };
+		374FAD867AD9465DB0143C09 /* libRNCustomKeyboard.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNCustomKeyboard.a; sourceTree = "<group>"; };
+		39F3F69C13B5B31D12AB495C /* Pods-CY_Stock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CY_Stock.debug.xcconfig"; path = "Target Support Files/Pods-CY_Stock/Pods-CY_Stock.debug.xcconfig"; sourceTree = "<group>"; };
+		484103473D5D648CEA947574 /* libPods-CY_Stock_Dev.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CY_Stock_Dev.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F0B5656D6D84C55B2D1E486 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		5AB5EF6A1E596F9C762B635E /* Pods-CY_Stock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CY_Stock.release.xcconfig"; path = "Target Support Files/Pods-CY_Stock/Pods-CY_Stock.release.xcconfig"; sourceTree = "<group>"; };
+		5B30E118607C4B4680D1A9D4 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		636CA808A3024E51B8F8C318 /* libRNSpringScrollView.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSpringScrollView.a; sourceTree = "<group>"; };
+		72DFE30D06664DCE815E5D4A /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		8213D6E722DF1F0800359AED /* NativeConfigModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeConfigModule.m; sourceTree = "<group>"; };
+		8213D6E822DF1F0800359AED /* NativeConfigModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeConfigModule.h; sourceTree = "<group>"; };
+		8213D6EA22DF1F1D00359AED /* YDConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDConfiguration.h; sourceTree = "<group>"; };
+		8213D6EB22DF1F1D00359AED /* YDConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDConfiguration.m; sourceTree = "<group>"; };
+		822209A422967ED00057A7F0 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		822209AC22967F120057A7F0 /* FMPlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FMPlayer.xcodeproj; path = ../Libraries/FMVideoPlayer/ios/FMPlayer.xcodeproj; sourceTree = "<group>"; };
+		822209B3229686850057A7F0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		822209B5229687260057A7F0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		822209B7229687380057A7F0 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		822209B9229687460057A7F0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		82220A42229697C90057A7F0 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		822E30D322C9A314003F1CC9 /* YDStockManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDStockManager.m; sourceTree = "<group>"; };
+		822E30D422C9A314003F1CC9 /* YDStockManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDStockManager.h; sourceTree = "<group>"; };
+		822E30D522C9A314003F1CC9 /* NSString+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extend.h"; sourceTree = "<group>"; };
+		822E30D622C9A315003F1CC9 /* NSObject+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extend.h"; sourceTree = "<group>"; };
+		822E30D722C9A315003F1CC9 /* NSString+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
+		822E30D922C9A315003F1CC9 /* NSObject+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extend.m"; sourceTree = "<group>"; };
+		822E30DF22C9A343003F1CC9 /* GRPCCall+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GRPCCall+Tests.m"; sourceTree = "<group>"; };
+		822E30E022C9A343003F1CC9 /* YDYunChannelModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDYunChannelModule.h; sourceTree = "<group>"; };
+		822E30E122C9A343003F1CC9 /* YDHistoryCandleStick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDHistoryCandleStick.m; sourceTree = "<group>"; };
+		822E30E222C9A343003F1CC9 /* GRPCCall+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GRPCCall+Tests.h"; sourceTree = "<group>"; };
+		822E30E322C9A343003F1CC9 /* YDYunChannelModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDYunChannelModule.m; sourceTree = "<group>"; };
+		822E30E422C9A343003F1CC9 /* YDHistoryCandleStick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDHistoryCandleStick.h; sourceTree = "<group>"; };
+		823FF743230F8679007470A0 /* DzhChart.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DzhChart.xcodeproj; path = ../Libraries/DzhChart/ios/DzhChart.xcodeproj; sourceTree = "<group>"; };
+		8246AF43F5184CA9A82683B5 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		8255FDF3247FAF6A0049C219 /* UMCommonLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommonLog.framework; sourceTree = "<group>"; };
+		8255FDF4247FAF6A0049C219 /* UMCommonLog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMCommonLog.bundle; sourceTree = "<group>"; };
+		8255FDF7247FAF6A0049C219 /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UTDID.framework; sourceTree = "<group>"; };
+		8255FDFB247FAF6A0049C219 /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommon.framework; sourceTree = "<group>"; };
+		8255FDFF247FAF6A0049C219 /* UMSocialSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResources.bundle; sourceTree = "<group>"; };
+		8255FE00247FAF6A0049C219 /* UShareUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UShareUI.framework; sourceTree = "<group>"; };
+		8255FE01247FAF6A0049C219 /* UMShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMShare.framework; sourceTree = "<group>"; };
+		8255FE04247FAF6A0049C219 /* libSocialWeChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialWeChat.a; sourceTree = "<group>"; };
+		8255FE05247FAF6A0049C219 /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialWechatHandler.h; sourceTree = "<group>"; };
+		8255FE07247FAF6A0049C219 /* libSocialSina.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialSina.a; sourceTree = "<group>"; };
+		8255FE08247FAF6A0049C219 /* UMSocialSinaHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSinaHandler.h; sourceTree = "<group>"; };
+		8255FE0A247FAF6A0049C219 /* UMSocialQQHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialQQHandler.h; sourceTree = "<group>"; };
+		8255FE0B247FAF6A0049C219 /* libSocialQQ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialQQ.a; sourceTree = "<group>"; };
+		829DCEF4248F8C0300E35587 /* CY_Stock_Dev-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CY_Stock_Dev-Info.plist"; sourceTree = "<group>"; };
+		82C692E82475293000489584 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CY_Stock/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82F41B852297E896006DBB0F /* RCTOrientation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTOrientation.xcodeproj; path = "../node_modules_modify/react-native-orientation/iOS/RCTOrientation.xcodeproj"; sourceTree = "<group>"; };
+		82F79B3923B778C8003CA7BA /* RNCustomKeyboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNCustomKeyboard.xcodeproj; path = "../node_modules_modify/react-native-custom-keyboard/ios/RNCustomKeyboard.xcodeproj"; sourceTree = "<group>"; };
+		A084E23D89894D648B8E2D0F /* libRNAudioStreamer.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNAudioStreamer.a; sourceTree = "<group>"; };
+		B237C38D231F8D6400A828F5 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		B237C38F231F8D8200A828F5 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		B237C391231F8D9900A828F5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B237C393231F8DAA00A828F5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B237C395231F8DCA00A828F5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B237C397231F8DD600A828F5 /* CY_Stock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = CY_Stock.entitlements; path = CY_Stock/CY_Stock.entitlements; sourceTree = "<group>"; };
+		B237C39A231FAB0300A828F5 /* RCTMIPushModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTMIPushModule.xcodeproj; path = ../Libraries/RCTMIPushModule/RCTMIPushModule.xcodeproj; sourceTree = "<group>"; };
+		B2678B962293F857003B84A3 /* CallPhoneModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallPhoneModule.m; sourceTree = "<group>"; };
+		B2678BC02293F857003B84A3 /* CallPhoneModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallPhoneModule.h; sourceTree = "<group>"; };
+		B29A0ABC2316204D007725D1 /* sharemodule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sharemodule.m; sourceTree = "<group>"; };
+		B29A0ABD2316204D007725D1 /* sharemodule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sharemodule.h; sourceTree = "<group>"; };
+		B29A0AE6231620E5007725D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B29A0AE823162222007725D1 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		B2B6D51E228D01E100239833 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B2B6D520228D023F00239833 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D06C8CF9C5304A13AEC01946 /* libRNGestureHandler.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNGestureHandler.a; sourceTree = "<group>"; };
+		DAA852CF9D9A7BB0D530833D /* Pods-CY_Stock_Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CY_Stock_Dev.debug.xcconfig"; path = "Target Support Files/Pods-CY_Stock_Dev/Pods-CY_Stock_Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		E91F4FE028A5488D963EC2D6 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		ED208248241F548100CBD8F0 /* CCBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = CCBundle.bundle; path = ../Libraries/RCTHuodePlayer/RCTHuodePlayer/SDK/Live_iOS_Play_SDK/CCBundle.bundle; sourceTree = "<group>"; };
+		ED258226241F2A5000E3C045 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = ../Libraries/RCTHuodePlayer/RCTHuodePlayer/SDK/Live_iOS_Play_SDK/IJKMediaFramework.framework; sourceTree = "<group>"; };
+		ED258228241F2A5000E3C045 /* DWDrmServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DWDrmServer.framework; path = ../Libraries/RCTHuodePlayer/RCTHuodePlayer/SDK/Live_iOS_Play_SDK/DWDrmServer.framework; sourceTree = "<group>"; };
+		ED258229241F2A5000E3C045 /* CCSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CCSDK.framework; path = ../Libraries/RCTHuodePlayer/RCTHuodePlayer/SDK/Live_iOS_Play_SDK/CCSDK.framework; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		EDBA351F23C8424100A5C2AF /* RCTHuodePlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTHuodePlayer.xcodeproj; path = ../Libraries/RCTHuodePlayer/RCTHuodePlayer.xcodeproj; sourceTree = "<group>"; };
+		EDE9808A239A021F0010CC7C /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../node_modules/react-native-sqlite-storage/src/ios/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		EF0302CA589146B79F84359B /* libRCTUmengAnalytics.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTUmengAnalytics.a; sourceTree = "<group>"; };
+		F9A2306E680BAB2D2F5CE0F3 /* libPods-CY_StockTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CY_StockTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA44AFCA6A4E4CA489E6750E /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		FD749E23248637370011EA0A /* CY_Stock_Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CY_Stock_Dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD749E5E2486379B0011EA0A /* libFormulaDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFormulaDB.a; sourceTree = "<group>"; };
+		FD749E61248637A60011EA0A /* libFormulaDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFormulaDB.a; sourceTree = "<group>"; };
+		FD749E6D248638760011EA0A /* CCBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CCBundle.bundle; sourceTree = "<group>"; };
+		FD749E6E248638760011EA0A /* DWDrmServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DWDrmServer.framework; sourceTree = "<group>"; };
+		FD749E6F248638770011EA0A /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		FD749E70248638770011EA0A /* CCSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CCSDK.framework; sourceTree = "<group>"; };
+		FDCC80B924AD672200679D35 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		FE0BA880FA6F23AF8B5FB3E7 /* Pods-CY_Stock_Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CY_Stock_Dev.release.xcconfig"; path = "Target Support Files/Pods-CY_Stock_Dev/Pods-CY_Stock_Dev.release.xcconfig"; sourceTree = "<group>"; };
+		FE764C2D3DD646F4B54DBA63 /* RNSpringScrollView.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSpringScrollView.xcodeproj; path = "../node_modules/react-native-spring-scrollview/ios/RNSpringScrollView.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ECC221474676CB9EC8B7E7F /* libPods-CY_StockTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822209B6229687260057A7F0 /* libz.tbd in Frameworks */,
+				822209BA229687460057A7F0 /* libsqlite3.tbd in Frameworks */,
+				FDCC80BA24AD672200679D35 /* libicucore.tbd in Frameworks */,
+				8255FE11247FAF6B0049C219 /* UShareUI.framework in Frameworks */,
+				ED25822D241F2A5100E3C045 /* DWDrmServer.framework in Frameworks */,
+				823FF767230FCE28007470A0 /* libDzhChart.a in Frameworks */,
+				8255FE13247FAF6B0049C219 /* libSocialWeChat.a in Frameworks */,
+				B237C3A0231FAB4000A828F5 /* libRCTMIPushModule.a in Frameworks */,
+				B237C396231F8DCA00A828F5 /* CoreTelephony.framework in Frameworks */,
+				8255FE14247FAF6B0049C219 /* libSocialSina.a in Frameworks */,
+				822209B4229686850057A7F0 /* CFNetwork.framework in Frameworks */,
+				ED25822F241F2A5100E3C045 /* CCSDK.framework in Frameworks */,
+				B237C394231F8DAB00A828F5 /* MobileCoreServices.framework in Frameworks */,
+				8255FE0E247FAF6B0049C219 /* UTDID.framework in Frameworks */,
+				B237C392231F8D9900A828F5 /* SystemConfiguration.framework in Frameworks */,
+				B237C390231F8D8200A828F5 /* libxml2.tbd in Frameworks */,
+				82220A6E229697C90057A7F0 /* libresolv.tbd in Frameworks */,
+				B237C38E231F8D6400A828F5 /* UserNotifications.framework in Frameworks */,
+				B29A0AE923162222007725D1 /* Photos.framework in Frameworks */,
+				B29A0AE7231620E5007725D1 /* CoreGraphics.framework in Frameworks */,
+				82F41BB62297E8CB006DBB0F /* libRCTOrientation.a in Frameworks */,
+				ED0764C423CDD6DF001CFB99 /* libRCTHuodePlayer.a in Frameworks */,
+				822209D7229692220057A7F0 /* libFMPlayer.a in Frameworks */,
+				822209B8229687380057A7F0 /* libiconv.tbd in Frameworks */,
+				8255FE0F247FAF6B0049C219 /* UMCommon.framework in Frameworks */,
+				822209A522967ED00057A7F0 /* GLKit.framework in Frameworks */,
+				B2B6D521228D023F00239833 /* UIKit.framework in Frameworks */,
+				B2B6D51F228D01E100239833 /* CoreFoundation.framework in Frameworks */,
+				8255FE12247FAF6B0049C219 /* UMShare.framework in Frameworks */,
+				ED25822A241F2A5000E3C045 /* IJKMediaFramework.framework in Frameworks */,
+				ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */,
+				8255FE15247FAF6B0049C219 /* libSocialQQ.a in Frameworks */,
+				8255FE0C247FAF6B0049C219 /* UMCommonLog.framework in Frameworks */,
+				82F79B3F23B788E9003CA7BA /* libRNCustomKeyboard.a in Frameworks */,
+				FD749E5F2486379B0011EA0A /* libFormulaDB.a in Frameworks */,
+				F06C24AB4DFF4376AE8E166C /* libRNSpringScrollView.a in Frameworks */,
+				EDA24E20D8AB1BD717BD53F2 /* libPods-CY_Stock.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4781E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */,
+				2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */,
+				1CC5DFA40B9C4BC2A5C5E49A /* libRNGestureHandler-tvOS.a in Frameworks */,
+				97488DF283CD4FF291599086 /* libRNDeviceInfo-tvOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48D1E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD749DDB248637370011EA0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD749DED248637370011EA0A /* libz.tbd in Frameworks */,
+				FD749DF3248637370011EA0A /* libsqlite3.tbd in Frameworks */,
+				FDCC80BC24AD674800679D35 /* libicucore.tbd in Frameworks */,
+				FD749DDE248637370011EA0A /* UShareUI.framework in Frameworks */,
+				FD749DE2248637370011EA0A /* libDzhChart.a in Frameworks */,
+				FD749E72248638770011EA0A /* DWDrmServer.framework in Frameworks */,
+				FD749DE4248637370011EA0A /* libSocialWeChat.a in Frameworks */,
+				FD749DE5248637370011EA0A /* libRCTMIPushModule.a in Frameworks */,
+				FD749E74248638770011EA0A /* CCSDK.framework in Frameworks */,
+				FD749DE6248637370011EA0A /* CoreTelephony.framework in Frameworks */,
+				FD749DE7248637370011EA0A /* libSocialSina.a in Frameworks */,
+				FD749DE8248637370011EA0A /* CFNetwork.framework in Frameworks */,
+				FD749DEA248637370011EA0A /* MobileCoreServices.framework in Frameworks */,
+				FD749DEB248637370011EA0A /* UTDID.framework in Frameworks */,
+				FD749DEC248637370011EA0A /* SystemConfiguration.framework in Frameworks */,
+				FD749E73248638770011EA0A /* IJKMediaFramework.framework in Frameworks */,
+				FD749DEE248637370011EA0A /* libxml2.tbd in Frameworks */,
+				FD749DEF248637370011EA0A /* libresolv.tbd in Frameworks */,
+				FD749DF0248637370011EA0A /* UserNotifications.framework in Frameworks */,
+				FD749DF1248637370011EA0A /* Photos.framework in Frameworks */,
+				FD749DF2248637370011EA0A /* CoreGraphics.framework in Frameworks */,
+				FD749DF4248637370011EA0A /* libRCTOrientation.a in Frameworks */,
+				FD749DF5248637370011EA0A /* libRCTHuodePlayer.a in Frameworks */,
+				FD749DF6248637370011EA0A /* libFMPlayer.a in Frameworks */,
+				FD749DF7248637370011EA0A /* libiconv.tbd in Frameworks */,
+				FD749DF8248637370011EA0A /* UMCommon.framework in Frameworks */,
+				FD749DF9248637370011EA0A /* GLKit.framework in Frameworks */,
+				FD749DFA248637370011EA0A /* UIKit.framework in Frameworks */,
+				FD749DFB248637370011EA0A /* CoreFoundation.framework in Frameworks */,
+				FD749DFC248637370011EA0A /* UMShare.framework in Frameworks */,
+				FD749DFE248637370011EA0A /* JavaScriptCore.framework in Frameworks */,
+				FD749DFF248637370011EA0A /* libSocialQQ.a in Frameworks */,
+				FD749E01248637370011EA0A /* UMCommonLog.framework in Frameworks */,
+				FD749E0C248637370011EA0A /* libRNCustomKeyboard.a in Frameworks */,
+				FD749E62248637A60011EA0A /* libFormulaDB.a in Frameworks */,
+				FD749E12248637370011EA0A /* libRNSpringScrollView.a in Frameworks */,
+				A324DAAB9BA14A8D20228994 /* libPods-CY_Stock_Dev.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* CY_StockTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* CY_StockTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = CY_StockTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* CY_Stock */ = {
+			isa = PBXGroup;
+			children = (
+				B237C397231F8DD600A828F5 /* CY_Stock.entitlements */,
+				8255FDF0247FAF6A0049C219 /* UMShare */,
+				822E30E822C9A387003F1CC9 /* ExportModules */,
+				822E30DE22C9A343003F1CC9 /* grpcModel */,
+				822E30E922C9A3BC003F1CC9 /* Utilites */,
+				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				829DCEF4248F8C0300E35587 /* CY_Stock_Dev-Info.plist */,
+				13B07FB71A68108700A75B9A /* main.m */,
+				82C692E72475293000489584 /* LaunchScreen.storyboard */,
+			);
+			name = CY_Stock;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDCC80B924AD672200679D35 /* libicucore.tbd */,
+				FD749E6C248638760011EA0A /* Release-iphonesimulator_Live_iOS_Play_SDK */,
+				FD749E60248637A60011EA0A /* Release-iphonesimulator */,
+				FD749E5D2486379B0011EA0A /* Release-iphoneos */,
+				ED258229241F2A5000E3C045 /* CCSDK.framework */,
+				ED258228241F2A5000E3C045 /* DWDrmServer.framework */,
+				ED258226241F2A5000E3C045 /* IJKMediaFramework.framework */,
+				B237C395231F8DCA00A828F5 /* CoreTelephony.framework */,
+				B237C393231F8DAA00A828F5 /* MobileCoreServices.framework */,
+				B237C391231F8D9900A828F5 /* SystemConfiguration.framework */,
+				B237C38F231F8D8200A828F5 /* libxml2.tbd */,
+				B237C38D231F8D6400A828F5 /* UserNotifications.framework */,
+				B29A0AE823162222007725D1 /* Photos.framework */,
+				B29A0AE6231620E5007725D1 /* CoreGraphics.framework */,
+				82220A42229697C90057A7F0 /* libresolv.tbd */,
+				822209B9229687460057A7F0 /* libsqlite3.tbd */,
+				822209B7229687380057A7F0 /* libiconv.tbd */,
+				822209B5229687260057A7F0 /* libz.tbd */,
+				822209B3229686850057A7F0 /* CFNetwork.framework */,
+				822209A422967ED00057A7F0 /* GLKit.framework */,
+				B2B6D520228D023F00239833 /* UIKit.framework */,
+				B2B6D51E228D01E100239833 /* CoreFoundation.framework */,
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
+				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+				484103473D5D648CEA947574 /* libPods-CY_Stock_Dev.a */,
+				036716117BF574A5D49093E4 /* libPods-CY_Stock.a */,
+				F9A2306E680BAB2D2F5CE0F3 /* libPods-CY_StockTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		822209AD22967F120057A7F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				822209B122967F120057A7F0 /* libFMPlayer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		822E30DE22C9A343003F1CC9 /* grpcModel */ = {
+			isa = PBXGroup;
+			children = (
+				822E30E222C9A343003F1CC9 /* GRPCCall+Tests.h */,
+				822E30DF22C9A343003F1CC9 /* GRPCCall+Tests.m */,
+				822E30D422C9A314003F1CC9 /* YDStockManager.h */,
+				822E30D322C9A314003F1CC9 /* YDStockManager.m */,
+			);
+			path = grpcModel;
+			sourceTree = "<group>";
+		};
+		822E30E822C9A387003F1CC9 /* ExportModules */ = {
+			isa = PBXGroup;
+			children = (
+				B29A0ABC2316204D007725D1 /* sharemodule.m */,
+				B29A0ABD2316204D007725D1 /* sharemodule.h */,
+				822E30E022C9A343003F1CC9 /* YDYunChannelModule.h */,
+				822E30E322C9A343003F1CC9 /* YDYunChannelModule.m */,
+				822E30E422C9A343003F1CC9 /* YDHistoryCandleStick.h */,
+				822E30E122C9A343003F1CC9 /* YDHistoryCandleStick.m */,
+				B2678BC02293F857003B84A3 /* CallPhoneModule.h */,
+				B2678B962293F857003B84A3 /* CallPhoneModule.m */,
+				8213D6E822DF1F0800359AED /* NativeConfigModule.h */,
+				8213D6E722DF1F0800359AED /* NativeConfigModule.m */,
+			);
+			path = ExportModules;
+			sourceTree = "<group>";
+		};
+		822E30E922C9A3BC003F1CC9 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				8213D6EA22DF1F1D00359AED /* YDConfiguration.h */,
+				8213D6EB22DF1F1D00359AED /* YDConfiguration.m */,
+				822E30D622C9A315003F1CC9 /* NSObject+Extend.h */,
+				822E30D922C9A315003F1CC9 /* NSObject+Extend.m */,
+				822E30D522C9A314003F1CC9 /* NSString+Extend.h */,
+				822E30D722C9A315003F1CC9 /* NSString+Extend.m */,
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		823FF744230F8679007470A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				823FF748230F8679007470A0 /* libDzhChart.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8255FDF0247FAF6A0049C219 /* UMShare */ = {
+			isa = PBXGroup;
+			children = (
+				8255FDF1247FAF6A0049C219 /* umcommonlog */,
+				8255FDF5247FAF6A0049C219 /* thirdparties */,
+				8255FDF8247FAF6A0049C219 /* common */,
+				8255FDFC247FAF6A0049C219 /* share */,
+			);
+			name = UMShare;
+			path = CY_Stock/UMShare;
+			sourceTree = "<group>";
+		};
+		8255FDF1247FAF6A0049C219 /* umcommonlog */ = {
+			isa = PBXGroup;
+			children = (
+				8255FDF2247FAF6A0049C219 /* umcommonlog_ios_1.0.0 */,
+			);
+			path = umcommonlog;
+			sourceTree = "<group>";
+		};
+		8255FDF2247FAF6A0049C219 /* umcommonlog_ios_1.0.0 */ = {
+			isa = PBXGroup;
+			children = (
+				8255FDF3247FAF6A0049C219 /* UMCommonLog.framework */,
+				8255FDF4247FAF6A0049C219 /* UMCommonLog.bundle */,
+			);
+			path = umcommonlog_ios_1.0.0;
+			sourceTree = "<group>";
+		};
+		8255FDF5247FAF6A0049C219 /* thirdparties */ = {
+			isa = PBXGroup;
+			children = (
+				8255FDF6247FAF6A0049C219 /* thirdparties_ios_1.0.5 */,
+			);
+			path = thirdparties;
+			sourceTree = "<group>";
+		};
+		8255FDF6247FAF6A0049C219 /* thirdparties_ios_1.0.5 */ = {
+			isa = PBXGroup;
+			children = (
+				8255FDF7247FAF6A0049C219 /* UTDID.framework */,
+			);
+			path = thirdparties_ios_1.0.5;
+			sourceTree = "<group>";
+		};
+		8255FDF8247FAF6A0049C219 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				8255FDF9247FAF6A0049C219 /* common_ios_2.1.4 */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		8255FDF9247FAF6A0049C219 /* common_ios_2.1.4 */ = {
+			isa = PBXGroup;
+			children = (
+				8255FDFA247FAF6A0049C219 /* normal */,
+			);
+			path = common_ios_2.1.4;
+			sourceTree = "<group>";
+		};
+		8255FDFA247FAF6A0049C219 /* normal */ = {
+			isa = PBXGroup;
+			children = (
+				8255FDFB247FAF6A0049C219 /* UMCommon.framework */,
+			);
+			path = normal;
+			sourceTree = "<group>";
+		};
+		8255FDFC247FAF6A0049C219 /* share */ = {
+			isa = PBXGroup;
+			children = (
+				8255FDFD247FAF6A0049C219 /* share_ios_6.9.8 */,
+			);
+			path = share;
+			sourceTree = "<group>";
+		};
+		8255FDFD247FAF6A0049C219 /* share_ios_6.9.8 */ = {
+			isa = PBXGroup;
+			children = (
+				8255FDFE247FAF6A0049C219 /* UMSocialUI */,
+				8255FE01247FAF6A0049C219 /* UMShare.framework */,
+				8255FE02247FAF6A0049C219 /* SocialLibraries */,
+			);
+			path = share_ios_6.9.8;
+			sourceTree = "<group>";
+		};
+		8255FDFE247FAF6A0049C219 /* UMSocialUI */ = {
+			isa = PBXGroup;
+			children = (
+				8255FDFF247FAF6A0049C219 /* UMSocialSDKResources.bundle */,
+				8255FE00247FAF6A0049C219 /* UShareUI.framework */,
+			);
+			path = UMSocialUI;
+			sourceTree = "<group>";
+		};
+		8255FE02247FAF6A0049C219 /* SocialLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				8255FE03247FAF6A0049C219 /* WeChat */,
+				8255FE06247FAF6A0049C219 /* Sina */,
+				8255FE09247FAF6A0049C219 /* QQ */,
+			);
+			path = SocialLibraries;
+			sourceTree = "<group>";
+		};
+		8255FE03247FAF6A0049C219 /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				8255FE04247FAF6A0049C219 /* libSocialWeChat.a */,
+				8255FE05247FAF6A0049C219 /* UMSocialWechatHandler.h */,
+			);
+			path = WeChat;
+			sourceTree = "<group>";
+		};
+		8255FE06247FAF6A0049C219 /* Sina */ = {
+			isa = PBXGroup;
+			children = (
+				8255FE07247FAF6A0049C219 /* libSocialSina.a */,
+				8255FE08247FAF6A0049C219 /* UMSocialSinaHandler.h */,
+			);
+			path = Sina;
+			sourceTree = "<group>";
+		};
+		8255FE09247FAF6A0049C219 /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				8255FE0A247FAF6A0049C219 /* UMSocialQQHandler.h */,
+				8255FE0B247FAF6A0049C219 /* libSocialQQ.a */,
+			);
+			path = QQ;
+			sourceTree = "<group>";
+		};
+		82F41B862297E896006DBB0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82F41B982297E896006DBB0F /* libRCTOrientation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82F79B3A23B778C8003CA7BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82F79B3E23B778C9003CA7BA /* libRNCustomKeyboard.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				EDBA351F23C8424100A5C2AF /* RCTHuodePlayer.xcodeproj */,
+				82F79B3923B778C8003CA7BA /* RNCustomKeyboard.xcodeproj */,
+				EDE9808A239A021F0010CC7C /* SQLite.xcodeproj */,
+				823FF743230F8679007470A0 /* DzhChart.xcodeproj */,
+				B237C39A231FAB0300A828F5 /* RCTMIPushModule.xcodeproj */,
+				82F41B852297E896006DBB0F /* RCTOrientation.xcodeproj */,
+				822209AC22967F120057A7F0 /* FMPlayer.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* CY_Stock */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* CY_StockTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				B2B6D52E228D43A200239833 /* Recovered References */,
+				91CC089D1E559BF23DFD9E09 /* Pods */,
+				A08C003B4CF54AD8A4C5CF5D /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* CY_Stock.app */,
+				00E356EE1AD99517003FC87E /* CY_StockTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* CY_Stock-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* CY_Stock-tvOSTests.xctest */,
+				FD749E23248637370011EA0A /* CY_Stock_Dev.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91CC089D1E559BF23DFD9E09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39F3F69C13B5B31D12AB495C /* Pods-CY_Stock.debug.xcconfig */,
+				5AB5EF6A1E596F9C762B635E /* Pods-CY_Stock.release.xcconfig */,
+				DAA852CF9D9A7BB0D530833D /* Pods-CY_Stock_Dev.debug.xcconfig */,
+				FE0BA880FA6F23AF8B5FB3E7 /* Pods-CY_Stock_Dev.release.xcconfig */,
+				28BE08A71C5A2D8B0FFA8F1C /* Pods-CY_StockTests.debug.xcconfig */,
+				0DEE0FF7A9DD6BFAA5B98FC0 /* Pods-CY_StockTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A08C003B4CF54AD8A4C5CF5D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14C59D5CE0074D4EA4B83801 /* Entypo.ttf */,
+				285E9E642F2B4A09B2C7D131 /* EvilIcons.ttf */,
+				FA44AFCA6A4E4CA489E6750E /* Feather.ttf */,
+				047768826F38422E8BFBD8FB /* FontAwesome.ttf */,
+				4F0B5656D6D84C55B2D1E486 /* Foundation.ttf */,
+				72DFE30D06664DCE815E5D4A /* Ionicons.ttf */,
+				8246AF43F5184CA9A82683B5 /* MaterialCommunityIcons.ttf */,
+				04FABCF252164059B79D6047 /* MaterialIcons.ttf */,
+				1CDA2C8F174E42CFB46B392F /* Octicons.ttf */,
+				E91F4FE028A5488D963EC2D6 /* SimpleLineIcons.ttf */,
+				5B30E118607C4B4680D1A9D4 /* Zocial.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B237C39B231FAB0300A828F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B237C39F231FAB0400A828F5 /* libRCTMIPushModule.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2B6D52E228D43A200239833 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				ED208248241F548100CBD8F0 /* CCBundle.bundle */,
+				D06C8CF9C5304A13AEC01946 /* libRNGestureHandler.a */,
+				2762A4D478FE4493B760D717 /* libRNGestureHandler-tvOS.a */,
+				0B2957C7103140DDA447DD16 /* libRNDeviceInfo.a */,
+				3126E4482BCB4B9FA9BDFBF4 /* libRNDeviceInfo-tvOS.a */,
+				636CA808A3024E51B8F8C318 /* libRNSpringScrollView.a */,
+				A084E23D89894D648B8E2D0F /* libRNAudioStreamer.a */,
+				EF0302CA589146B79F84359B /* libRCTUmengAnalytics.a */,
+				374FAD867AD9465DB0143C09 /* libRNCustomKeyboard.a */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		EDBA352023C8424100A5C2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDBA352423C8424300A5C2AF /* libRCTHuodePlayer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDE9808B239A021F0010CC7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDE980C4239A02200010CC7C /* libSQLite.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD749E5D2486379B0011EA0A /* Release-iphoneos */ = {
+			isa = PBXGroup;
+			children = (
+				FD749E5E2486379B0011EA0A /* libFormulaDB.a */,
+			);
+			name = "Release-iphoneos";
+			path = "libs/Release-iphoneos";
+			sourceTree = "<group>";
+		};
+		FD749E60248637A60011EA0A /* Release-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				FD749E61248637A60011EA0A /* libFormulaDB.a */,
+			);
+			name = "Release-iphonesimulator";
+			path = "libs/Release-iphonesimulator";
+			sourceTree = "<group>";
+		};
+		FD749E6C248638760011EA0A /* Release-iphonesimulator_Live_iOS_Play_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				FD749E6D248638760011EA0A /* CCBundle.bundle */,
+				FD749E6E248638760011EA0A /* DWDrmServer.framework */,
+				FD749E6F248638770011EA0A /* IJKMediaFramework.framework */,
+				FD749E70248638770011EA0A /* CCSDK.framework */,
+			);
+			name = "Release-iphonesimulator_Live_iOS_Play_SDK";
+			path = "../Libraries/RCTHuodePlayer/RCTHuodePlayer/SDK/Release-iphonesimulator_Live_iOS_Play_SDK";
+			sourceTree = "<group>";
+		};
+		FD93FB5724D9343B00FD5418 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD93FB6524D9351000FD5418 /* libRNSpringScrollView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* CY_StockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "CY_StockTests" */;
+			buildPhases = (
+				63AB23F0C917DCFE21E15CCB /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+				04D240D17345762C558912B9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = CY_StockTests;
+			productName = CY_StockTests;
+			productReference = 00E356EE1AD99517003FC87E /* CY_StockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* CY_Stock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "CY_Stock" */;
+			buildPhases = (
+				9A2C7253B7017B6069C640CE /* [CP] Check Pods Manifest.lock */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				82C692AE247526CB00489584 /* Update Launch Screen App Version */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				C7788A9AA61E992EB4C39111 /* [CP] Copy Pods Resources */,
+				ED258231241F2A5100E3C045 /* Embed Frameworks */,
+				FDD5F77224DB9FE3007CE085 /* Start Packager */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CY_Stock;
+			productName = "Hello World";
+			productReference = 13B07F961A680F5B00A75B9A /* CY_Stock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E47A1E0B4A5D006451C7 /* CY_Stock-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "CY_Stock-tvOS" */;
+			buildPhases = (
+				2D02E4771E0B4A5D006451C7 /* Sources */,
+				2D02E4781E0B4A5D006451C7 /* Frameworks */,
+				2D02E4791E0B4A5D006451C7 /* Resources */,
+				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CY_Stock-tvOS";
+			productName = "CY_Stock-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* CY_Stock-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E48F1E0B4A5D006451C7 /* CY_Stock-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "CY_Stock-tvOSTests" */;
+			buildPhases = (
+				2D02E48C1E0B4A5D006451C7 /* Sources */,
+				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
+				2D02E48E1E0B4A5D006451C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
+			);
+			name = "CY_Stock-tvOSTests";
+			productName = "CY_Stock-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* CY_Stock-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD749DCC248637370011EA0A /* CY_Stock_Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD749E20248637370011EA0A /* Build configuration list for PBXNativeTarget "CY_Stock_Dev" */;
+			buildPhases = (
+				FD749DCD248637370011EA0A /* [CP] Check Pods Manifest.lock */,
+				FD749DCE248637370011EA0A /* Sources */,
+				FD749DDB248637370011EA0A /* Frameworks */,
+				FD749E13248637370011EA0A /* Update Launch Screen App Version */,
+				FD749E14248637370011EA0A /* Resources */,
+				FD749E1A248637370011EA0A /* Bundle React Native code and images */,
+				FD749E1B248637370011EA0A /* [CP] Copy Pods Resources */,
+				FD749E1C248637370011EA0A /* Embed Frameworks */,
+				FDD5F76924DB99EF007CE085 /* Start Packager */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CY_Stock_Dev;
+			productName = "Hello World";
+			productReference = FD749E23248637370011EA0A /* CY_Stock_Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 940;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 8R5SY642VF;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 8R5SY642VF;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					2D02E47A1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					2D02E48F1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+					FD749DCC248637370011EA0A = {
+						DevelopmentTeam = 8R5SY642VF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "CY_Stock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 823FF744230F8679007470A0 /* Products */;
+					ProjectRef = 823FF743230F8679007470A0 /* DzhChart.xcodeproj */;
+				},
+				{
+					ProductGroup = 822209AD22967F120057A7F0 /* Products */;
+					ProjectRef = 822209AC22967F120057A7F0 /* FMPlayer.xcodeproj */;
+				},
+				{
+					ProductGroup = EDBA352023C8424100A5C2AF /* Products */;
+					ProjectRef = EDBA351F23C8424100A5C2AF /* RCTHuodePlayer.xcodeproj */;
+				},
+				{
+					ProductGroup = B237C39B231FAB0300A828F5 /* Products */;
+					ProjectRef = B237C39A231FAB0300A828F5 /* RCTMIPushModule.xcodeproj */;
+				},
+				{
+					ProductGroup = 82F41B862297E896006DBB0F /* Products */;
+					ProjectRef = 82F41B852297E896006DBB0F /* RCTOrientation.xcodeproj */;
+				},
+				{
+					ProductGroup = 82F79B3A23B778C8003CA7BA /* Products */;
+					ProjectRef = 82F79B3923B778C8003CA7BA /* RNCustomKeyboard.xcodeproj */;
+				},
+				{
+					ProductGroup = FD93FB5724D9343B00FD5418 /* Products */;
+					ProjectRef = FE764C2D3DD646F4B54DBA63 /* RNSpringScrollView.xcodeproj */;
+				},
+				{
+					ProductGroup = EDE9808B239A021F0010CC7C /* Products */;
+					ProjectRef = EDE9808A239A021F0010CC7C /* SQLite.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* CY_Stock */,
+				FD749DCC248637370011EA0A /* CY_Stock_Dev */,
+				00E356ED1AD99517003FC87E /* CY_StockTests */,
+				2D02E47A1E0B4A5D006451C7 /* CY_Stock-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* CY_Stock-tvOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		822209B122967F120057A7F0 /* libFMPlayer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFMPlayer.a;
+			remoteRef = 822209B022967F120057A7F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		823FF748230F8679007470A0 /* libDzhChart.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDzhChart.a;
+			remoteRef = 823FF747230F8679007470A0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		82F41B982297E896006DBB0F /* libRCTOrientation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTOrientation.a;
+			remoteRef = 82F41B972297E896006DBB0F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		82F79B3E23B778C9003CA7BA /* libRNCustomKeyboard.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNCustomKeyboard.a;
+			remoteRef = 82F79B3D23B778C9003CA7BA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B237C39F231FAB0400A828F5 /* libRCTMIPushModule.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTMIPushModule.a;
+			remoteRef = B237C39E231FAB0400A828F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDBA352423C8424300A5C2AF /* libRCTHuodePlayer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTHuodePlayer.a;
+			remoteRef = EDBA352323C8424300A5C2AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDE980C4239A02200010CC7C /* libSQLite.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSQLite.a;
+			remoteRef = EDE980C3239A02200010CC7C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FD93FB6524D9351000FD5418 /* libRNSpringScrollView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNSpringScrollView.a;
+			remoteRef = FD93FB6424D9351000FD5418 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				829DCEF5248F8C0300E35587 /* CY_Stock_Dev-Info.plist in Resources */,
+				ED208249241F548100CBD8F0 /* CCBundle.bundle in Resources */,
+				82C692E92475293000489584 /* LaunchScreen.storyboard in Resources */,
+				8255FE0D247FAF6B0049C219 /* UMCommonLog.bundle in Resources */,
+				8255FE10247FAF6B0049C219 /* UMSocialSDKResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4791E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48E1E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD749E14248637370011EA0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD749E15248637370011EA0A /* Images.xcassets in Resources */,
+				FD749E17248637370011EA0A /* LaunchScreen.storyboard in Resources */,
+				FD749E71248638770011EA0A /* CCBundle.bundle in Resources */,
+				FD749E18248637370011EA0A /* UMCommonLog.bundle in Resources */,
+				FD749E19248637370011EA0A /* UMSocialSDKResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		04D240D17345762C558912B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CY_StockTests/Pods-CY_StockTests-resources.sh",
+				"${PODS_ROOT}/SensorsAnalyticsSDK/SensorsAnalyticsSDK/SensorsAnalyticsSDK.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC/gRPCCertificates.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SensorsAnalyticsSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CY_StockTests/Pods-CY_StockTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		63AB23F0C917DCFE21E15CCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CY_StockTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82C692AE247526CB00489584 /* Update Launch Screen App Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Update Launch Screen App Version";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "versionNumber=\"$MARKETING_VERSION\"\nsed -i bak -e \"/userLabel=\\\"LaunchScreenAppVersion\\\"/s/text=\\\"[^\\\"]*\\\"/text=\\\"版本号信息 $versionNumber\\\"/\" $PROJECT_DIR/CY_Stock/Base.lproj/LaunchScreen.storyboard\n";
+		};
+		9A2C7253B7017B6069C640CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CY_Stock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7788A9AA61E992EB4C39111 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CY_Stock/Pods-CY_Stock-resources.sh",
+				"${PODS_ROOT}/SensorsAnalyticsSDK/SensorsAnalyticsSDK/SensorsAnalyticsSDK.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC/gRPCCertificates.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SensorsAnalyticsSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CY_Stock/Pods-CY_Stock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD749DCD248637370011EA0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CY_Stock_Dev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD749E13248637370011EA0A /* Update Launch Screen App Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Update Launch Screen App Version";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "versionNumber=\"$MARKETING_VERSION\"\nsed -i bak -e \"/userLabel=\\\"LaunchScreenAppVersion\\\"/s/text=\\\"[^\\\"]*\\\"/text=\\\"版本号信息 $versionNumber\\\"/\" $PROJECT_DIR/CY_Stock/Base.lproj/LaunchScreen.storyboard\n";
+		};
+		FD749E1A248637370011EA0A /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		FD749E1B248637370011EA0A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CY_Stock_Dev/Pods-CY_Stock_Dev-resources.sh",
+				"${PODS_ROOT}/SensorsAnalyticsSDK/SensorsAnalyticsSDK/SensorsAnalyticsSDK.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC/gRPCCertificates.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SensorsAnalyticsSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CY_Stock_Dev/Pods-CY_Stock_Dev-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDD5F76924DB99EF007CE085 /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# debug模式自动启动 packager service\nexport RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+		};
+		FDD5F77224DB9FE3007CE085 /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# debug模式自动启动 packager service\nexport RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* CY_StockTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				8213D6EC22DF1F1D00359AED /* YDConfiguration.m in Sources */,
+				8213D6E922DF1F0800359AED /* NativeConfigModule.m in Sources */,
+				B2678BC12293F857003B84A3 /* CallPhoneModule.m in Sources */,
+				822E30E522C9A343003F1CC9 /* GRPCCall+Tests.m in Sources */,
+				B29A0ABF2316204D007725D1 /* sharemodule.m in Sources */,
+				822E30DD22C9A315003F1CC9 /* NSObject+Extend.m in Sources */,
+				822E30E722C9A343003F1CC9 /* YDYunChannelModule.m in Sources */,
+				822E30E622C9A343003F1CC9 /* YDHistoryCandleStick.m in Sources */,
+				822E30DA22C9A315003F1CC9 /* YDStockManager.m in Sources */,
+				822E30DB22C9A315003F1CC9 /* NSString+Extend.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4771E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
+				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48C1E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCD954D1E0B4F2C00145EB5 /* CY_StockTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD749DCE248637370011EA0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD749DCF248637370011EA0A /* AppDelegate.m in Sources */,
+				FD749DD0248637370011EA0A /* main.m in Sources */,
+				FD749DD1248637370011EA0A /* YDConfiguration.m in Sources */,
+				FD749DD2248637370011EA0A /* NativeConfigModule.m in Sources */,
+				FD749DD3248637370011EA0A /* CallPhoneModule.m in Sources */,
+				FD749DD4248637370011EA0A /* GRPCCall+Tests.m in Sources */,
+				FD749DD5248637370011EA0A /* sharemodule.m in Sources */,
+				FD749DD6248637370011EA0A /* NSObject+Extend.m in Sources */,
+				FD749DD7248637370011EA0A /* YDYunChannelModule.m in Sources */,
+				FD749DD8248637370011EA0A /* YDHistoryCandleStick.m in Sources */,
+				FD749DD9248637370011EA0A /* YDStockManager.m in Sources */,
+				FD749DDA248637370011EA0A /* NSString+Extend.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* CY_Stock */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D02E47A1E0B4A5D006451C7 /* CY_Stock-tvOS */;
+			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		82C692E72475293000489584 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82C692E82475293000489584 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28BE08A71C5A2D8B0FFA8F1C /* Pods-CY_StockTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-device-info/ios/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-spring-scrollview/ios/SpringScrollView",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
+					"$(SRCROOT)/../node_modules/react-native-umeng-analytics/ios/RCTUmengAnalytics/**",
+					"$(SRCROOT)/../node_modules/react-native-custom-keyboard/ios",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
+					"$(SRCROOT)/../node_modules/react-native-umeng-analytics/ios/RCTUmengAnalytics/**",
+				);
+				INFOPLIST_FILE = CY_StockTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CY_Stock.app/CY_Stock";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DEE0FF7A9DD6BFAA5B98FC0 /* Pods-CY_StockTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-device-info/ios/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-spring-scrollview/ios/SpringScrollView",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
+					"$(SRCROOT)/../node_modules/react-native-umeng-analytics/ios/RCTUmengAnalytics/**",
+					"$(SRCROOT)/../node_modules/react-native-custom-keyboard/ios",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
+					"$(SRCROOT)/../node_modules/react-native-umeng-analytics/ios/RCTUmengAnalytics/**",
+				);
+				INFOPLIST_FILE = CY_StockTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CY_Stock.app/CY_Stock";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39F3F69C13B5B31D12AB495C /* Pods-CY_Stock.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CY_Stock/CY_Stock.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1855;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8R5SY642VF;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../Libraries/RCTGenseePlayer/ios/",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/umcommonlog/umcommonlog_ios_1.0.0",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/thirdparties/thirdparties_ios_1.0.5",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/common/common_ios_2.1.4/normal",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/share/share_ios_6.9.8/UMSocialUI",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/share/share_ios_6.9.8",
+					"$(PROJECT_DIR)/../Libraries/RCTHuodePlayer/RCTHuodePlayer/SDK/Live_iOS_Play_SDK",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-device-info/ios/RNDeviceInfo",
+					"$(SRCROOT)/../Libraries/RCTGenseePlayer/ios/RCTGenseePlayer",
+					"$(SRCROOT)/../Libraries/FMVideoPlayer/ios/FMPlayer",
+					"\"$(SRCROOT)/Pods/gRPC/src/objective-c/GRPCClient/private\"",
+					"$(SRCROOT)/../node_modules/react-native-fs",
+					"$(SRCROOT)/../node_modules/react-native-spring-scrollview/ios/SpringScrollView",
+					"\"$(SRCROOT)/../Libraries/DzhChart/ios/DzhChart\"",
+					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+					"$(SRCROOT)/../node_modules/react-native-picker/ios/RCTBEEPickerManager",
+					"\"$(SRCROOT)/../Libraries/RCTMIPushModule\"/**",
+					"\"$(SRCROOT)/../node_modules_modify/react-native-custom-keyboard/ios\"",
+					"$(SRCROOT)/../node_modules_modify/react-native-orientation/iOS/RCTOrientation",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
+					"$(SRCROOT)/../node_modules/react-native-umeng-analytics/ios/RCTUmengAnalytics/**",
+				);
+				INFOPLIST_FILE = CY_Stock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Libraries/FMVideoPlayer/ios/FMPlayer",
+					"$(PROJECT_DIR)/libs/Release$(EFFECTIVE_PLATFORM_NAME)",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/share/share_ios_6.9.8/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/share/share_ios_6.9.8/SocialLibraries/Sina",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/share/share_ios_6.9.8/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/libs/Release-iphonesimulator",
+					"$(PROJECT_DIR)/libs/Release-iphoneos",
+				);
+				MARKETING_VERSION = 1.2.4;
+				MiSDKRun = debug;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuanda.hui-xuan-gu-enterprise";
+				PRODUCT_NAME = CY_Stock;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AB5EF6A1E596F9C762B635E /* Pods-CY_Stock.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CY_Stock/CY_Stock.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1855;
+				DEVELOPMENT_TEAM = 8R5SY642VF;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../Libraries/RCTGenseePlayer/ios/",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/umcommonlog/umcommonlog_ios_1.0.0",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/thirdparties/thirdparties_ios_1.0.5",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/common/common_ios_2.1.4/normal",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/share/share_ios_6.9.8/UMSocialUI",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/share/share_ios_6.9.8",
+					"$(PROJECT_DIR)/../Libraries/RCTHuodePlayer/RCTHuodePlayer/SDK/Live_iOS_Play_SDK",
+				);
+				GCC_OPTIMIZATION_LEVEL = s;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-device-info/ios/RNDeviceInfo",
+					"$(SRCROOT)/../Libraries/RCTGenseePlayer/ios/RCTGenseePlayer",
+					"$(SRCROOT)/../Libraries/FMVideoPlayer/ios/FMPlayer",
+					"\"$(SRCROOT)/Pods/gRPC/src/objective-c/GRPCClient/private\"",
+					"$(SRCROOT)/../node_modules/react-native-fs",
+					"$(SRCROOT)/../node_modules/react-native-spring-scrollview/ios/SpringScrollView",
+					"\"$(SRCROOT)/../Libraries/DzhChart/ios/DzhChart\"",
+					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+					"$(SRCROOT)/../node_modules/react-native-picker/ios/RCTBEEPickerManager",
+					"\"$(SRCROOT)/../Libraries/RCTMIPushModule\"/**",
+					"\"$(SRCROOT)/../node_modules_modify/react-native-custom-keyboard/ios\"",
+					"$(SRCROOT)/../node_modules_modify/react-native-orientation/iOS/RCTOrientation",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
+					"$(SRCROOT)/../node_modules/react-native-umeng-analytics/ios/RCTUmengAnalytics/**",
+				);
+				INFOPLIST_FILE = CY_Stock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Libraries/FMVideoPlayer/ios/FMPlayer",
+					"$(PROJECT_DIR)/libs/Release$(EFFECTIVE_PLATFORM_NAME)",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/share/share_ios_6.9.8/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/share/share_ios_6.9.8/SocialLibraries/Sina",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/share/share_ios_6.9.8/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/libs/Release-iphonesimulator",
+					"$(PROJECT_DIR)/libs/Release-iphoneos",
+				);
+				MARKETING_VERSION = 1.2.4;
+				MiSDKRun = online;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuanda.hui-xuan-gu-enterprise";
+				PRODUCT_NAME = CY_Stock;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		2D02E4971E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-device-info/ios/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-spring-scrollview/ios/SpringScrollView",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
+					"$(SRCROOT)/../node_modules/react-native-umeng-analytics/ios/RCTUmengAnalytics/**",
+					"$(SRCROOT)/../node_modules/react-native-custom-keyboard/ios",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
+					"$(SRCROOT)/../node_modules/react-native-umeng-analytics/ios/RCTUmengAnalytics/**",
+				);
+				INFOPLIST_FILE = "CY_Stock-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.CY_Stock-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		2D02E4981E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-device-info/ios/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-spring-scrollview/ios/SpringScrollView",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
+					"$(SRCROOT)/../node_modules/react-native-umeng-analytics/ios/RCTUmengAnalytics/**",
+					"$(SRCROOT)/../node_modules/react-native-custom-keyboard/ios",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
+					"$(SRCROOT)/../node_modules/react-native-umeng-analytics/ios/RCTUmengAnalytics/**",
+				);
+				INFOPLIST_FILE = "CY_Stock-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.CY_Stock-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+		2D02E4991E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-device-info/ios/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-spring-scrollview/ios/SpringScrollView",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
+					"$(SRCROOT)/../node_modules/react-native-umeng-analytics/ios/RCTUmengAnalytics/**",
+					"$(SRCROOT)/../node_modules/react-native-custom-keyboard/ios",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
+					"$(SRCROOT)/../node_modules/react-native-umeng-analytics/ios/RCTUmengAnalytics/**",
+				);
+				INFOPLIST_FILE = "CY_Stock-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.CY_Stock-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CY_Stock-tvOS.app/CY_Stock-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		2D02E49A1E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-device-info/ios/RNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-spring-scrollview/ios/SpringScrollView",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
+					"$(SRCROOT)/../node_modules/react-native-umeng-analytics/ios/RCTUmengAnalytics/**",
+					"$(SRCROOT)/../node_modules/react-native-custom-keyboard/ios",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
+					"$(SRCROOT)/../node_modules/react-native-umeng-analytics/ios/RCTUmengAnalytics/**",
+				);
+				INFOPLIST_FILE = "CY_Stock-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.CY_Stock-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CY_Stock-tvOS.app/CY_Stock-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD749E21248637370011EA0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAA852CF9D9A7BB0D530833D /* Pods-CY_Stock_Dev.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CY_Stock/CY_Stock.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1855;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8R5SY642VF;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/CY_Stock/UMShare/umcommonlog/umcommonlog_ios_1.0.0",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/thirdparties/thirdparties_ios_1.0.5",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/common/common_ios_2.1.4/normal",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/share/share_ios_6.9.8/UMSocialUI",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/share/share_ios_6.9.8",
+					"$(PROJECT_DIR)/../Libraries/RCTHuodePlayer/RCTHuodePlayer/SDK/Release-iphonesimulator_Live_iOS_Play_SDK",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-device-info/ios/RNDeviceInfo",
+					"$(SRCROOT)/../Libraries/FMVideoPlayer/ios/FMPlayer",
+					"\"$(SRCROOT)/Pods/gRPC/src/objective-c/GRPCClient/private\"",
+					"$(SRCROOT)/../node_modules/react-native-fs",
+					"$(SRCROOT)/../node_modules/react-native-spring-scrollview/ios/SpringScrollView",
+					"\"$(SRCROOT)/../Libraries/DzhChart/ios/DzhChart\"",
+					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+					"$(SRCROOT)/../node_modules/react-native-picker/ios/RCTBEEPickerManager",
+					"\"$(SRCROOT)/../Libraries/RCTMIPushModule\"/**",
+					"\"$(SRCROOT)/../node_modules_modify/react-native-custom-keyboard/ios\"",
+					"$(SRCROOT)/../node_modules_modify/react-native-orientation/iOS/RCTOrientation",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
+					"$(SRCROOT)/../node_modules/react-native-umeng-analytics/ios/RCTUmengAnalytics/**",
+				);
+				INFOPLIST_FILE = "CY_Stock_Dev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Libraries/FMVideoPlayer/ios/FMPlayer",
+					"$(PROJECT_DIR)/libs/Release$(EFFECTIVE_PLATFORM_NAME)",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/share/share_ios_6.9.8/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/share/share_ios_6.9.8/SocialLibraries/Sina",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/share/share_ios_6.9.8/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/libs/Release-iphonesimulator",
+					"$(PROJECT_DIR)/libs/Release-iphoneos",
+				);
+				MARKETING_VERSION = 1.2.4;
+				MiSDKRun = debug;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuanda.hui-xuan-gu-enterprise";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		FD749E22248637370011EA0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE0BA880FA6F23AF8B5FB3E7 /* Pods-CY_Stock_Dev.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CY_Stock/CY_Stock.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1855;
+				DEVELOPMENT_TEAM = 8R5SY642VF;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/CY_Stock/UMShare/umcommonlog/umcommonlog_ios_1.0.0",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/thirdparties/thirdparties_ios_1.0.5",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/common/common_ios_2.1.4/normal",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/share/share_ios_6.9.8/UMSocialUI",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/share/share_ios_6.9.8",
+					"$(PROJECT_DIR)/../Libraries/RCTHuodePlayer/RCTHuodePlayer/SDK/Release-iphonesimulator_Live_iOS_Play_SDK",
+				);
+				GCC_OPTIMIZATION_LEVEL = s;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-device-info/ios/RNDeviceInfo",
+					"$(SRCROOT)/../Libraries/FMVideoPlayer/ios/FMPlayer",
+					"\"$(SRCROOT)/Pods/gRPC/src/objective-c/GRPCClient/private\"",
+					"$(SRCROOT)/../node_modules/react-native-fs",
+					"$(SRCROOT)/../node_modules/react-native-spring-scrollview/ios/SpringScrollView",
+					"\"$(SRCROOT)/../Libraries/DzhChart/ios/DzhChart\"",
+					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+					"$(SRCROOT)/../node_modules/react-native-picker/ios/RCTBEEPickerManager",
+					"\"$(SRCROOT)/../Libraries/RCTMIPushModule\"/**",
+					"\"$(SRCROOT)/../node_modules_modify/react-native-custom-keyboard/ios\"",
+					"$(SRCROOT)/../node_modules_modify/react-native-orientation/iOS/RCTOrientation",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
+					"$(SRCROOT)/../node_modules/react-native-umeng-analytics/ios/RCTUmengAnalytics/**",
+				);
+				INFOPLIST_FILE = "CY_Stock_Dev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Libraries/FMVideoPlayer/ios/FMPlayer",
+					"$(PROJECT_DIR)/libs/Release$(EFFECTIVE_PLATFORM_NAME)",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/share/share_ios_6.9.8/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/share/share_ios_6.9.8/SocialLibraries/Sina",
+					"$(PROJECT_DIR)/CY_Stock/UMShare/share/share_ios_6.9.8/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/libs/Release-iphonesimulator",
+					"$(PROJECT_DIR)/libs/Release-iphoneos",
+				);
+				MARKETING_VERSION = 1.2.4;
+				MiSDKRun = online;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuanda.hui-xuan-gu-enterprise";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "CY_StockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "CY_Stock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "CY_Stock-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4971E0B4A5E006451C7 /* Debug */,
+				2D02E4981E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "CY_Stock-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4991E0B4A5E006451C7 /* Debug */,
+				2D02E49A1E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "CY_Stock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD749E20248637370011EA0A /* Build configuration list for PBXNativeTarget "CY_Stock_Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD749E21248637370011EA0A /* Debug */,
+				FD749E22248637370011EA0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

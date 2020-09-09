@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F4DB9102084333000A7D479 /* YD_BIAS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DB8F62084333000A7D479 /* YD_BIAS.cpp */; };
+		1F4DB9112084333000A7D479 /* YD_RSI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DB8F82084333000A7D479 /* YD_RSI.cpp */; };
+		1F4DB9122084333000A7D479 /* YD_DMA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DB8F92084333000A7D479 /* YD_DMA.cpp */; };
+		1F4DB9132084333000A7D479 /* YD_MA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DB8FB2084333000A7D479 /* YD_MA.cpp */; };
+		1F4DB9142084333000A7D479 /* YDInnerFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DB8FC2084333000A7D479 /* YDInnerFunction.cpp */; };
+		1F4DB9152084333000A7D479 /* YDFormulaManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DB8FE2084333000A7D479 /* YDFormulaManager.cpp */; };
+		1F4DB9162084333000A7D479 /* YD_CCI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DB9012084333000A7D479 /* YD_CCI.cpp */; };
+		1F4DB9172084333000A7D479 /* YDFormulaBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DB9032084333000A7D479 /* YDFormulaBase.cpp */; };
+		1F4DB9182084333000A7D479 /* YD_MACD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DB9042084333000A7D479 /* YD_MACD.cpp */; };
+		1F4DB9192084333000A7D479 /* YD_VOL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DB9062084333000A7D479 /* YD_VOL.cpp */; };
+		1F4DB91A2084333000A7D479 /* YD_KDJ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DB9072084333000A7D479 /* YD_KDJ.cpp */; };
+		1F4DB91B2084333000A7D479 /* YD_BOLL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DB9092084333000A7D479 /* YD_BOLL.cpp */; };
+		1F4DB91C2084333000A7D479 /* YD__Fml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DB90C2084333000A7D479 /* YD__Fml.cpp */; };
+		1F4DB91D2084333000A7D479 /* YD_WR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DB90E2084333000A7D479 /* YD_WR.cpp */; };
+		1F4FFD86223269400080CA2F /* SplitCalculate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FFD852232693F0080CA2F /* SplitCalculate.cpp */; };
+		1F4FFD882235FCF00080CA2F /* YDSplitManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FFD872235FCEE0080CA2F /* YDSplitManager.cpp */; };
+		EDA36132235D866C008094D0 /* YD__Fml_Min.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDA36130235D866C008094D0 /* YD__Fml_Min.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F4DB8C42084329600A7D479 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1F4DB8C62084329600A7D479 /* libFormulaDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFormulaDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F4DB8F52084333000A7D479 /* YD_KDJ.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = YD_KDJ.hpp; sourceTree = "<group>"; };
+		1F4DB8F62084333000A7D479 /* YD_BIAS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YD_BIAS.cpp; sourceTree = "<group>"; };
+		1F4DB8F72084333000A7D479 /* YD_BOLL.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = YD_BOLL.hpp; sourceTree = "<group>"; };
+		1F4DB8F82084333000A7D479 /* YD_RSI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YD_RSI.cpp; sourceTree = "<group>"; };
+		1F4DB8F92084333000A7D479 /* YD_DMA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YD_DMA.cpp; sourceTree = "<group>"; };
+		1F4DB8FA2084333000A7D479 /* YD__Fml.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = YD__Fml.hpp; sourceTree = "<group>"; };
+		1F4DB8FB2084333000A7D479 /* YD_MA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YD_MA.cpp; sourceTree = "<group>"; };
+		1F4DB8FC2084333000A7D479 /* YDInnerFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YDInnerFunction.cpp; sourceTree = "<group>"; };
+		1F4DB8FD2084333000A7D479 /* YD_WR.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = YD_WR.hpp; sourceTree = "<group>"; };
+		1F4DB8FE2084333000A7D479 /* YDFormulaManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YDFormulaManager.cpp; sourceTree = "<group>"; };
+		1F4DB8FF2084333000A7D479 /* YDFormulaBase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = YDFormulaBase.hpp; sourceTree = "<group>"; };
+		1F4DB9002084333000A7D479 /* YD_MACD.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = YD_MACD.hpp; sourceTree = "<group>"; };
+		1F4DB9012084333000A7D479 /* YD_CCI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YD_CCI.cpp; sourceTree = "<group>"; };
+		1F4DB9022084333000A7D479 /* YD_VOL.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = YD_VOL.hpp; sourceTree = "<group>"; };
+		1F4DB9032084333000A7D479 /* YDFormulaBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YDFormulaBase.cpp; sourceTree = "<group>"; };
+		1F4DB9042084333000A7D479 /* YD_MACD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YD_MACD.cpp; sourceTree = "<group>"; };
+		1F4DB9052084333000A7D479 /* YD_CCI.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = YD_CCI.hpp; sourceTree = "<group>"; };
+		1F4DB9062084333000A7D479 /* YD_VOL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YD_VOL.cpp; sourceTree = "<group>"; };
+		1F4DB9072084333000A7D479 /* YD_KDJ.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YD_KDJ.cpp; sourceTree = "<group>"; };
+		1F4DB9082084333000A7D479 /* YD_BIAS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = YD_BIAS.hpp; sourceTree = "<group>"; };
+		1F4DB9092084333000A7D479 /* YD_BOLL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YD_BOLL.cpp; sourceTree = "<group>"; };
+		1F4DB90A2084333000A7D479 /* YD_RSI.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = YD_RSI.hpp; sourceTree = "<group>"; };
+		1F4DB90B2084333000A7D479 /* YD_DMA.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = YD_DMA.hpp; sourceTree = "<group>"; };
+		1F4DB90C2084333000A7D479 /* YD__Fml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YD__Fml.cpp; sourceTree = "<group>"; };
+		1F4DB90D2084333000A7D479 /* YD_MA.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = YD_MA.hpp; sourceTree = "<group>"; };
+		1F4DB90E2084333000A7D479 /* YD_WR.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YD_WR.cpp; sourceTree = "<group>"; };
+		1F4DB90F2084333000A7D479 /* YDInnerFunction.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = YDInnerFunction.hpp; sourceTree = "<group>"; };
+		1F4FFD832232693E0080CA2F /* singleton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = singleton.hpp; sourceTree = "<group>"; };
+		1F4FFD842232693F0080CA2F /* SplitCalculate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SplitCalculate.hpp; sourceTree = "<group>"; };
+		1F4FFD852232693F0080CA2F /* SplitCalculate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SplitCalculate.cpp; sourceTree = "<group>"; };
+		1F4FFD872235FCEE0080CA2F /* YDSplitManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YDSplitManager.cpp; sourceTree = "<group>"; };
+		EDA36130235D866C008094D0 /* YD__Fml_Min.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YD__Fml_Min.cpp; sourceTree = "<group>"; };
+		EDA36131235D866C008094D0 /* YD__Fml_Min.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = YD__Fml_Min.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F4DB8C32084329600A7D479 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F4DB8BD2084329600A7D479 = {
+			isa = PBXGroup;
+			children = (
+				1F4DB8F42084333000A7D479 /* fe */,
+				1F4DB8C72084329600A7D479 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F4DB8C72084329600A7D479 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F4DB8C62084329600A7D479 /* libFormulaDB.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F4DB8F42084333000A7D479 /* fe */ = {
+			isa = PBXGroup;
+			children = (
+				EDA36131235D866C008094D0 /* YD__Fml_Min.hpp */,
+				EDA36130235D866C008094D0 /* YD__Fml_Min.cpp */,
+				1F4FFD872235FCEE0080CA2F /* YDSplitManager.cpp */,
+				1F4DB8FC2084333000A7D479 /* YDInnerFunction.cpp */,
+				1F4FFD832232693E0080CA2F /* singleton.hpp */,
+				1F4FFD842232693F0080CA2F /* SplitCalculate.hpp */,
+				1F4FFD852232693F0080CA2F /* SplitCalculate.cpp */,
+				1F4DB8FF2084333000A7D479 /* YDFormulaBase.hpp */,
+				1F4DB8FE2084333000A7D479 /* YDFormulaManager.cpp */,
+				1F4DB8FA2084333000A7D479 /* YD__Fml.hpp */,
+				1F4DB90C2084333000A7D479 /* YD__Fml.cpp */,
+				1F4DB8F52084333000A7D479 /* YD_KDJ.hpp */,
+				1F4DB9072084333000A7D479 /* YD_KDJ.cpp */,
+				1F4DB9082084333000A7D479 /* YD_BIAS.hpp */,
+				1F4DB8F62084333000A7D479 /* YD_BIAS.cpp */,
+				1F4DB8F72084333000A7D479 /* YD_BOLL.hpp */,
+				1F4DB9092084333000A7D479 /* YD_BOLL.cpp */,
+				1F4DB90A2084333000A7D479 /* YD_RSI.hpp */,
+				1F4DB8F82084333000A7D479 /* YD_RSI.cpp */,
+				1F4DB90B2084333000A7D479 /* YD_DMA.hpp */,
+				1F4DB8F92084333000A7D479 /* YD_DMA.cpp */,
+				1F4DB90D2084333000A7D479 /* YD_MA.hpp */,
+				1F4DB8FB2084333000A7D479 /* YD_MA.cpp */,
+				1F4DB8FD2084333000A7D479 /* YD_WR.hpp */,
+				1F4DB90E2084333000A7D479 /* YD_WR.cpp */,
+				1F4DB9002084333000A7D479 /* YD_MACD.hpp */,
+				1F4DB9042084333000A7D479 /* YD_MACD.cpp */,
+				1F4DB9052084333000A7D479 /* YD_CCI.hpp */,
+				1F4DB9012084333000A7D479 /* YD_CCI.cpp */,
+				1F4DB9022084333000A7D479 /* YD_VOL.hpp */,
+				1F4DB9062084333000A7D479 /* YD_VOL.cpp */,
+				1F4DB90F2084333000A7D479 /* YDInnerFunction.hpp */,
+				1F4DB9032084333000A7D479 /* YDFormulaBase.cpp */,
+			);
+			path = fe;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F4DB8C52084329600A7D479 /* FormulaDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F4DB8CF2084329600A7D479 /* Build configuration list for PBXNativeTarget "FormulaDB" */;
+			buildPhases = (
+				1F4DB8C22084329600A7D479 /* Sources */,
+				1F4DB8C32084329600A7D479 /* Frameworks */,
+				1F4DB8C42084329600A7D479 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FormulaDB;
+			productName = FormulaDB;
+			productReference = 1F4DB8C62084329600A7D479 /* libFormulaDB.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F4DB8BE2084329600A7D479 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = yd;
+				TargetAttributes = {
+					1F4DB8C52084329600A7D479 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 1F4DB8C12084329600A7D479 /* Build configuration list for PBXProject "FormulaDB" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1F4DB8BD2084329600A7D479;
+			productRefGroup = 1F4DB8C72084329600A7D479 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F4DB8C52084329600A7D479 /* FormulaDB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F4DB8C22084329600A7D479 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F4DB9112084333000A7D479 /* YD_RSI.cpp in Sources */,
+				1F4DB9142084333000A7D479 /* YDInnerFunction.cpp in Sources */,
+				1F4DB91D2084333000A7D479 /* YD_WR.cpp in Sources */,
+				1F4DB9132084333000A7D479 /* YD_MA.cpp in Sources */,
+				1F4DB9122084333000A7D479 /* YD_DMA.cpp in Sources */,
+				1F4DB9172084333000A7D479 /* YDFormulaBase.cpp in Sources */,
+				1F4DB91B2084333000A7D479 /* YD_BOLL.cpp in Sources */,
+				1F4FFD882235FCF00080CA2F /* YDSplitManager.cpp in Sources */,
+				1F4DB9192084333000A7D479 /* YD_VOL.cpp in Sources */,
+				1F4DB91C2084333000A7D479 /* YD__Fml.cpp in Sources */,
+				1F4FFD86223269400080CA2F /* SplitCalculate.cpp in Sources */,
+				EDA36132235D866C008094D0 /* YD__Fml_Min.cpp in Sources */,
+				1F4DB9102084333000A7D479 /* YD_BIAS.cpp in Sources */,
+				1F4DB91A2084333000A7D479 /* YD_KDJ.cpp in Sources */,
+				1F4DB9162084333000A7D479 /* YD_CCI.cpp in Sources */,
+				1F4DB9152084333000A7D479 /* YDFormulaManager.cpp in Sources */,
+				1F4DB9182084333000A7D479 /* YD_MACD.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1F4DB8CD2084329600A7D479 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				"VALID_ARCHS[sdk=*]" = "arm64 armv7 armv7s x86_64";
+			};
+			name = Debug;
+		};
+		1F4DB8CE2084329600A7D479 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Release;
+		};
+		1F4DB8D02084329600A7D479 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				"VALID_ARCHS[sdk=*]" = "arm64 arm64e armv7 armv7s";
+			};
+			name = Debug;
+		};
+		1F4DB8D12084329600A7D479 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F4DB8C12084329600A7D479 /* Build configuration list for PBXProject "FormulaDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F4DB8CD2084329600A7D479 /* Debug */,
+				1F4DB8CE2084329600A7D479 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F4DB8CF2084329600A7D479 /* Build configuration list for PBXNativeTarget "FormulaDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F4DB8D02084329600A7D479 /* Debug */,
+				1F4DB8D12084329600A7D479 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F4DB8BE2084329600A7D479 /* Project object */;
+}

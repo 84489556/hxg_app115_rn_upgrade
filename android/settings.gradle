@@ -1,0 +1,50 @@
+rootProject.name = 'CY_Stock'
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+
+include ':react-native-fast-image'
+project(':react-native-fast-image').projectDir = new File(rootProject.projectDir, '../node_modules_modify/react-native-fast-image/android')
+//include ':react-nativ-translucent-modal'
+//project(':react-native-translucent-modal').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-translucent-modal/android')
+include ':react-native-pdf'
+project(':react-native-pdf').projectDir = new File(rootProject.projectDir, '../node_modules_modify/react-native-pdf/android')
+include ':react-native-fetch-blob'
+project(':react-native-fetch-blob').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fetch-blob/android')
+include ':react-native-picker'
+project(':react-native-picker').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-picker/android')
+include ':react-native-splash-screen'
+project(':react-native-splash-screen').projectDir = new File(rootProject.projectDir, '../node_modules_modify/react-native-splash-screen/android')
+//include ':react-native-vector-icons'
+//project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
+
+include ':app',':FMLivePlayer',':rtmpResourceLib',':livemodule'
+
+include ':ydsdk'
+project(':ydsdk').projectDir = new File(rootProject.projectDir, '../Libraries/ydsdk/android')
+
+include ':dzhchart'
+project(':dzhchart').projectDir = new File(rootProject.projectDir, '../Libraries/DzhChart/android')
+include ':react-native-orientation'
+project(':react-native-orientation').projectDir = new File(rootProject.projectDir, '../node_modules_modify/react-native-orientation/android')
+
+//include ':react-native-pdf-view'
+//project(':react-native-pdf-view').projectDir = new File(rootProject.projectDir, '../node_modules_modify/react-native-pdf-view/android')
+//include ':react-native-audio-streamer'
+//project(':react-native-audio-streamer').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-audio-streamer/android')
+//include ':react-native-image-picker'
+//project(':react-native-image-picker').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-image-picker/android')
+include ':react-native-custom-keyboard'
+project(':react-native-custom-keyboard').projectDir = new File(rootProject.projectDir, 	'../node_modules_modify/react-native-custom-keyboard/android')
+include ':react-native-webview-android'
+//project(':react-native-webview-android').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-webview-android/android')
+project(':react-native-webview-android').projectDir = new File(rootProject.projectDir, '../node_modules_modify/react-native-webview-android/android')
+
+include ':react-native-android-fullscreen-webview-video'
+project(':react-native-android-fullscreen-webview-video').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-fullscreen-webview-video/android')
+
+include ':react-native-exit-app', ':app'
+project(':react-native-exit-app').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-exit-app/android')
+include ':progress-view', ':app'
+project(':progress-view').projectDir = new File(rootProject.projectDir, '../node_modules_modify/progress-view/android')
+include ':progress-bar-android', ':app'
+project(':progress-bar-android').projectDir = new File(rootProject.projectDir, '../node_modules_modify/progress-bar-android/android')
+

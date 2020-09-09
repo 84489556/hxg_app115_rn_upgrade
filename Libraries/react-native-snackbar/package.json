@@ -1,0 +1,132 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-native-snackbar",
+        "scope": null,
+        "escapedName": "react-native-snackbar",
+        "name": "react-native-snackbar",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/hebeiyuanda/Desktop/新付费产品/新付费产品代码/新付费产品"
+    ]
+  ],
+  "_from": "react-native-snackbar@latest",
+  "_id": "react-native-snackbar@0.4.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/react-native-snackbar",
+  "_nodeVersion": "8.1.4",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/react-native-snackbar-0.4.1.tgz_1501822873156_0.3055590116418898"
+  },
+  "_npmUser": {
+    "name": "cooperka",
+    "email": "cooperka92@gmail.com"
+  },
+  "_npmVersion": "4.6.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-snackbar",
+    "scope": null,
+    "escapedName": "react-native-snackbar",
+    "name": "react-native-snackbar",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-snackbar/-/react-native-snackbar-0.4.1.tgz",
+  "_shasum": "8b2753833e6ca8db0c62b2026e5c24eb6fd688f5",
+  "_shrinkwrap": null,
+  "_spec": "react-native-snackbar",
+  "_where": "/Users/hebeiyuanda/Desktop/新付费产品/新付费产品代码/新付费产品",
+  "author": {
+    "name": "Azendoo"
+  },
+  "bugs": {
+    "url": "https://github.com/cooperka/react-native-snackbar/issues"
+  },
+  "dependencies": {},
+  "description": "Material-design \"Snackbar\" component for Android and iOS",
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-eslint": "7.2.3",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "15.0.1",
+    "eslint-config-cooperka": "0.2.4",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "5.0.1",
+    "eslint-plugin-react": "7.0.1",
+    "eslint-plugin-react-native": "2.3.2",
+    "flow-bin": "0.40.0",
+    "jest": "20.0.4",
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.45.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "8b2753833e6ca8db0c62b2026e5c24eb6fd688f5",
+    "tarball": "https://registry.npmjs.org/react-native-snackbar/-/react-native-snackbar-0.4.1.tgz"
+  },
+  "files": [
+    "src",
+    "lib",
+    "android",
+    "ios",
+    "RNSnackbar.podspec"
+  ],
+  "gitHead": "03b93151572b5e9096129b923c3909d5a631c370",
+  "homepage": "https://github.com/cooperka/react-native-snackbar",
+  "jest": {
+    "preset": "react-native",
+    "modulePathIgnorePatterns": [
+      "<rootDir>/example/"
+    ],
+    "verbose": true
+  },
+  "keywords": [
+    "react-native",
+    "component",
+    "ios",
+    "android",
+    "material design",
+    "snackbar",
+    "snack bar"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "maintainers": [
+    {
+      "name": "cooperka",
+      "email": "cooperka92@gmail.com"
+    }
+  ],
+  "name": "react-native-snackbar",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react": ">=15.1 || >=16.0.0-alpha.6",
+    "react-native": ">=0.40"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cooperka/react-native-snackbar.git"
+  },
+  "scripts": {
+    "build": "npm run clean && babel src --out-dir lib --ignore src/__tests__",
+    "clean": "rm -rf lib",
+    "flow": "flow src",
+    "lint": "eslint src example --ext .js,.jsx",
+    "prepublish": "npm run build",
+    "test": "jest"
+  },
+  "types": "src/index.d.ts",
+  "version": "0.4.1"
+}

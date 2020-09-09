@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="eX-sb6NYwPn">
+  <start-date>2019-06-27T00:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t-2">
+      <title>任务 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-3">
+      <title>里程碑 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-4">
+      <title>群组 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r-2">
+      <name>资源 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-3">
+      <name>设备 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-4">
+      <name>素材 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-5">
+      <name>群组 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <name/>
+    <type>Group</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="32400" end-time="43200"/>
+        <time-span start-time="46800" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="32400" end-time="43200"/>
+        <time-span start-time="46800" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="32400" end-time="43200"/>
+        <time-span start-time="46800" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="32400" end-time="43200"/>
+        <time-span start-time="46800" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="32400" end-time="43200"/>
+        <time-span start-time="46800" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+      <calendar name="Time Off" editable="yes" overtime="no">
+        <event start="2019-09-13T01:00:00.000Z" end="2019-09-13T04:00:00.000Z" sd="6829" st="32400" ed="6829" et="43200"/>
+        <event start="2019-09-13T05:00:00.000Z" end="2019-09-13T10:00:00.000Z" sd="6829" st="46800" ed="6829" et="64800"/>
+      </calendar>
+      <calendar name="Overtime" editable="yes" overtime="yes"/>
+    </schedule>
+    <child-resource idref="r1"/>
+    <child-resource idref="r2"/>
+    <child-resource idref="r3"/>
+    <child-resource idref="r4"/>
+  </resource>
+  <resource id="r1">
+    <name>杨紫剑</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r2">
+    <name>崔文娟</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r3">
+    <name>李帅</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r4">
+    <name>唐乾柱</name>
+    <type>Staff</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t1"/>
+  </task>
+  <task id="t1">
+    <title>慧选股APP-1.0</title>
+    <type>group</type>
+    <start-constraint-date>2019-07-26T01:00:00.000Z</start-constraint-date>
+    <child-task idref="t3"/>
+    <start-no-earlier-than>2019-07-26T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t2">
+    <title>资讯</title>
+    <effort>43200</effort>
+    <start-constraint-date>2019-06-28T01:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t150"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2019-06-28T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t3">
+    <title>前端</title>
+    <type>group</type>
+    <child-task idref="t72"/>
+    <child-task idref="t4"/>
+    <child-task idref="t5"/>
+    <child-task idref="t63"/>
+    <child-task idref="t61"/>
+    <child-task idref="t28"/>
+    <child-task idref="t67"/>
+  </task>
+  <task id="t4">
+    <title>首页</title>
+    <type>group</type>
+    <child-task idref="t16"/>
+    <child-task idref="t95"/>
+    <child-task idref="t103"/>
+    <child-task idref="t73"/>
+    <child-task idref="t12"/>
+  </task>
+  <task id="t5">
+    <title>看势</title>
+    <type>group</type>
+    <child-task idref="t24"/>
+    <child-task idref="t25"/>
+    <child-task idref="t34"/>
+    <child-task idref="t29"/>
+    <child-task idref="t33"/>
+    <child-task idref="t37"/>
+    <child-task idref="t121"/>
+    <child-task idref="t122"/>
+    <child-task idref="t124"/>
+  </task>
+  <task id="t12">
+    <title>成长学堂</title>
+    <type>group</type>
+    <child-task idref="t18"/>
+    <child-task idref="t19"/>
+    <child-task idref="t20"/>
+    <child-task idref="t21"/>
+    <child-task idref="t22"/>
+    <child-task idref="t23"/>
+  </task>
+  <task id="t16">
+    <title>首页主页面</title>
+    <effort>57600</effort>
+    <prerequisite-task idref="t69"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t17">
+    <title>机构调研-关注个股</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t60"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t18">
+    <title>首页</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t142"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t19">
+    <title>股小白列表页</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t18"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t20">
+    <title>股大咖列表页</title>
+    <effort>21600</effort>
+    <prerequisite-task idref="t19"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t21">
+    <title>实战课程列表页</title>
+    <effort>21600</effort>
+    <prerequisite-task idref="t20"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t22">
+    <title>策略学堂列表页</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t21"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t23">
+    <title>视频播放页</title>
+    <effort>57600</effort>
+    <prerequisite-task idref="t22"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t24">
+    <title>自选股页、沪深页</title>
+    <effort>57600</effort>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t25">
+    <title>分时竖屏个股详情页</title>
+    <effort>57600</effort>
+    <prerequisite-task idref="t24"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t27">
+    <title>法律和免责内容调整</title>
+    <effort>7200</effort>
+    <prerequisite-task idref="t86"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t28">
+    <title>选股</title>
+    <type>group</type>
+    <child-task idref="t31"/>
+    <child-task idref="t87"/>
+    <child-task idref="t88"/>
+    <child-task idref="t35"/>
+    <child-task idref="t89"/>
+    <child-task idref="t30"/>
+    <child-task idref="t44"/>
+    <child-task idref="t32"/>
+  </task>
+  <task id="t29">
+    <title>收益统计页</title>
+    <effort>21600</effort>
+    <prerequisite-task idref="t34"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t30">
+    <title>价值策略页面搭建，数据获取和展示</title>
+    <effort>57600</effort>
+    <prerequisite-task idref="t41"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t31">
+    <title>选股页面搭建</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t17"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t32">
+    <title>研报策略页面搭建，数据获取和展示</title>
+    <effort>57600</effort>
+    <prerequisite-task idref="t90"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t33">
+    <title>双突战法和资金流入数据的获取及绘制</title>
+    <type>group</type>
+    <child-task idref="t160"/>
+    <child-task idref="t161"/>
+  </task>
+  <task id="t34">
+    <title>分时横屏个股详情页</title>
+    <effort>57600</effort>
+    <prerequisite-task idref="t25"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t35">
+    <title>指标选股页面搭建，数据获取和展示</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t88"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t37">
+    <title>九转战法指标及组合</title>
+    <effort>86400</effort>
+    <prerequisite-task idref="t160"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t38">
+    <title>高管交易榜-最新交易</title>
+    <effort>43200</effort>
+    <prerequisite-task idref="t159"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t39">
+    <title>高管交易榜-集中买入</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t50"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t40">
+    <title>入选股票列表数据获取，列表展示和跳转</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t92"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t41">
+    <title>叠加条件页面搭建和跳转</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t40"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t43">
+    <title>指标介绍内容获取和展示</title>
+    <effort>7200</effort>
+    <prerequisite-task idref="t35"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t44">
+    <title>价值策略详情页</title>
+    <type>group</type>
+    <child-task idref="t45"/>
+    <child-task idref="t46"/>
+    <child-task idref="t47"/>
+    <child-task idref="t48"/>
+    <child-task idref="t93"/>
+    <child-task idref="t94"/>
+    <child-task idref="t90"/>
+  </task>
+  <task id="t45">
+    <title>策略介绍内容获取和展示</title>
+    <effort>7200</effort>
+    <prerequisite-task idref="t30"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t46">
+    <title>成长学堂数据获取，展示和跳转</title>
+    <effort>7200</effort>
+    <prerequisite-task idref="t45"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t47">
+    <title>历史战绩数据获取，展示和跳转</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t46"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t48">
+    <title>历史战绩页面搭建</title>
+    <effort>21600</effort>
+    <start-constraint-date>2019-06-27T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t47"/>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2019-06-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t49">
+    <title>机构调研-最新调研-搜索</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t58"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t50">
+    <title>高管交易榜-最新交易-搜索</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t38"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t51">
+    <title>高管持股变动</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t39"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t52">
+    <title>高管交易榜-持续买入</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t51"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t53">
+    <title>高管交易榜-市场统计</title>
+    <effort>43200</effort>
+    <prerequisite-task idref="t52"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t54">
+    <title>高管交易榜-行业统计</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t53"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t55">
+    <title>买卖明细</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t54"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t56">
+    <title>涨停炸板-市场情绪</title>
+    <effort>57600</effort>
+    <prerequisite-task idref="t55"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t57">
+    <title>涨停炸板-板块分析</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t56"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t58">
+    <title>机构调研-最新调研</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t57"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t59">
+    <title>机构调研-一致看多</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t49"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t60">
+    <title>机构调研-关注行业</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t59"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t61">
+    <title>打榜</title>
+    <type>group</type>
+    <child-task idref="t38"/>
+    <child-task idref="t50"/>
+    <child-task idref="t39"/>
+    <child-task idref="t51"/>
+    <child-task idref="t52"/>
+    <child-task idref="t53"/>
+    <child-task idref="t54"/>
+    <child-task idref="t55"/>
+    <child-task idref="t56"/>
+    <child-task idref="t57"/>
+    <child-task idref="t58"/>
+    <child-task idref="t49"/>
+    <child-task idref="t59"/>
+    <child-task idref="t60"/>
+    <child-task idref="t17"/>
+  </task>
+  <task id="t62">
+    <title>专家分析</title>
+    <type>group</type>
+    <child-task idref="t148"/>
+    <child-task idref="t149"/>
+    <child-task idref="t150"/>
+  </task>
+  <task id="t63">
+    <title>观点</title>
+    <type>group</type>
+    <start-constraint-date>2019-06-28T01:00:00.000Z</start-constraint-date>
+    <child-task idref="t62"/>
+    <child-task idref="t2"/>
+    <child-task idref="t66"/>
+    <start-no-earlier-than>2019-06-28T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t65">
+    <title>主题投资历史战绩页面搭建</title>
+    <effort>28800</effort>
+    <start-constraint-date>2019-06-27T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t99"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2019-06-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t66">
+    <title>资讯详情(线上用的webview加载的内容)</title>
+    <effort>14400</effort>
+    <start-constraint-date>2019-06-27T01:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t2"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2019-06-27T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t67">
+    <title>其他</title>
+    <type>group</type>
+    <child-task idref="t107"/>
+    <child-task idref="t116"/>
+    <child-task idref="t68"/>
+    <child-task idref="t152"/>
+    <child-task idref="t153"/>
+    <child-task idref="t143"/>
+  </task>
+  <task id="t68">
+    <title>推送</title>
+    <type>group</type>
+    <child-task idref="t146"/>
+    <child-task idref="t147"/>
+  </task>
+  <task id="t69">
+    <title>风险提示全局配置</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t70"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t70">
+    <title>横向滑动tab封装</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t158"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t71">
+    <title>横向滑动列表封装</title>
+    <type>group</type>
+    <child-task idref="t158"/>
+    <child-task idref="t159"/>
+  </task>
+  <task id="t72">
+    <title>基础组件</title>
+    <type>group</type>
+    <start-constraint-date>2019-06-28T01:00:00.000Z</start-constraint-date>
+    <child-task idref="t71"/>
+    <child-task idref="t70"/>
+    <child-task idref="t69"/>
+    <start-no-earlier-than>2019-06-28T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t73">
+    <title>个人中心</title>
+    <type>group</type>
+    <child-task idref="t74"/>
+    <child-task idref="t75"/>
+    <child-task idref="t76"/>
+    <child-task idref="t77"/>
+    <child-task idref="t78"/>
+    <child-task idref="t79"/>
+    <child-task idref="t80"/>
+    <child-task idref="t81"/>
+    <child-task idref="t82"/>
+    <child-task idref="t83"/>
+    <child-task idref="t84"/>
+    <child-task idref="t85"/>
+    <child-task idref="t86"/>
+    <child-task idref="t27"/>
+  </task>
+  <task id="t74">
+    <title>个人中心主页面搭建</title>
+    <effort>10800</effort>
+    <prerequisite-task idref="t120"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t75">
+    <title>客服</title>
+    <effort>3600</effort>
+    <prerequisite-task idref="t74"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t76">
+    <title>消息，主要逻辑跳转和权限显示</title>
+    <effort>10800</effort>
+    <prerequisite-task idref="t75"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t77">
+    <title>基本资料页面搭建和跳转</title>
+    <effort>10800</effort>
+    <prerequisite-task idref="t76"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t78">
+    <title>基本资料，修改头像，修改用户名，修改密码接口。</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t77"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t79">
+    <title>绑定手机号页面搭建，跳转，绑定接口开发和联调</title>
+    <effort>21600</effort>
+    <prerequisite-task idref="t78"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t80">
+    <title>汇款方式页面搭建，数据获取和页面展示</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t79"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t81">
+    <title>活动中心页面搭建，数据获取和页面展示</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t80"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t82">
+    <title>活动详情页搭建</title>
+    <effort>10800</effort>
+    <prerequisite-task idref="t81"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t83">
+    <title>服务商城页面搭建，数据获取和页面展示</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t82"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t84">
+    <title>服务商城详情页搭建</title>
+    <effort>10800</effort>
+    <prerequisite-task idref="t83"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t85">
+    <title>我的订单（全部，待付，已付，已取消）页面搭建，数据获取和展示</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t84"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t86">
+    <title>我的权限页面搭建</title>
+    <effort>10800</effort>
+    <prerequisite-task idref="t85"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t87">
+    <title>特色指标选股页面搭建</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t31"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t88">
+    <title>组合选股页面搭建，数据获取和展示</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t87"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t89">
+    <title>特色指标详情页</title>
+    <type>group</type>
+    <child-task idref="t43"/>
+    <child-task idref="t91"/>
+    <child-task idref="t92"/>
+    <child-task idref="t40"/>
+    <child-task idref="t41"/>
+  </task>
+  <task id="t90">
+    <title>入选股票列表</title>
+    <effort>28800</effort>
+    <start-constraint-date>2019-06-27T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t94"/>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2019-06-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t91">
+    <title>成长学堂数据获取，展示和跳转</title>
+    <effort>7200</effort>
+    <prerequisite-task idref="t43"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t92">
+    <title>叠加条件，重置后展示调整</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t91"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t93">
+    <title>叠加条件，重置后展示调整</title>
+    <effort>14400</effort>
+    <start-constraint-date>2019-06-27T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t48"/>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2019-06-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t94">
+    <title>叠加条件页面搭建</title>
+    <effort>14400</effort>
+    <start-constraint-date>2019-06-27T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t93"/>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2019-06-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t95">
+    <title>热点决策</title>
+    <type>group</type>
+    <start-constraint-date>2019-06-27T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t125"/>
+    <child-task idref="t126"/>
+    <child-task idref="t128"/>
+    <child-task idref="t127"/>
+    <child-task idref="t129"/>
+    <child-task idref="t130"/>
+    <child-task idref="t138"/>
+    <child-task idref="t137"/>
+    <child-task idref="t132"/>
+    <child-task idref="t131"/>
+    <child-task idref="t134"/>
+    <child-task idref="t133"/>
+    <child-task idref="t135"/>
+    <child-task idref="t136"/>
+    <child-task idref="t139"/>
+    <child-task idref="t140"/>
+    <child-task idref="t141"/>
+    <child-task idref="t142"/>
+    <child-task idref="t96"/>
+    <child-task idref="t97"/>
+    <child-task idref="t98"/>
+    <child-task idref="t99"/>
+    <child-task idref="t65"/>
+    <child-task idref="t100"/>
+    <child-task idref="t101"/>
+    <child-task idref="t102"/>
+    <start-no-earlier-than>2019-06-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t96">
+    <title>热点风口页面搭建，数据获取和展示（一买，二买，主升浪）</title>
+    <effort>86400</effort>
+    <start-constraint-date>2019-06-27T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t27"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2019-06-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t97">
+    <title>热点风口历史战绩页面搭建</title>
+    <effort>28800</effort>
+    <start-constraint-date>2019-06-27T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t96"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2019-06-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t98">
+    <title>热点风口设置页面搭建</title>
+    <effort>14400</effort>
+    <start-constraint-date>2019-06-27T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t97"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2019-06-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t99">
+    <title>主题投资页面搭建，数据获取和展示（一买，二买，主升浪）</title>
+    <effort>86400</effort>
+    <start-constraint-date>2019-06-27T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t98"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2019-06-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t100">
+    <title>主题投资设置页面搭建</title>
+    <effort>14400</effort>
+    <start-constraint-date>2019-06-27T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t65"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2019-06-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t101">
+    <title>主题报告列表页面搭建，数据获取和展示</title>
+    <effort>14400</effort>
+    <start-constraint-date>2019-06-27T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t100"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2019-06-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t102">
+    <title>主题报告详情页</title>
+    <effort>28800</effort>
+    <start-constraint-date>2019-06-27T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t101"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2019-06-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t103">
+    <title>主力决策</title>
+    <type>group</type>
+    <start-constraint-date>2019-06-27T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t104"/>
+    <child-task idref="t105"/>
+    <child-task idref="t106"/>
+    <start-no-earlier-than>2019-06-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t104">
+    <title>资金揭秘页面搭建，数据获取和展示</title>
+    <effort>86400</effort>
+    <start-constraint-date>2019-06-27T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t102"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2019-06-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t105">
+    <title>资金抢入个股列表页面搭建，数据获取和展示</title>
+    <effort>57600</effort>
+    <start-constraint-date>2019-06-27T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t104"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2019-06-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t106">
+    <title>叠加条件页面搭建</title>
+    <effort>14400</effort>
+    <start-constraint-date>2019-06-27T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t105"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2019-06-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t107">
+    <title>登录注册</title>
+    <type>group</type>
+    <child-task idref="t108"/>
+    <child-task idref="t109"/>
+    <child-task idref="t110"/>
+    <child-task idref="t111"/>
+    <child-task idref="t112"/>
+    <child-task idref="t113"/>
+    <child-task idref="t114"/>
+    <child-task idref="t115"/>
+  </task>
+  <task id="t108">
+    <title>登录页面调整</title>
+    <effort>7200</effort>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t109">
+    <title>注册页面搭建，跳转</title>
+    <effort>10800</effort>
+    <prerequisite-task idref="t108"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t110">
+    <title>找回密码页面搭建，跳转</title>
+    <effort>10800</effort>
+    <prerequisite-task idref="t109"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t111">
+    <title>注册协议页面</title>
+    <effort>7200</effort>
+    <prerequisite-task idref="t110"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t112">
+    <title>登录注册相关接口开发和联调(登录，注册，获取验证码，验证手机是否注册，修改密码)</title>
+    <effort>57600</effort>
+    <prerequisite-task idref="t111"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t113">
+    <title>相关接口调试</title>
+    <effort>57600</effort>
+    <start-constraint-date>2019-06-27T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t112"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2019-06-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t114">
+    <title>登录成功用户个人信息，权限，和用户相关信息存储和获取</title>
+    <effort>28800</effort>
+    <start-constraint-date>2019-06-27T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t113"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2019-06-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t115">
+    <title>数据获取接口调试</title>
+    <effort>28800</effort>
+    <start-constraint-date>2019-06-27T00:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t114"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2019-06-27T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t116">
+    <title>营销页</title>
+    <type>group</type>
+    <child-task idref="t117"/>
+    <child-task idref="t118"/>
+    <child-task idref="t119"/>
+    <child-task idref="t120"/>
+  </task>
+  <task id="t117">
+    <title>用户进入app营销显示逻辑</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t115"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t118">
+    <title>营销内容获取和存储和显示</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t117"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t119">
+    <title>营销详情页逻辑搭建和逻辑调整（三 四 五星）</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t118"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t120">
+    <title>营销详情页开通权限接口开发和调试</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t119"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t121">
+    <title>多空资金 K线副图指标数据的获取及绘制</title>
+    <type>group</type>
+    <child-task idref="t162"/>
+    <child-task idref="t163"/>
+  </task>
+  <task id="t122">
+    <title>主力资金 K线副图指标数据的获取及绘制</title>
+    <type>group</type>
+    <child-task idref="t164"/>
+    <child-task idref="t165"/>
+  </task>
+  <task id="t124">
+    <title>指标设置页面（分权限）</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t164"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t125">
+    <title>热点决策</title>
+    <effort>57600</effort>
+    <prerequisite-task idref="t16"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t126">
+    <title>热点聚焦列表页</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t125"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t127">
+    <title>解盘视频详情页</title>
+    <effort>57600</effort>
+    <prerequisite-task idref="t128"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t128">
+    <title>热点聚焦详情页(样式固定可以rn实现，否则建议用h5实现)</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t126"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t129">
+    <title>解盘视频往期回顾列表</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t127"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t130">
+    <title>主力决策列表</title>
+    <effort>43200</effort>
+    <prerequisite-task idref="t129"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t131">
+    <title>龙虎榜-游资图谱</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t132"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t132">
+    <title>龙虎榜-龙虎密码-搜索</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t137"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t133">
+    <title>龙虎榜-机构重仓</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t134"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t134">
+    <title>龙虎榜-游资图谱-搜索</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t131"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t135">
+    <title>上榜详情页</title>
+    <effort>43200</effort>
+    <prerequisite-task idref="t133"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t136">
+    <title>席位透视</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t135"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t137">
+    <title>龙虎榜-龙虎密码</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t138"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t138">
+    <title>龙虎榜-最新龙虎榜</title>
+    <effort>43200</effort>
+    <prerequisite-task idref="t130"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t139">
+    <title>席位历史数据</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t136"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t140">
+    <title>资金流向统计列表</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t139"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t141">
+    <title>资金流向痛就饼图</title>
+    <effort>28800</effort>
+    <prerequisite-task idref="t140"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t142">
+    <title>观点直播引导区块跳转逻辑</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t141"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t143">
+    <title>手势改造</title>
+    <effort>144000</effort>
+    <start-constraint-date>2019-06-28T01:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t66"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2019-06-28T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t146">
+    <title>安卓端</title>
+    <effort>28800</effort>
+    <start-constraint-date>2019-06-28T01:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t32"/>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2019-06-28T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t147">
+    <title>iOS端</title>
+    <effort>28800</effort>
+    <start-constraint-date>2019-06-28T01:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t165"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2019-06-28T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t148">
+    <title>首页面</title>
+    <effort>28800</effort>
+    <start-constraint-date>2019-06-28T01:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t124"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2019-06-28T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t149">
+    <title>早知晓落地页及往期FM页</title>
+    <effort>28800</effort>
+    <start-constraint-date>2019-06-28T01:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t148"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2019-06-28T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t150">
+    <title>视频直播间</title>
+    <effort>10800</effort>
+    <start-constraint-date>2019-06-28T01:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t149"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2019-06-28T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t152">
+    <title>分享</title>
+    <type>group</type>
+    <start-constraint-date>2019-07-02T01:00:00.000Z</start-constraint-date>
+    <child-task idref="t154"/>
+    <child-task idref="t155"/>
+    <start-no-earlier-than>2019-07-02T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t153">
+    <title>强制更新</title>
+    <effort>14400</effort>
+    <start-constraint-date>2019-07-02T01:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t154"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2019-07-02T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t154">
+    <title>ios(应用申请)</title>
+    <effort>28800</effort>
+    <start-constraint-date>2019-07-02T01:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t106"/>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2019-07-02T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t155">
+    <title>Android</title>
+    <effort>28800</effort>
+    <start-constraint-date>2019-07-02T01:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t146"/>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2019-07-02T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t158">
+    <title>iOS</title>
+    <effort>28800</effort>
+    <start-constraint-date>2019-07-25T01:00:00.000Z</start-constraint-date>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2019-07-25T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t159">
+    <title>安卓</title>
+    <effort>28800</effort>
+    <start-constraint-date>2019-07-25T01:00:00.000Z</start-constraint-date>
+    <assignment idref="r4"/>
+    <start-no-earlier-than>2019-07-25T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t160">
+    <title>安卓</title>
+    <effort>86400</effort>
+    <start-constraint-date>2019-07-25T01:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t29"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2019-07-25T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t161">
+    <title>iOS</title>
+    <effort>86400</effort>
+    <start-constraint-date>2019-07-25T01:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t23"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2019-07-25T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t162">
+    <title>安卓</title>
+    <effort>57600</effort>
+    <start-constraint-date>2019-07-25T01:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t37"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2019-07-25T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t163">
+    <title>iOS</title>
+    <effort>57600</effort>
+    <start-constraint-date>2019-07-25T01:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t161"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2019-07-25T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t164">
+    <title>安卓</title>
+    <effort>57600</effort>
+    <start-constraint-date>2019-07-25T01:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t162"/>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2019-07-25T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t165">
+    <title>iOS</title>
+    <effort>57600</effort>
+    <start-constraint-date>2019-07-25T01:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t163"/>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2019-07-25T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color space="srgb" r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>

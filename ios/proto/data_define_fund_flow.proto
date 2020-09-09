@@ -1,0 +1,119 @@
+syntax = "proto3";
+
+package yuanda;
+
+option java_package = "cn.com.yd.cygp4.grpc";
+
+/* k线、分时 */
+message MiniFundFlow {
+    //证券代码，可以是股票代码，也可以是板块或者指数代码
+    string secCode = 1;
+
+    // super + large 资金流入 --》 大单（源达自定）、即主力资金
+    int64 hugeIn = 2;
+    //主力资金流出
+    int64 hugeOut = 3;
+
+    //超大单 资金流入，元
+    int64 superIn = 7;
+    //超大单 资金流出
+    int64 superOut = 8;
+
+    //大单流入资金，元
+    int64 largeIn = 12;
+    //大单流出资金，元
+    int64 largeOut = 13;
+
+    //中单流入资金，元
+    int64 mediumIn = 17;
+    //中单流出资金，元
+    int64 mediumOut = 18;
+
+    //小单资金流入，元
+    int64 littleIn = 22;
+    //小单资金流出，元
+    int64 littleOut = 23;
+
+    //资金流流入和流出之和
+    int64 total = 27;
+
+    //交易时间 -- unix时间
+    int64 unixTradeTime = 29;
+}
+
+/* 快照、排序 */
+message BaseFundFlow {
+    //证券代码，可以是股票代码，也可以是板块或者指数代码
+    string secCode = 1;
+
+    //主力资金流入 = 超大单 + 大单
+    int64 hugeIn = 2;
+    //主力资金流出
+    int64 hugeOut = 3;
+    //主力资金净额
+    int64 hugeNet1Day = 4;
+    //主力资金总额，元
+    int64 hugeInTotal = 5;
+    int64 hugeOutTotal = 6;
+
+    //超大单资金流入，元
+    int64 superIn = 7;
+    //超大单资金流出，%
+    int64 superOut = 8;
+    int64 superNet = 9;
+    int64 superInTotal = 10;
+    int64 superOutTotal = 11;
+
+    //大单流入资金，元
+    int64 largeIn = 12;
+    //大单流出资金，元
+    int64 largeOut = 13;
+    int64 largeNet = 14;
+    int64 largeInTotal = 15;
+    int64 largeOutTotal = 16;
+
+    //中单流入资金，元
+    int64 mediumIn = 17;
+    //中单流出资金，元
+    int64 mediumOut = 18;
+    //中单资金净额，元
+    int64 mediumNet = 19;
+    //中单资金总额，元
+    int64 mediumInTotal = 20;
+    int64 mediumOutTotal = 21;
+
+    //小单资金流入，元
+    int64 littleIn = 22;
+    //小单资金流出，元
+    int64 littleOut = 23;
+    //小单资金净额，元
+    int64 littleNet = 24;
+    //小单资金总额，元
+    int64 littleInTotal = 25;
+    int64 littleOutTotal = 26;
+
+    //资金流入和流出之和
+    int64 total = 27;
+
+    //交易时间 -- unix时间
+    int64 unixTradeTime = 29;
+
+    /*
+    2019-09-05
+    hugeNet变为hugeNet1即当日主力资金净额，元；
+    增加
+    hugeNet3即3日主力资金净额，元；
+    hugeNet5即5日主力资金净额，元；
+    hugeNet10即10日主力资金净额，元；
+    */
+    //3日主力资金净额，元
+    int64 hugeNet3Day = 30;
+    //5日主力资金净额，元
+    int64 hugeNet5Day = 31;
+    //10日主力资金净额，元
+    int64 hugeNet10Day = 32;
+}
+
+message MultiBaseFundFlow {
+    repeated BaseFundFlow entities = 1;
+}

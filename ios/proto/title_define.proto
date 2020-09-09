@@ -1,0 +1,186 @@
+syntax = "proto3";
+
+option cc_enable_arenas = true;
+
+package yuanda;
+
+//抬头标识
+enum TitleId
+{
+	TINVALID = 0;						//
+	TMarketID = 1;						//市场ID
+	TMarketName = 2;					//市场名称
+	TExchangeID = 3;					//交易所ID
+	TExchangeName = 4;					//交易所名称
+	TExchangeCommodityCount = 5;		//交易所商品数量
+	TCommodityID = 6;					//商品ID
+	TCommodityCode = 7;					//代码
+	TCommodityName = 8;					//名称
+	TCommodityType = 9;					//商品类型
+	TCommodityScaleLength = 10;			//商品小数位数
+	TCommodityStatus = 11;				//商品状态
+
+	TTime = 32;							//时间
+	TPrice = 33;						//价格
+	TLastClose = 34;					//昨收
+	TLastSettle = 35;					//昨结算
+	TOpen = 36;							//开盘价
+	THigh = 37;							//最高价
+	TLow = 38;							//最低价
+	TLast = 39;							//最新价
+	TClose = 40;						//收盘价
+	TSettle = 41;						//结算价
+	TVolume = 42;						//总手
+	TAmount = 43;						//总金额
+
+	TBuyPrice1 = 64;					//委买价(买一价)
+	TBuyPrice2 = 65;					//买二价
+	TBuyPrice3 = 66;					//买三价
+	TBuyPrice4 = 67;					//买四价
+	TBuyPrice5 = 68;					//买五价
+	TBuyPrice6 = 69;					//买六价
+	TBuyPrice7 = 70;					//买七价
+	TBuyPrice8 = 71;					//买八价
+	TBuyPrice9 = 72;					//买九价
+	TBuyPrice10 = 73;					//买十价
+	TSellPrice1 = 74;					//委卖价(卖一价)
+	TSellPrice2 = 75;					//卖二价
+	TSellPrice3 = 76;					//卖三价
+	TSellPrice4 = 77;					//卖四价
+	TSellPrice5 = 78;					//卖五价
+	TSellPrice6 = 79;					//卖六价
+	TSellPrice7 = 80;					//卖七价
+	TSellPrice8 = 81;					//卖八价
+	TSellPrice9 = 82;					//卖九价
+	TSellPrice10 = 83;					//卖十价
+	TBuyVolume1 = 84;					//委买量(买一量)
+	TBuyVolume2 = 85;					//买二量
+	TBuyVolume3 = 86;					//买三量
+	TBuyVolume4 = 87;					//买四量
+	TBuyVolume5 = 88;					//买五量
+	TBuyVolume6 = 89;					//买六量
+	TBuyVolume7 = 90;					//买七量
+	TBuyVolume8 = 91;					//买八量
+	TBuyVolume9 = 92;					//买九量
+	TBuyVolume10 = 93;					//买十量
+	TSellVolume1 = 94;					//委卖量(卖一量)
+	TSellVolume2 = 95;					//卖二量
+	TSellVolume3 = 96;					//卖三量
+	TSellVolume4 = 97;					//卖四量
+	TSellVolume5 = 98;					//卖五量
+	TSellVolume6 = 99;					//卖六量
+	TSellVolume7 = 100;					//卖七量
+	TSellVolume8 = 101;					//卖八量
+	TSellVolume9 = 102;					//卖九量
+	TSellVolume10 = 103;				//卖十量
+	TBuyOrderNum1 = 104;				//申买笔数1
+	TBuyOrderNum2 = 105;				//申买笔数2
+	TBuyOrderNum3 = 106;				//申买笔数3
+	TBuyOrderNum4 = 107;				//申买笔数4
+	TBuyOrderNum5 = 108;				//申买笔数5
+	TBuyOrderNum6 = 109;				//申买笔数6
+	TBuyOrderNum7 = 110;				//申买笔数7
+	TBuyOrderNum8 = 111;				//申买笔数8
+	TBuyOrderNum9 = 112;				//申买笔数9
+	TBuyOrderNum10 = 113;				//申买笔数10
+	TSellOrderNum1 = 114;				//申卖笔数1
+	TSellOrderNum2 = 115;				//申卖笔数2
+	TSellOrderNum3 = 116;				//申卖笔数3
+	TSellOrderNum4 = 117;				//申卖笔数4
+	TSellOrderNum5 = 118;				//申卖笔数5
+	TSellOrderNum6 = 119;				//申卖笔数6
+	TSellOrderNum7 = 120;				//申卖笔数7
+	TSellOrderNum8 = 121;				//申卖笔数8
+	TSellOrderNum9 = 122;				//申卖笔数9
+	TSellOrderNum10 = 123;				//申卖笔数10
+
+	TOpenInterest = 192;				//持仓量
+	TLastOpenInterest = 193;			//昨持仓量
+	TDealCount = 194;					//成交笔数
+	TLastVolume = 195;					//现手
+	TInVolume = 196;					//内盘
+	TOutVolume = 197;					//外盘
+	TIncrease = 198;					//涨跌
+	TIncreaseRatio = 199;				//涨跌幅%
+	TIncreaseSpeed = 200;				//涨速%
+	TAmplitude = 201;					//振幅
+	TAverage = 202;						//均价
+	TEntrustRatio = 203;				//委比%
+	TEntrustDifference = 204;			//委差
+	TVolumeRatio = 205;					//量比
+	TInOutRatio = 206;					//内外比
+	TAverageVolume5Day = 207;			//5日均量
+	TOpenVolume = 208;					//开仓
+	TCloseVolume = 209;					//平仓
+	TInterestChange = 210;				//仓差
+	TInterestChangeDay = 211;			//增仓
+	TTradeType = 212;					//交易类型
+	TRiseCount = 213;					//上涨家数
+	TFallCount = 214;					//下跌家数
+	TEqualCount = 215;					//平盘家数
+	TUpper = 216;						//涨停
+	TLower = 217;						//跌停
+	TIncreaseRatio1Day = 218;			//1日涨幅
+	TIncreaseRatio2Day = 219;			//2日涨幅
+	TIncreaseRatio3Day = 220;			//3日涨幅
+	TIncreaseRatio4Day = 221;			//4日涨幅
+	TIncreaseRatio5Day = 222;			//5日涨幅
+	TIncreaseRatio6Day = 223;			//6日涨幅
+	TIncreaseRatio7Day = 224;			//7日涨幅
+	TIncreaseRatio8Day = 225;			//8日涨幅
+	TIncreaseRatio9Day = 226;			//9日涨幅
+	TIncreaseRatio10Day = 227;			//10日涨幅
+	TIncreaseRatioWeek = 228;			//本周涨幅
+	TIncreaseRatioMonth = 229;			//本月涨幅
+	IncreaseRatio1Min = 230;			//1分钟涨幅
+	IncreaseRatio5Min = 231;			//5分钟涨幅
+	IncreaseRatio10Min = 232;			//10分钟涨幅
+	IncreaseRatio15Min = 233;			//15分钟涨幅
+	IncreaseRatio30Min = 234;			//30分钟涨幅
+
+	TExchangeRatio = 256;				//换手%
+	TIncomeRatioDynamic = 257;			//市盈率[动]
+	TIncomeRatio = 258;					//市盈率
+	TNetRatio = 259;					//市净率
+	TCirculateMarketValue = 260;		//流通市值
+	TTotalMarketValue = 261;			//总市值
+	TUnitNetValue = 262;				//单位净值
+	TAccumulateNetValue = 263;			//累计净值
+
+	TLeader = 288;			            //领涨股
+	TNetCapital = 289;			        //资金净额
+}
+
+/* 可排序抬头
+	TPrice = 33;						//价格
+	TLastClose = 34;					//昨收
+	TOpen = 36;							//开盘价
+	THigh = 37;							//最高价
+	TLow = 38;							//最低价
+	TLast = 39;							//最新价
+	TClose = 40;						//收盘价
+	TVolume = 42;						//总手
+	TAmount = 43;						//总金额
+
+	TLastVolume = 195;					//现手
+	TInVolume = 196;					//内盘
+	TOutVolume = 197;					//外盘
+	TIncrease = 198;					//涨跌
+	TIncreaseRatio = 199;				//涨跌幅%
+	TIncreaseSpeed = 200;				//涨速%
+	TAmplitude = 201;					//振幅
+	TAverage = 202;						//均价
+	TEntrustRatio = 203;				//委比%
+	TVolumeRatio = 205;					//量比
+	TRiseCount = 213;					//上涨家数
+	TFallCount = 214;					//下跌家数
+	TEqualCount = 215;					//平盘家数
+	TIncreaseRatio3Day = 220;			//3日涨幅
+	TIncreaseRatio5Day = 222;			//5日涨幅
+
+	TExchangeRatio = 256;				//换手%
+	TIncomeRatio = 258;					//市盈率
+	TNetRatio = 259;					//市净率
+	TCirculateMarketValue = 260;		//流通市值
+	TTotalMarketValue = 261;			//总市值
+*/

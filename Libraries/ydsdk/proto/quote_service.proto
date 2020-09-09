@@ -1,0 +1,229 @@
+
+syntax = "proto3";
+
+import "title_define.proto";
+import "data_define.proto";
+
+option cc_enable_arenas = true;
+
+
+///option java_package = "com.dzhyun.yuandaservice";
+
+package yuanda;
+
+
+/** 行情服务器数据接口 
+*   注：接口中，返回结果为stream类型的为支持推送的。对同一个股票的同一种数据重复要求
+*      推送时，将取消之前的推送。
+*/
+service QuoteService {
+	/// 获取指定的股票的快照数据。
+	///
+	/// 当客户端调用此接口时，服务器首先注销调QuoteRequest中Unsubcribes指定的股票，
+	/// 不在推送相关的快照信息；同时，服务器会注册QuoteRequest中Subcribes指定股票，并
+	/// 返回相关的快照数据。后续注册的股票快照数据有更新，也会推送给客户端。
+	///
+	/// 一个客户端只需（也必须）调用一次FetchQuote，调用后，可以通过stream QuoteRequest
+	/// 多次发送快照请求。当客户端把所有的股票都注销时，服务器会结束此次调用。
+	///
+	/// 如果一个客户端多次调用此接口，服务器会忽略掉之前的注册的股票，不再推送它们的快照，
+	/// 同时，也会结束之前的调用（关闭stream Quote）
+  	rpc FetchQuote(stream QuoteRequest) returns (stream MiniQuote) {}
+
+
+  	/// 与接口FetchQuote作用相同，区别是，返回的数据是FullQuote
+  	rpc FetchFullQuote(stream QuoteRequest) returns (stream FullQuote) {}
+
+	/// 获取指定的股票的快照数据。
+	///
+	/// 该接口只获取最新的快照数据，不支持订阅，服务器不推送后续的更新的数据。
+	/// QuoteRequest的Unsubcribes字段将会被忽略。
+  	rpc FetchStaticQuote(QuoteRequest) returns (MultiMiniQuote) {}
+
+  	/// 获取指定股票的K线数据。
+  	///
+  	/// 服务器根据Request的label、period、split确定一种K线。再根据statr、count确定获取
+  	/// 数据的位置和数量。subscribe为false时，服务器返回数据后，会关闭stream；否则，会持续
+  	/// 推送最新的K线数据。注意需要避免对同一个K线多次设置subscribe，多次带有subscribe等于
+  	/// true的调用，会关闭之前的stream CandleStick。
+  	rpc FetchCandleStick(CandleStickRequest) returns (stream CandleStick) {}
+
+  	/// 获取实时分时数据。一次最多获取10日，当超过10日时，只返回最近的10日数据。
+  	/// 此接口适用于分时图和多日分时图调用。
+  	/// 
+  	/// MinRequest.subscribe为true时，服务器会推送最新的分时数据。推送数据有
+  	/// 可能比拉取的数据先到，客户端需要注意按时间整理数据。
+  	/// 
+  	/// 客户端不再需要推送数据时，须调用ClientContext.TryCancel方法取消推送。
+  	///
+  	/// MinRequest.subscribe为false时，服务器返回数据后，会关闭stream MinChart
+  	rpc FetchMinData(MinRequest) returns(stream MinChart) {}
+
+  	/// 获取指定日期的分时数据。只拉取，不推送实时数据，即使是指定的日期是当前交易日。
+  	/// 此接口适用于从K线调取对于的历史分时。
+  	///
+  	/// 注意：发送请求时，指定的时间点是当地时间零点对应的UTC。
+  	rpc FetchHistoryMinData(HisMinRequest) returns (MinChart) {}
+
+  	
+  	/// 获取指定日期的分笔数据。
+  	///
+  	/// TickRequest.subscribe为true时，服务器会推送最新的分笔数据。客户端不再需
+  	/// 要推送数据时，须调用ClientContext.TryCancel方法取消推送。
+  	/// 
+  	/// TickRequest.subscribe为false时，服务器返回数据后，会关闭stream Ticks。
+  	rpc FetchTicks(TickRequest) returns (stream Ticks) {}
+
+  	/// 按照指定的抬头获取某个板块的排序数
+  	///
+  	/// TickRequest.subscribe为true时，服务器会推送最新的分笔数据。客户端不再需
+  	/// 要推送数据时，须调用ClientContext.TryCancel方法取消推送。
+  	/// 
+  	/// TickRequest.subscribe为false时，服务器返回数据后，会关闭stream Ticks。
+  	rpc FetchSort(FullSortRequest) returns (stream FullSortResponse) {} 
+
+  	/// 按照指定的抬头获取某个板块的排序数
+  	///
+  	/// TickRequest.subscribe为true时，服务器会推送最新的分笔数据。客户端不再需
+  	/// 要推送数据时，须调用ClientContext.TryCancel方法取消推送。
+  	/// 
+  	/// TickRequest.subscribe为false时，服务器返回数据后，会关闭stream Ticks。
+  	rpc FetchBlockSort(SortRequest) returns (stream FullSortResponse) {} 
+
+  	/// 获取某个股票的加量统计结果
+  	rpc FetchPriVol(PriVolRequest) returns (stream PriceVolume){}
+}
+
+/** 快照请求 */
+message QuoteRequest{
+	/// 需要注册的股票的代码
+  	repeated string Subcribes = 1;
+
+  	/// 需要注消的股票的代码
+  	repeated string Unsubcribes = 2;
+}
+
+/** K线数据请求 */
+message CandleStickRequest{
+	/// 股票代码
+	string Label = 1;
+
+	/// 周期
+	PeriodT Period = 2;
+
+	/// 除复权
+	SplitT Split = 3;
+
+	/// 行筛选，表示从以上步骤产生的数据的第几行开始往后筛选.从0开始计数。例如0表示
+	/// 从第1行开始，-1表示最后一行开始，7表示从第8行开始。
+	int64 Start = 4;
+
+	/// 行筛选，Time!=0时, 表示从Time所在数据行开筛选，此时不走start逻辑， 该行数据不返回。
+	/// 目前Time只考虑所对应的数据是精准的情况， 不存在返回空数据体，Time为K线数据的UTC时间。
+	uint32 Time = 5;
+	
+	/// 行筛选，表示从start的位置筛选多少行数据（包括start）, 当count>0时，向时间
+	/// 更大的方向筛选; 当count<0时，向时间更小的方向筛选。
+	int64 Count = 6;
+	
+	/// 是否订阅最新的数据。当subscribe=true时, 服务器会推送最新的K线数据。
+	bool Subscribe = 7;
+}
+
+/** 实时分时数据请求 */
+message MinRequest{
+	/// 股票代码
+	string Label = 1;
+
+	/// 获取最近几日的分时数据。当days等于0时，获取最近一个交易日的分时数据。
+	uint32 Days = 2;
+	
+	/// 是否订阅最新的数据。当subscribe=true时, 服务器会推送最新的分笔数据。
+	bool Subscribe = 3; 
+}
+
+/** 历史分时数据请求 */
+message HisMinRequest{
+	/// 股票代码
+	string Label = 1;
+
+	/// 指定获取哪天的分时。考虑到以后会有多个不同国家的跨时区的交易所，date的
+	/// 取值为股票所在交易所所在的时区的地方时零点对应的UTC时间。如：北京时间
+	/// 2018/03/01 00:00:00 对应UTC为 1519833600。
+	int32 Date = 2;
+}
+
+/** 分笔数据请求 */
+message TickRequest{
+	/// 股票代码
+	string Label = 1;
+
+	/// 指定获取哪天的分笔。考虑到以后会有多个不同国家的跨时区的交易所，date的
+	/// 取值为股票所在交易所所在的时区的地方时零点对应的UTC时间。如：北京时间
+	/// 2018/03/01 00:00:00 对应UTC为 1519833600。 当date等于0时，取当前
+	/// 交易日的数据。
+	int32 Date = 2;
+
+	/// 行筛选，表示从以上步骤产生的数据的第几行开始往后筛选.从0开始计数。例如0表示
+	/// 从第1行开始，-1表示最后一行开始，7表示从第8行开始。
+	int64 Start = 3;
+	
+	/// 行筛选，Time!=0时, 表示从Time所在数据行开筛选，此时不走start逻辑， 该行数据不返回。
+	/// 目前Time只考虑所对应的数据是精准的情况， 不存在返回空数据体， Time为分笔数据的UTC时间。
+	uint32 Time = 4;
+	
+	/// 行筛选，表示从start的位置筛选多少行数据（包括start）, 当count>0时，向时间
+	/// 更大的方向筛选; 当count<0时，向时间更小的方向筛选; 当count==0时，此时忽略
+	/// start，取date指定日期下所有的分笔数据。
+	int64 Count = 5;
+
+	/// 是否订阅最新的数据。当subscribe=true时, 服务器会推送最新的分笔数据。
+	bool Subscribe = 6; 
+}
+
+/** 排序数据请求(暂时废除) */
+message SortRequest{
+	/// 板块ID
+	string BlockId = 1;
+
+	/// 抬头ID
+	int32 TitleId = 2;
+
+	/// 排序方式, 可选项包括:false(升序),true(降序)
+	bool Desc = 3;
+
+	/// 行筛选，表示从第几行开始往后筛选. 从0开始计数。例如0表示从第1行开始
+	uint32 Start = 4;
+
+	/// 行筛选，大于0的数字，表示从start的位置往后筛选多少行数据(包括start)，当等于0时，
+	/// 忽略本次请求。
+	uint32 Count = 5;
+
+	/// 是否订阅最新的数据。当subscribe=true时, 服务器会推送最新的数据。
+	bool Subscribe = 6; 
+}
+
+/** 排序数据请求(全市场所有的股票的排序) */
+message FullSortRequest{
+	/// 抬头ID
+	TitleId Title = 1;
+
+	/// 是否订阅最新的数据。当subscribe=true时, 服务器会推送最新的数据。
+	bool Subscribe = 2; 
+}
+
+/** 价量统计数据请求 */
+message PriVolRequest{
+	/// 股票代码
+	string Label = 1;
+
+	/// 指定获取哪天的分笔。考虑到以后会有多个不同国家的跨时区的交易所，date的
+	/// 取值为股票所在交易所所在的时区的地方时零点对应的UTC时间。如：北京时间
+	/// 2018/03/01 00:00:00 对应UTC为 1519833600。 当date等于0时，取当前
+	/// 交易日的数据。
+	int32 Date = 2;
+
+	/// 是否订阅最新的数据。当subscribe=true时, 服务器会推送最新的数据。
+	bool Subscribe = 3; 
+}
+

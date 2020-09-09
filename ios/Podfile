@@ -1,0 +1,103 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+workspace 'CY_Stock.xcworkspace'
+
+platform :ios, '9.0'
+
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+install! 'cocoapods', :deterministic_uuids => false
+
+def common_pods
+  pod 'data_define', :path => '.'
+  pod 'title_define', :path => '.'
+  pod 'quote_service', :path => '.'
+  pod 'historydata_define', :path => '.'
+  pod 'data_define_fund_flow', :path => '.'
+  pod 'data_define_req_rep', :path => '.'
+  pod 'glue_data_define', :path => '.'
+  pod 'glue_service', :path => '.'
+  pod 'Masonry'
+  pod 'SDWebImage', '3.8.3' #FMPlayer能用版本
+  # Pods for React-Native
+  pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
+  pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
+  pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
+  pod 'RCTTypeSafety', :path => "../node_modules/react-native/Libraries/TypeSafety"
+  pod 'React', :path => '../node_modules/react-native/'
+  pod 'React-Core', :path => '../node_modules/react-native/'
+  pod 'React-CoreModules', :path => '../node_modules/react-native/React/CoreModules'
+  pod 'React-Core/DevSupport', :path => '../node_modules/react-native/'
+  pod 'React-RCTActionSheet', :path => '../node_modules/react-native/Libraries/ActionSheetIOS'
+  pod 'React-RCTAnimation', :path => '../node_modules/react-native/Libraries/NativeAnimation'
+  pod 'React-RCTBlob', :path => '../node_modules/react-native/Libraries/Blob'
+  pod 'React-RCTImage', :path => '../node_modules/react-native/Libraries/Image'
+  pod 'React-RCTLinking', :path => '../node_modules/react-native/Libraries/LinkingIOS'
+  pod 'React-RCTNetwork', :path => '../node_modules/react-native/Libraries/Network'
+  pod 'React-RCTSettings', :path => '../node_modules/react-native/Libraries/Settings'
+  pod 'React-RCTText', :path => '../node_modules/react-native/Libraries/Text'
+  pod 'React-RCTVibration', :path => '../node_modules/react-native/Libraries/Vibration'
+  pod 'React-Core/RCTWebSocket', :path => '../node_modules/react-native/'
+
+  pod 'React-cxxreact', :path => '../node_modules/react-native/ReactCommon/cxxreact'
+  pod 'React-jsi', :path => '../node_modules/react-native/ReactCommon/jsi'
+  pod 'React-jsiexecutor', :path => '../node_modules/react-native/ReactCommon/jsiexecutor'
+  pod 'React-jsinspector', :path => '../node_modules/react-native/ReactCommon/jsinspector'
+  pod 'ReactCommon/jscallinvoker', :path => "../node_modules/react-native/ReactCommon"
+  pod 'ReactCommon/turbomodule/core', :path => "../node_modules/react-native/ReactCommon"
+  pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+end
+
+target 'CY_Stock' do
+  common_pods
+  use_native_modules!
+end
+
+target 'CY_Stock_Dev' do
+  common_pods
+  use_native_modules!
+end
+
+target 'CY_StockTests' do
+  common_pods
+  use_native_modules!
+end
+
+target 'RNCustomKeyboard' do
+  project '../node_modules_modify/react-native-custom-keyboard/ios/RNCustomKeyboard'
+  pod 'React-Core', :path => '../node_modules/react-native/'
+end
+
+target 'RCTHuodePlayer' do
+  project '../Libraries/RCTHuodePlayer/RCTHuodePlayer'
+  pod 'React-Core', :path => '../node_modules/react-native/'
+end
+
+target 'RCTMIPushModule' do
+  project '../Libraries/RCTMIPushModule/RCTMIPushModule'
+  pod 'React-Core', :path => '../node_modules/react-native/'
+end
+
+target 'DzhChart' do
+  project '../Libraries/DzhChart/ios/DzhChart'
+  pod 'React-Core', :path => '../node_modules/react-native/'
+end
+
+target 'FMPlayer' do
+  project '../Libraries/FMVideoPlayer/ios/FMPlayer'
+  pod 'React-Core', :path => '../node_modules/react-native/'
+end
+
+target 'SQLite' do
+  project '../node_modules/react-native-sqlite-storage/src/ios/SQLite'
+  pod 'React-Core', :path => '../node_modules/react-native/'
+end
+
+target 'RCTOrientation' do
+  project '../node_modules_modify/react-native-orientation/iOS/RCTOrientation'
+  pod 'React-Core', :path => '../node_modules/react-native/'
+end

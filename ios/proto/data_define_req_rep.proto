@@ -1,0 +1,178 @@
+syntax = "proto3";
+
+package yuanda;
+
+import "data_define_fund_flow.proto";
+
+option java_package = "cn.com.yd.cygp4.grpc";
+
+message FundFlowEmptyMessage {
+}
+/*****************************************************
+* K线
+*****************************************************/
+/* 归档周期 */
+enum FundFlowPeriod {
+    // 1分钟
+    _1_MIN = 0;
+
+    // 5分钟
+    _5_MIN = 1;
+
+    // 15分钟
+    _15_MIN = 2;
+
+    // 30分钟
+    _30_MIN = 3;
+
+    // 60分钟
+    _60_MIN = 4;
+
+    // 日
+    DAY = 5;
+
+    // 周
+    WEEK = 6;
+
+    // 月
+    MONTH = 7;
+
+    // 季
+    SEASON = 8;
+
+    // 半年
+    HALF_YEAR = 9;
+
+    // 年
+    YEAR = 10;
+}
+/* K线数据请求 */
+message FundFlowCandleStickRequest {
+    // 股票、板块代码
+    string itemCode = 1;
+
+    // 周期。必输入
+    FundFlowPeriod period = 2;
+
+    // 行筛选，表示从以上步骤产生的数据的第几行开始往后筛选. 必须小于0，-1表示最后一行开始取。
+    // 目前不支持 Start >= 0 的情况。
+    int64 start = 3;
+
+    // 行筛选，Time!=0 时, 表示从Time所在数据行开筛选，此时不走start逻辑， 该行数据不返回。
+    // 目前Time只考虑所对应的数据是精准的情况， 不存在返回空数据体，Time为K线数据的UTC时间。
+    int64 time = 4;
+
+    // 行筛选，表示从start的位置筛选多少条数据（包括start, count必须小于0时，表示向时间
+    // 更小的方向筛选数据。目前不支持向时间更大的方向取数。
+    int64 count = 5;
+}
+/* K线数据应答 */
+message FundFlowCandleStickResponse {
+    // 股票、板块代码
+    string itemCode = 1;
+    //周期
+    FundFlowPeriod period = 2;
+    // 数据
+    repeated MiniFundFlow entities = 3;
+}
+/* K线数据应答 */
+message FundFlowMultiCandleStickResponse {
+    repeated FundFlowCandleStickResponse entities = 1;
+}
+
+/*****************************************************
+* 分时
+*****************************************************/
+/* 分时请求 */
+message FundFlowMinChartRequest {
+    // 股票、板块代码
+    string itemCode = 1;
+    // 获取最近几日的分时数据。当days等于0时，获取最近一个交易日的分时数据。
+    // days 等于0或1时，都是指最近1天。
+    // days 等于2时，代表获取最近两天全部的数据，以此类推。
+    uint32 days = 2;
+
+}
+/*请求历史分时*/
+message FundFlowHisMinRequest {
+    /// 股票代码
+    string itemCode = 1;
+
+    // 指定获取哪天的分时。考虑到以后会有多个不同国家的跨时区的交易所，date的
+    // 取值为股票所在交易所所在的时区的地方时零点对应的UTC时间。如：北京时间
+    // 2018/03/01 00:00:00 对应UTC为 1519833600。
+    int64 date = 2;
+}
+/* 分时应答 */
+message FundFlowMultiMinChartResponse {
+    // 数据
+    repeated FundFlowMinChart entities = 1;
+}
+/* 分时应答元素 */
+message FundFlowMinChart {
+    //时间 某一日 unix 时间
+    int64 time = 1;
+    string itemCode = 2;
+    // 数据
+    repeated MiniFundFlow entities = 3;
+}
+
+/*****************************************************
+* 快照
+*****************************************************/
+/* 快照请求 */
+message FundFlowSnapshotRequest {
+    //股票、板块代码
+    repeated string itemCode = 1;
+}
+
+/* 快照应答 */
+message FundFlowSnapshotResponse {
+    // 数据
+    repeated BaseFundFlow entities = 1;
+}
+
+/*****************************************************
+* 排序
+*****************************************************/
+/* title 即：排序字段 */
+enum FundFlowTitleId {
+    EMPTY = 0;
+    HUGE_NET_1_DAY = 1000; //当日主力资金净流入
+    HUGE_NET_3_DAY = 1001; //3日主力资金净流入
+    HUGE_NET_5_DAY = 1002; //5日主力资金净流入
+    HUGE_NET_10_DAY = 1003; //10日主力资金净流入
+}
+
+/* 排序请求 */
+message FundFlowSortRequest {
+    string blockId = 1;
+    FundFlowTitleId titleId = 2; // 抬头（排序字段）
+    bool desc = 3; // 排序方式, 可选项包括:false(升序),true(降序)
+    /// 行筛选，表示从第几行开始往后筛选. 从0开始计数。例如0表示从第1行开始
+    uint32 start = 4;
+
+    /// 行筛选，大于0的数字，表示从start的位置往后筛选多少行数据(包括start)，当等于0时，
+    /// 忽略本次请求。
+    uint32 count = 5;
+}
+
+/* 排序应答 */
+message FundFlowSortResponse {
+    string blockId = 1;
+    FundFlowTitleId titleId = 2; // 抬头（排序字段）
+    bool desc = 3; // 排序方式, 可选项包括:false(升序),true(降序)
+    int32 validCount = 4; // 排序中，有效的数据个数（针对停牌等情况）
+    repeated FundFlowSortEntity entities = 5;
+}
+
+/* 排序元素 */
+message FundFlowSortEntity {
+    string stockCode = 1; //股票代码
+    double value = 2; //排序数值
+}
+
+/* 排序应答 */
+message FundFlowMultiSortResponse {
+    repeated FundFlowSortResponse entities = 1;
+}

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.1</version>
+  <task-change-set user="admin" date="2019-07-25T01:27:58.607Z" timestamp="2019-07-25T01:27:58.607Z">
+    <change idref="t151" from="t-1" from-position="1" resolved="yes">
+      <change idref="t151" attribute="effort" type="real" from="28800" to="864000"/>
+      <change idref="t151" attribute="internalAssignments" type="string" from="" to="1; 2; 3"/>
+      <change idref="t151" attribute="noEarlierThanConstraintDate" type="date" to="2019-09-02T01:00:00.000Z"/>
+      <change idref="t151" attribute="title" type="string" to="财源APP野狗迁移"/>
+    </change>
+    <change idref="t1" attribute="noEarlierThanConstraintDate" type="date" from="2019-07-02T01:00:00.000Z" to="2019-07-26T01:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="admin" date="2019-07-25T01:30:47.674Z" timestamp="2019-07-25T01:30:47.674Z">
+    <change idref="t70" attribute="internalPrerequisitesString" type="string" from="71FS" resolved="yes"/>
+    <change idref="t71" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t71" attribute="multiResourceWorkType" type="real" from="0" resolved="yes"/>
+    <change idref="t71" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t71" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t71" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t71" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t71" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t71" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t71" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t71" attribute="internalAssignments" type="string" from="3" resolved="yes"/>
+    <change idref="t71" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t71" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t158" to="t71" to-position="0" resolved="yes">
+      <change idref="t158" attribute="internalAssignments" type="string" from="" to="3"/>
+      <change idref="t158" attribute="noEarlierThanConstraintDate" type="date" to="2019-07-25T01:00:00.000Z"/>
+      <change idref="t158" attribute="title" type="string" to="iOS"/>
+    </change>
+    <change idref="t159" to="t71" to-position="1" resolved="yes">
+      <change idref="t159" attribute="internalAssignments" type="string" from="" to="4"/>
+      <change idref="t159" attribute="noEarlierThanConstraintDate" type="date" to="2019-07-25T01:00:00.000Z"/>
+      <change idref="t159" attribute="title" type="string" to="安卓"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="admin" date="2019-07-25T01:54:04.736Z" timestamp="2019-07-25T01:54:04.736Z">
+    <change idref="t18" attribute="internalAssignments" type="string" from="1" to="4" resolved="yes"/>
+    <change idref="t19" attribute="internalAssignments" type="string" from="1" to="4" resolved="yes"/>
+    <change idref="t20" attribute="internalAssignments" type="string" from="1" to="4" resolved="yes"/>
+    <change idref="t21" attribute="internalAssignments" type="string" from="1" to="4" resolved="yes"/>
+    <change idref="t22" attribute="internalAssignments" type="string" from="1" to="4" resolved="yes"/>
+    <change idref="t23" attribute="internalAssignments" type="string" from="1" to="4" resolved="yes"/>
+    <change idref="t24" attribute="title" type="string" from="自选股页" to="自选股页、沪深页" resolved="yes"/>
+    <change idref="t70" attribute="internalPrerequisitesString" type="string" to="158FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="admin" date="2019-07-25T01:59:16.701Z" timestamp="2019-07-25T01:59:16.701Z">
+    <change idref="t24" attribute="internalPrerequisitesString" type="string" from="23FS" resolved="yes"/>
+    <change idref="t143" attribute="effort" type="real" from="115200" to="144000" resolved="yes"/>
+    <change idref="t146" attribute="internalAssignments" type="string" from="1" to="4" resolved="yes"/>
+    <change idref="t153" attribute="isGroup" type="real" from="1" to="0" resolved="yes"/>
+    <change idref="t153" attribute="taskType" type="real" from="2" to="0" resolved="yes"/>
+    <change idref="t153" attribute="multiResourceWorkType" type="real" to="0" resolved="yes"/>
+    <change idref="t153" attribute="isSplittableTask" type="real" to="1" resolved="yes"/>
+    <change idref="t153" attribute="resourceAssignmentType" type="real" to="0" resolved="yes"/>
+    <change idref="t153" attribute="staticCost" type="real" to="0" resolved="yes"/>
+    <change idref="t153" attribute="effort" type="real" to="14400" resolved="yes"/>
+    <change idref="t153" attribute="isSplitChunk" type="real" to="0" resolved="yes"/>
+    <change idref="t153" attribute="scheduleType" type="real" to="0" resolved="yes"/>
+    <change idref="t153" attribute="internalAssignments" type="string" to="2" resolved="yes"/>
+    <change idref="t153" attribute="isSplitTask" type="real" to="0" resolved="yes"/>
+    <change idref="t153" attribute="internalEffortDone" type="real" to="0" resolved="yes"/>
+    <change idref="t156" from="t153" from-position="1" resolved="yes">
+      <change idref="t156" attribute="noEarlierThanConstraintDate" type="date" to="2019-07-02T01:00:00.000Z"/>
+      <change idref="t156" attribute="title" type="string" to="Android"/>
+    </change>
+    <change idref="t157" from="t153" from-position="0" resolved="yes">
+      <change idref="t157" attribute="effort" type="real" from="28800" to="3600"/>
+      <change idref="t157" attribute="internalAssignments" type="string" from="" to="2"/>
+      <change idref="t157" attribute="internalPrerequisitesString" type="string" to="154FS"/>
+      <change idref="t157" attribute="noEarlierThanConstraintDate" type="date" to="2019-07-02T01:00:00.000Z"/>
+      <change idref="t157" attribute="title" type="string" to="ios"/>
+    </change>
+    <change idref="t154" attribute="effort" type="real" from="43200" to="28800" resolved="yes"/>
+    <change idref="t155" attribute="internalAssignments" type="string" from="" to="4" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="admin" date="2019-07-25T02:20:16.796Z" timestamp="2019-07-25T02:20:16.796Z">
+    <change idref="t17" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t33" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t33" attribute="multiResourceWorkType" type="real" from="0" resolved="yes"/>
+    <change idref="t33" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t33" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t33" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t33" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t33" attribute="effort" type="real" from="86400" resolved="yes"/>
+    <change idref="t33" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t33" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t33" attribute="internalAssignments" type="string" from="1" resolved="yes"/>
+    <change idref="t33" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t33" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t160" to="t33" to-position="0" resolved="yes">
+      <change idref="t160" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t160" attribute="noEarlierThanConstraintDate" type="date" to="2019-07-25T01:00:00.000Z"/>
+      <change idref="t160" attribute="title" type="string" to="安卓"/>
+    </change>
+    <change idref="t161" to="t33" to-position="1" resolved="yes">
+      <change idref="t161" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t161" attribute="noEarlierThanConstraintDate" type="date" to="2019-07-25T01:00:00.000Z"/>
+      <change idref="t161" attribute="title" type="string" to="iOS"/>
+    </change>
+    <change idref="t38" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t39" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t49" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t50" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t51" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t52" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t53" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t54" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t55" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t56" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t57" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t58" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t59" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t60" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t104" attribute="internalAssignments" type="string" from="2" to="4" resolved="yes"/>
+    <change idref="t105" attribute="internalAssignments" type="string" from="2" to="4" resolved="yes"/>
+    <change idref="t106" attribute="internalAssignments" type="string" from="2" to="4" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="admin" date="2019-07-25T02:21:34.074Z" timestamp="2019-07-25T02:21:34.074Z">
+    <change idref="t121" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t121" attribute="multiResourceWorkType" type="real" from="0" resolved="yes"/>
+    <change idref="t121" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t121" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t121" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t121" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t121" attribute="effort" type="real" from="57600" resolved="yes"/>
+    <change idref="t121" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t121" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t121" attribute="internalAssignments" type="string" from="1" resolved="yes"/>
+    <change idref="t121" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t121" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t162" to="t121" to-position="0" resolved="yes">
+      <change idref="t162" attribute="effort" type="real" from="28800" to="57600"/>
+      <change idref="t162" attribute="internalAssignments" type="string" from="" to="1"/>
+      <change idref="t162" attribute="noEarlierThanConstraintDate" type="date" to="2019-07-25T01:00:00.000Z"/>
+      <change idref="t162" attribute="title" type="string" to="安卓"/>
+    </change>
+    <change idref="t163" to="t121" to-position="1" resolved="yes">
+      <change idref="t163" attribute="effort" type="real" from="28800" to="57600"/>
+      <change idref="t163" attribute="internalAssignments" type="string" from="" to="3"/>
+      <change idref="t163" attribute="noEarlierThanConstraintDate" type="date" to="2019-07-25T01:00:00.000Z"/>
+      <change idref="t163" attribute="title" type="string" to="iOS"/>
+    </change>
+    <change idref="t122" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t122" attribute="multiResourceWorkType" type="real" from="0" resolved="yes"/>
+    <change idref="t122" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t122" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t122" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t122" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t122" attribute="effort" type="real" from="57600" resolved="yes"/>
+    <change idref="t122" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t122" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t122" attribute="internalAssignments" type="string" from="1" resolved="yes"/>
+    <change idref="t122" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t122" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t164" to="t122" to-position="0" resolved="yes">
+      <change idref="t164" attribute="effort" type="real" from="28800" to="57600"/>
+      <change idref="t164" attribute="noEarlierThanConstraintDate" type="date" to="2019-07-25T01:00:00.000Z"/>
+      <change idref="t164" attribute="title" type="string" to="安卓"/>
+    </change>
+    <change idref="t165" to="t122" to-position="1" resolved="yes">
+      <change idref="t165" attribute="effort" type="real" from="28800" to="57600"/>
+      <change idref="t165" attribute="noEarlierThanConstraintDate" type="date" to="2019-07-25T01:00:00.000Z"/>
+      <change idref="t165" attribute="title" type="string" to="iOS"/>
+    </change>
+    <change idref="t160" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t161" attribute="internalAssignments" type="string" from="" to="3" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="admin" date="2019-07-25T02:21:42.247Z" timestamp="2019-07-25T02:21:42.247Z">
+    <change idref="t164" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t165" attribute="internalAssignments" type="string" from="" to="3" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="admin" date="2019-07-25T02:36:52.307Z" timestamp="2019-07-25T02:36:52.307Z">
+    <change idref="t18" attribute="internalAssignments" type="string" from="4" to="3" resolved="yes"/>
+    <change idref="t19" attribute="internalAssignments" type="string" from="4" to="3" resolved="yes"/>
+    <change idref="t20" attribute="internalAssignments" type="string" from="4" to="3" resolved="yes"/>
+    <change idref="t21" attribute="internalAssignments" type="string" from="4" to="3" resolved="yes"/>
+    <change idref="t22" attribute="internalAssignments" type="string" from="4" to="3" resolved="yes"/>
+    <change idref="t23" attribute="internalAssignments" type="string" from="4" to="3" resolved="yes"/>
+    <change idref="t30" attribute="internalAssignments" type="string" from="2" to="4" resolved="yes"/>
+    <change idref="t31" attribute="internalAssignments" type="string" from="2" to="4" resolved="yes"/>
+    <change idref="t32" attribute="internalAssignments" type="string" from="2" to="4" resolved="yes"/>
+    <change idref="t35" attribute="internalAssignments" type="string" from="2" to="4" resolved="yes"/>
+    <change idref="t40" attribute="internalAssignments" type="string" from="2" to="4" resolved="yes"/>
+    <change idref="t41" attribute="internalAssignments" type="string" from="2" to="4" resolved="yes"/>
+    <change idref="t43" attribute="internalAssignments" type="string" from="2" to="4" resolved="yes"/>
+    <change idref="t45" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t46" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t47" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t48" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t87" attribute="internalAssignments" type="string" from="2" to="4" resolved="yes"/>
+    <change idref="t88" attribute="internalAssignments" type="string" from="2" to="4" resolved="yes"/>
+    <change idref="t90" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t91" attribute="internalAssignments" type="string" from="2" to="4" resolved="yes"/>
+    <change idref="t92" attribute="internalAssignments" type="string" from="2" to="4" resolved="yes"/>
+    <change idref="t93" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t94" attribute="internalAssignments" type="string" from="3" to="4" resolved="yes"/>
+    <change idref="t104" attribute="internalAssignments" type="string" from="4" to="2" resolved="yes"/>
+    <change idref="t105" attribute="internalAssignments" type="string" from="4" to="2" resolved="yes"/>
+    <change idref="t106" attribute="internalAssignments" type="string" from="4" to="2" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="admin" date="2019-07-25T02:47:06.938Z" timestamp="2019-07-25T02:47:06.938Z">
+    <change idref="t18" attribute="internalPrerequisitesString" type="string" to="142FS" resolved="yes"/>
+    <change idref="t31" attribute="internalPrerequisitesString" type="string" from="106FS" to="17FS" resolved="yes"/>
+    <change idref="t32" attribute="internalPrerequisitesString" type="string" from="30FS" to="90FS" resolved="yes"/>
+    <change idref="t33" attribute="internalPrerequisitesString" type="string" from="29FS" resolved="yes"/>
+    <change idref="t37" attribute="internalPrerequisitesString" type="string" from="33FS" to="160FS" resolved="yes"/>
+    <change idref="t38" attribute="internalPrerequisitesString" type="string" from="90FS" to="159FS" resolved="yes"/>
+    <change idref="t45" attribute="internalPrerequisitesString" type="string" from="142FS" to="30FS" resolved="yes"/>
+    <change idref="t121" attribute="internalPrerequisitesString" type="string" from="37FS" resolved="yes"/>
+    <change idref="t122" attribute="internalPrerequisitesString" type="string" from="121FS" resolved="yes"/>
+    <change idref="t124" attribute="internalPrerequisitesString" type="string" from="122FS" to="164FS" resolved="yes"/>
+    <change idref="t143" attribute="internalPrerequisitesString" type="string" from="146FS" resolved="yes"/>
+    <change idref="t146" attribute="internalPrerequisitesString" type="string" from="66FS" to="32FS" resolved="yes"/>
+    <change idref="t147" attribute="internalPrerequisitesString" type="string" from="17FS" to="165FS" resolved="yes"/>
+    <change idref="t153" attribute="internalPrerequisitesString" type="string" to="154FS" resolved="yes"/>
+    <change idref="t154" attribute="internalPrerequisitesString" type="string" from="32FS" resolved="yes"/>
+    <change idref="t155" attribute="internalPrerequisitesString" type="string" to="146FS" resolved="yes"/>
+    <change idref="t160" attribute="internalPrerequisitesString" type="string" to="29FS" resolved="yes"/>
+    <change idref="t161" attribute="internalPrerequisitesString" type="string" to="23FS" resolved="yes"/>
+    <change idref="t162" attribute="internalPrerequisitesString" type="string" to="37FS" resolved="yes"/>
+    <change idref="t163" attribute="internalPrerequisitesString" type="string" to="161FS" resolved="yes"/>
+    <change idref="t164" attribute="internalPrerequisitesString" type="string" to="162FS" resolved="yes"/>
+    <change idref="t165" attribute="internalPrerequisitesString" type="string" to="163FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="admin" date="2019-07-25T02:49:04.846Z" timestamp="2019-07-25T02:49:04.846Z">
+    <change idref="t143" attribute="internalPrerequisitesString" type="string" to="66FS" resolved="yes"/>
+    <change idref="t154" attribute="internalPrerequisitesString" type="string" to="106FS" resolved="yes"/>
+  </task-change-set>
+  <resource-change-set user="admin" date="2019-07-25T01:27:14.513Z" timestamp="2019-07-25T01:27:14.513Z">
+    <change idref="r4" to="r-1" to-position="3" resolved="yes">
+      <change idref="r4" attribute="name" type="string" from="" to="唐乾柱"/>
+    </change>
+  </resource-change-set>
+  <resource-change-set user="admin" date="2019-07-25T02:52:49.658Z" timestamp="2019-07-25T02:52:49.658Z">
+    <change idref="r-1" attribute="timeOffString" type="string" from="YnBsaXN0MDCgCAAAAAAAAAEBAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAJ" to="YnBsaXN0MDCiAQnUAgMEBQYHCAZSZWRSc3RSZXRSc2QRGq0iRv0gACJHKMAA1AIDBAUGCgsGIkc20AAiR30gAAgLFBcaHSAjKC02OwAAAAAAAAEBAAAAAAAAAAwAAAAAAAAAAAAAAAAAAABA" resolved="yes"/>
+  </resource-change-set>
+</changelog>

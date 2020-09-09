@@ -1,0 +1,94 @@
+{
+ "transferWay":[
+   {
+     "title":"石家庄分公司源达产品银行汇款转账",
+     "datas":[
+       {
+         "nameTitle":"开户账号",
+         "accountTitle":"账号",
+         "bankTitle":"开户银行",
+         "name":"河北源达信息技术股份有限公司石家庄分公司",
+         "account":"1305 0161 5832 0000 0363",
+         "bank":"建行石家庄中山东路支行",
+         "icon":"uc_transfer_jh"
+       },
+       {
+         "nameTitle":"开户账号",
+         "accountTitle":"账号",
+         "bankTitle":"开户银行",
+         "name":"河北源达信息技术股份有限公司石家庄分公司",
+         "account":"0402 0227 1930 0081 775",
+         "bank":"工行石家庄东胜科技支行",
+         "icon":"uc_transfer_gh"
+       },
+       {
+         "nameTitle":"开户账号",
+         "accountTitle":"账号",
+         "bankTitle":"开户银行",
+         "name":"河北源达信息技术股份有限公司石家庄分公司",
+         "account":"3119 0106 6310 901",
+         "bank":"招商银行石家庄广安支行",
+         "icon":"uc_transfer_zh"
+       }
+     ]
+   },
+   {
+     "title":"石家庄桥西分公司源达产品银行汇款转账",
+     "datas":[
+       {
+         "nameTitle":"开户账号",
+         "accountTitle":"账号",
+         "bankTitle":"开户银行",
+         "name":"河北源达信息技术股份有限公司石家庄桥西分公司",
+         "account":"1305 0161 5832 0000 0552",
+         "bank":"建行石家庄中山东路支行",
+         "icon":"uc_transfer_jh"
+       },
+       {
+         "nameTitle":"开户账号",
+         "accountTitle":"账号",
+         "bankTitle":"开户银行",
+         "name":"河北源达信息技术股份有限公司石家庄桥西分公司",
+         "account":"0402 0227 1930 0108 877",
+         "bank":"工行石家庄东胜科技支行",
+         "icon":"uc_transfer_gh"
+       },
+       {
+         "nameTitle":"开户账号",
+         "accountTitle":"账号",
+         "bankTitle":"开户银行",
+         "name":"河北源达信息技术股份有限公司石家庄桥西分公司",
+         "account":"3119 0157 1010 902",
+         "bank":"招商银行石家庄广安支行",
+         "icon":"uc_transfer_zh"
+       }
+     ]
+   },
+   {
+     "title":"其他付款方式",
+     "datas":[
+       {
+         "nameTitle":"支付方式",
+         "accountTitle":"支付宝账号",
+         "bankTitle":"公司名称",
+         "name":"支付宝",
+         "account":"hbyd2013@sina.com ",
+         "bank":"河北源达信息技术股份有限公司",
+         "image":"uc_transfer_zfbpay",
+         "icon":"uc_transfer_zfb"
+       },
+       {
+         "nameTitle":"支付方式",
+         "accountTitle":"微信公众号",
+         "bankTitle":"公司名称",
+         "name":"微信支付",
+         "account":"hebeiyuanda",
+         "bank":"河北源达信息技术股份有限公司",
+         "image":"uc_transfer_wxpay",
+         "icon":"uc_transfer_wx"
+       }
+     ]
+   }
+
+ ]
+}

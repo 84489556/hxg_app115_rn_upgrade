@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0424AB8D2046407C00DF3D72 /* WYPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424AB8A2046407B00DF3D72 /* WYPlayer.m */; };
+		0424AB8E2046407C00DF3D72 /* WYPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424AB8B2046407C00DF3D72 /* WYPlayerView.m */; };
+		0424AB9B2046411000DF3D72 /* UIColor+UIColor_Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424AB9A2046411000DF3D72 /* UIColor+UIColor_Hex.m */; };
+		0424AB9F204642E000DF3D72 /* FMPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424AB9D204642E000DF3D72 /* FMPlayerManager.m */; };
+		0424ABA7204642EA00DF3D72 /* WYLoadedFailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424ABA2204642EA00DF3D72 /* WYLoadedFailView.m */; };
+		0424ABA8204642EA00DF3D72 /* WYLoadedNoWifiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424ABA4204642EA00DF3D72 /* WYLoadedNoWifiView.m */; };
+		0424ABA9204642EA00DF3D72 /* WYLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424ABA6204642EA00DF3D72 /* WYLoadingView.m */; };
+		046AC2CF1F66759D005C5193 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 046AC2CB1F66759D005C5193 /* libcrypto.a */; };
+		046AC2D01F66759D005C5193 /* libNELivePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 046AC2CC1F66759D005C5193 /* libNELivePlayer.a */; };
+		046AC2D11F66759D005C5193 /* libNMCBasicModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 046AC2CD1F66759D005C5193 /* libNMCBasicModule.a */; };
+		046AC2D21F66759D005C5193 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 046AC2CE1F66759D005C5193 /* libssl.a */; };
+		04DB5D272068B70100F262BB /* VideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DB5D262068B70000F262BB /* VideoPlayerView.m */; };
+		04DB5D77206B3BB400F262BB /* libyuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DB5D76206B3BB400F262BB /* libyuv.a */; };
+		59CC12BA1F4AC35600BF18D7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CC12B91F4AC35600BF18D7 /* SystemConfiguration.framework */; };
+		59CC12BC1F4AC36400BF18D7 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CC12BB1F4AC36400BF18D7 /* CoreTelephony.framework */; };
+		59CC12BE1F4AC36B00BF18D7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CC12BD1F4AC36B00BF18D7 /* CFNetwork.framework */; };
+		59CC12CB1F4AC3BB00BF18D7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CC12C91F4AC3BB00BF18D7 /* AVFoundation.framework */; };
+		59CC12CC1F4AC3BB00BF18D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CC12CA1F4AC3BB00BF18D7 /* Foundation.framework */; };
+		59CC12CE1F4AC3C800BF18D7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CC12CD1F4AC3C800BF18D7 /* OpenGLES.framework */; };
+		59CC12D01F4AC3CF00BF18D7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CC12CF1F4AC3CF00BF18D7 /* QuartzCore.framework */; };
+		59CC12D21F4AC3E300BF18D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CC12D11F4AC3E300BF18D7 /* CoreAudio.framework */; };
+		59CC12D41F4AC3EA00BF18D7 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CC12D31F4AC3EA00BF18D7 /* CoreVideo.framework */; };
+		59CC12D61F4AC3F500BF18D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CC12D51F4AC3F500BF18D7 /* CoreGraphics.framework */; };
+		59CC12D81F4AC40000BF18D7 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CC12D71F4AC40000BF18D7 /* CoreMedia.framework */; };
+		59CC12DA1F4AC42D00BF18D7 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CC12D91F4AC42D00BF18D7 /* VideoToolbox.framework */; };
+		59CC12DC1F4AC43800BF18D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CC12DB1F4AC43800BF18D7 /* AudioToolbox.framework */; };
+		59CC12DE1F4AC44300BF18D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CC12DD1F4AC44300BF18D7 /* UIKit.framework */; };
+		A1FFA7B05851B57E798DED91 /* libPods-FMPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B2438500F6F657EA47CD9F /* libPods-FMPlayer.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		59CC129A1F4ABF8E00BF18D7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0424AB892046407B00DF3D72 /* WYPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPlayer.h; sourceTree = "<group>"; };
+		0424AB8A2046407B00DF3D72 /* WYPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPlayer.m; sourceTree = "<group>"; };
+		0424AB8B2046407C00DF3D72 /* WYPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPlayerView.m; sourceTree = "<group>"; };
+		0424AB8C2046407C00DF3D72 /* WYPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPlayerView.h; sourceTree = "<group>"; };
+		0424AB992046411000DF3D72 /* UIColor+UIColor_Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIColor_Hex.h"; sourceTree = "<group>"; };
+		0424AB9A2046411000DF3D72 /* UIColor+UIColor_Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIColor_Hex.m"; sourceTree = "<group>"; };
+		0424AB9D204642E000DF3D72 /* FMPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPlayerManager.m; sourceTree = "<group>"; };
+		0424AB9E204642E000DF3D72 /* FMPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPlayerManager.h; sourceTree = "<group>"; };
+		0424ABA1204642EA00DF3D72 /* WYLoadedFailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLoadedFailView.h; sourceTree = "<group>"; };
+		0424ABA2204642EA00DF3D72 /* WYLoadedFailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLoadedFailView.m; sourceTree = "<group>"; };
+		0424ABA3204642EA00DF3D72 /* WYLoadedNoWifiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLoadedNoWifiView.h; sourceTree = "<group>"; };
+		0424ABA4204642EA00DF3D72 /* WYLoadedNoWifiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLoadedNoWifiView.m; sourceTree = "<group>"; };
+		0424ABA5204642EA00DF3D72 /* WYLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLoadingView.h; sourceTree = "<group>"; };
+		0424ABA6204642EA00DF3D72 /* WYLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLoadingView.m; sourceTree = "<group>"; };
+		046AC2CB1F66759D005C5193 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = libs/NELivePlayer/libs/libcrypto.a; sourceTree = "<group>"; };
+		046AC2CC1F66759D005C5193 /* libNELivePlayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNELivePlayer.a; path = libs/NELivePlayer/libs/libNELivePlayer.a; sourceTree = "<group>"; };
+		046AC2CD1F66759D005C5193 /* libNMCBasicModule.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNMCBasicModule.a; path = libs/NELivePlayer/libs/libNMCBasicModule.a; sourceTree = "<group>"; };
+		046AC2CE1F66759D005C5193 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = libs/NELivePlayer/libs/libssl.a; sourceTree = "<group>"; };
+		046AC2EC1F667B58005C5193 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = NELivePlayer/libs/libcrypto.a; sourceTree = "<group>"; };
+		046AC2ED1F667B58005C5193 /* libNELivePlayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNELivePlayer.a; path = NELivePlayer/libs/libNELivePlayer.a; sourceTree = "<group>"; };
+		046AC2EE1F667B58005C5193 /* libNMCBasicModule.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNMCBasicModule.a; path = NELivePlayer/libs/libNMCBasicModule.a; sourceTree = "<group>"; };
+		046AC2EF1F667B58005C5193 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = NELivePlayer/libs/libssl.a; sourceTree = "<group>"; };
+		046AC2F01F667B6A005C5193 /* NELivePlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NELivePlayer.h; path = NELivePlayer/include/NELivePlayer/NELivePlayer.h; sourceTree = "<group>"; };
+		046AC2F11F667B6A005C5193 /* NELivePlayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NELivePlayerController.h; path = NELivePlayer/include/NELivePlayer/NELivePlayerController.h; sourceTree = "<group>"; };
+		04DB5D252068B70000F262BB /* VideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerView.h; sourceTree = "<group>"; };
+		04DB5D262068B70000F262BB /* VideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerView.m; sourceTree = "<group>"; };
+		04DB5D76206B3BB400F262BB /* libyuv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libyuv.a; path = libs/NELivePlayer/libs/libyuv.a; sourceTree = "<group>"; };
+		06B2438500F6F657EA47CD9F /* libPods-FMPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FMPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AD4FC31612457B72CC9A04E /* Pods-FMPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMPlayer.release.xcconfig"; path = "Target Support Files/Pods-FMPlayer/Pods-FMPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		2C45EB5AED5BE9B28C5D5BC1 /* Pods-FMPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMPlayer.debug.xcconfig"; path = "Target Support Files/Pods-FMPlayer/Pods-FMPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		59CC129C1F4ABF8E00BF18D7 /* libFMPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFMPlayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		59CC12B91F4AC35600BF18D7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		59CC12BB1F4AC36400BF18D7 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		59CC12BD1F4AC36B00BF18D7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		59CC12C91F4AC3BB00BF18D7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		59CC12CA1F4AC3BB00BF18D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		59CC12CD1F4AC3C800BF18D7 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		59CC12CF1F4AC3CF00BF18D7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		59CC12D11F4AC3E300BF18D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		59CC12D31F4AC3EA00BF18D7 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		59CC12D51F4AC3F500BF18D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		59CC12D71F4AC40000BF18D7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		59CC12D91F4AC42D00BF18D7 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		59CC12DB1F4AC43800BF18D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		59CC12DD1F4AC44300BF18D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59CC12991F4ABF8E00BF18D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DB5D77206B3BB400F262BB /* libyuv.a in Frameworks */,
+				046AC2D01F66759D005C5193 /* libNELivePlayer.a in Frameworks */,
+				046AC2D11F66759D005C5193 /* libNMCBasicModule.a in Frameworks */,
+				046AC2D21F66759D005C5193 /* libssl.a in Frameworks */,
+				046AC2CF1F66759D005C5193 /* libcrypto.a in Frameworks */,
+				59CC12DE1F4AC44300BF18D7 /* UIKit.framework in Frameworks */,
+				59CC12DC1F4AC43800BF18D7 /* AudioToolbox.framework in Frameworks */,
+				59CC12DA1F4AC42D00BF18D7 /* VideoToolbox.framework in Frameworks */,
+				59CC12D61F4AC3F500BF18D7 /* CoreGraphics.framework in Frameworks */,
+				59CC12D81F4AC40000BF18D7 /* CoreMedia.framework in Frameworks */,
+				59CC12D41F4AC3EA00BF18D7 /* CoreVideo.framework in Frameworks */,
+				59CC12D21F4AC3E300BF18D7 /* CoreAudio.framework in Frameworks */,
+				59CC12D01F4AC3CF00BF18D7 /* QuartzCore.framework in Frameworks */,
+				59CC12CE1F4AC3C800BF18D7 /* OpenGLES.framework in Frameworks */,
+				59CC12CB1F4AC3BB00BF18D7 /* AVFoundation.framework in Frameworks */,
+				59CC12CC1F4AC3BB00BF18D7 /* Foundation.framework in Frameworks */,
+				59CC12BE1F4AC36B00BF18D7 /* CFNetwork.framework in Frameworks */,
+				59CC12BC1F4AC36400BF18D7 /* CoreTelephony.framework in Frameworks */,
+				59CC12BA1F4AC35600BF18D7 /* SystemConfiguration.framework in Frameworks */,
+				A1FFA7B05851B57E798DED91 /* libPods-FMPlayer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0424ABA0204642EA00DF3D72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0424ABA1204642EA00DF3D72 /* WYLoadedFailView.h */,
+				0424ABA2204642EA00DF3D72 /* WYLoadedFailView.m */,
+				0424ABA3204642EA00DF3D72 /* WYLoadedNoWifiView.h */,
+				0424ABA4204642EA00DF3D72 /* WYLoadedNoWifiView.m */,
+				0424ABA5204642EA00DF3D72 /* WYLoadingView.h */,
+				0424ABA6204642EA00DF3D72 /* WYLoadingView.m */,
+			);
+			name = View;
+			path = FMPlayer/View;
+			sourceTree = "<group>";
+		};
+		046AC2E91F667B2E005C5193 /* NELivePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				046AC2EB1F667B49005C5193 /* libs */,
+				046AC2EA1F667B3E005C5193 /* include */,
+			);
+			name = NELivePlayer;
+			sourceTree = "<group>";
+		};
+		046AC2EA1F667B3E005C5193 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				046AC2F01F667B6A005C5193 /* NELivePlayer.h */,
+				046AC2F11F667B6A005C5193 /* NELivePlayerController.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		046AC2EB1F667B49005C5193 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				046AC2EC1F667B58005C5193 /* libcrypto.a */,
+				046AC2ED1F667B58005C5193 /* libNELivePlayer.a */,
+				046AC2EE1F667B58005C5193 /* libNMCBasicModule.a */,
+				046AC2EF1F667B58005C5193 /* libssl.a */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		500D80D823686F711CEDE7B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C45EB5AED5BE9B28C5D5BC1 /* Pods-FMPlayer.debug.xcconfig */,
+				2AD4FC31612457B72CC9A04E /* Pods-FMPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../../ios/Pods;
+			sourceTree = "<group>";
+		};
+		59CC12931F4ABF8E00BF18D7 = {
+			isa = PBXGroup;
+			children = (
+				0424ABA0204642EA00DF3D72 /* View */,
+				0424AB9E204642E000DF3D72 /* FMPlayerManager.h */,
+				0424AB9D204642E000DF3D72 /* FMPlayerManager.m */,
+				0424AB892046407B00DF3D72 /* WYPlayer.h */,
+				0424AB8A2046407B00DF3D72 /* WYPlayer.m */,
+				0424AB8C2046407C00DF3D72 /* WYPlayerView.h */,
+				0424AB8B2046407C00DF3D72 /* WYPlayerView.m */,
+				04DB5D252068B70000F262BB /* VideoPlayerView.h */,
+				04DB5D262068B70000F262BB /* VideoPlayerView.m */,
+				59CC12A81F4AC1E500BF18D7 /* libs */,
+				59CC129D1F4ABF8E00BF18D7 /* Products */,
+				59CC12B81F4AC35600BF18D7 /* Frameworks */,
+				500D80D823686F711CEDE7B7 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		59CC129D1F4ABF8E00BF18D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59CC129C1F4ABF8E00BF18D7 /* libFMPlayer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59CC12A81F4AC1E500BF18D7 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				0424AB992046411000DF3D72 /* UIColor+UIColor_Hex.h */,
+				0424AB9A2046411000DF3D72 /* UIColor+UIColor_Hex.m */,
+				046AC2E91F667B2E005C5193 /* NELivePlayer */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		59CC12B81F4AC35600BF18D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04DB5D76206B3BB400F262BB /* libyuv.a */,
+				046AC2CB1F66759D005C5193 /* libcrypto.a */,
+				046AC2CC1F66759D005C5193 /* libNELivePlayer.a */,
+				046AC2CD1F66759D005C5193 /* libNMCBasicModule.a */,
+				046AC2CE1F66759D005C5193 /* libssl.a */,
+				59CC12DD1F4AC44300BF18D7 /* UIKit.framework */,
+				59CC12DB1F4AC43800BF18D7 /* AudioToolbox.framework */,
+				59CC12D91F4AC42D00BF18D7 /* VideoToolbox.framework */,
+				59CC12D71F4AC40000BF18D7 /* CoreMedia.framework */,
+				59CC12D51F4AC3F500BF18D7 /* CoreGraphics.framework */,
+				59CC12D31F4AC3EA00BF18D7 /* CoreVideo.framework */,
+				59CC12D11F4AC3E300BF18D7 /* CoreAudio.framework */,
+				59CC12CF1F4AC3CF00BF18D7 /* QuartzCore.framework */,
+				59CC12CD1F4AC3C800BF18D7 /* OpenGLES.framework */,
+				59CC12C91F4AC3BB00BF18D7 /* AVFoundation.framework */,
+				59CC12CA1F4AC3BB00BF18D7 /* Foundation.framework */,
+				59CC12BD1F4AC36B00BF18D7 /* CFNetwork.framework */,
+				59CC12BB1F4AC36400BF18D7 /* CoreTelephony.framework */,
+				59CC12B91F4AC35600BF18D7 /* SystemConfiguration.framework */,
+				06B2438500F6F657EA47CD9F /* libPods-FMPlayer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59CC129B1F4ABF8E00BF18D7 /* FMPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59CC12A51F4ABF8E00BF18D7 /* Build configuration list for PBXNativeTarget "FMPlayer" */;
+			buildPhases = (
+				2C04D38E6DA059564D43AC93 /* [CP] Check Pods Manifest.lock */,
+				59CC12981F4ABF8E00BF18D7 /* Sources */,
+				59CC12991F4ABF8E00BF18D7 /* Frameworks */,
+				59CC129A1F4ABF8E00BF18D7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMPlayer;
+			productName = FMPlayer;
+			productReference = 59CC129C1F4ABF8E00BF18D7 /* libFMPlayer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59CC12941F4ABF8E00BF18D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = yuanda;
+				TargetAttributes = {
+					59CC129B1F4ABF8E00BF18D7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 59CC12971F4ABF8E00BF18D7 /* Build configuration list for PBXProject "FMPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 59CC12931F4ABF8E00BF18D7;
+			productRefGroup = 59CC129D1F4ABF8E00BF18D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59CC129B1F4ABF8E00BF18D7 /* FMPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C04D38E6DA059564D43AC93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FMPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59CC12981F4ABF8E00BF18D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0424ABA7204642EA00DF3D72 /* WYLoadedFailView.m in Sources */,
+				0424AB8D2046407C00DF3D72 /* WYPlayer.m in Sources */,
+				0424ABA9204642EA00DF3D72 /* WYLoadingView.m in Sources */,
+				04DB5D272068B70100F262BB /* VideoPlayerView.m in Sources */,
+				0424AB9B2046411000DF3D72 /* UIColor+UIColor_Hex.m in Sources */,
+				0424AB8E2046407C00DF3D72 /* WYPlayerView.m in Sources */,
+				0424AB9F204642E000DF3D72 /* FMPlayerManager.m in Sources */,
+				0424ABA8204642EA00DF3D72 /* WYLoadedNoWifiView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		59CC12A31F4ABF8E00BF18D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		59CC12A41F4ABF8E00BF18D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59CC12A61F4ABF8E00BF18D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C45EB5AED5BE9B28C5D5BC1 /* Pods-FMPlayer.debug.xcconfig */;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libs/NELivePlayer\"",
+					"\"$(SRCROOT)/../../RCTGenseePlayer/ios/RCTGenseePlayer/Libraries/SDWebImage\"",
+					"\"$(SRCROOT)/../../RCTGenseePlayer/ios/RCTGenseePlayer/Libraries/Masonry\"",
+					"\"$(SRCROOT)/../../../ios/Pods/Masonry/Masonry\"",
+					"\"$(SRCROOT)/../../../ios/Pods/SDWebImage/SDWebImage\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs/NELivePlayer/libs",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		59CC12A71F4ABF8E00BF18D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AD4FC31612457B72CC9A04E /* Pods-FMPlayer.release.xcconfig */;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libs/NELivePlayer\"",
+					"\"$(SRCROOT)/../../RCTGenseePlayer/ios/RCTGenseePlayer/Libraries/SDWebImage\"",
+					"\"$(SRCROOT)/../../RCTGenseePlayer/ios/RCTGenseePlayer/Libraries/Masonry\"",
+					"\"$(SRCROOT)/../../../ios/Pods/Masonry/Masonry\"",
+					"\"$(SRCROOT)/../../../ios/Pods/SDWebImage/SDWebImage\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs/NELivePlayer/libs",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59CC12971F4ABF8E00BF18D7 /* Build configuration list for PBXProject "FMPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59CC12A31F4ABF8E00BF18D7 /* Debug */,
+				59CC12A41F4ABF8E00BF18D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59CC12A51F4ABF8E00BF18D7 /* Build configuration list for PBXNativeTarget "FMPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59CC12A61F4ABF8E00BF18D7 /* Debug */,
+				59CC12A71F4ABF8E00BF18D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59CC12941F4ABF8E00BF18D7 /* Project object */;
+}

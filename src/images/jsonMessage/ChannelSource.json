@@ -1,0 +1,126 @@
+{
+  "releaseCannel":{
+    "anzhi": {
+      "channel": 497,
+      "source": "安智"
+    },
+    "baidu": {
+      "channel": 497,
+      "source": "百度手机助手（91助手、安卓市场）"
+    },
+    "huawei": {
+      "channel": 497,
+      "source": "华为"
+    },
+    "lianxiangle": {
+      "channel": 497,
+      "source": "联想"
+    },
+    "meizu": {
+      "channel": 497,
+      "source": "魅族"
+    },
+    "oppo": {
+      "channel": 497,
+      "source": "oppo"
+    },
+    "shichang_360": {
+      "channel": 497,
+      "source": "360手机助手"
+    },
+    "vivo": {
+      "channel": 497,
+      "source": "vivo"
+    },
+    "wandoujia": {
+      "channel": 497,
+      "source": "阿里系列（豌豆荚、pp助手）"
+    },
+    "xiaomi": {
+      "channel": 497,
+      "source": "小米"
+    },
+    "yidong_mm": {
+      "channel": 497,
+      "source": "移动"
+    },
+    "yingyongbao": {
+      "channel": 497,
+      "source": "应用宝"
+    },
+    "sougou": {
+      "channel": 497,
+      "source": "搜狗手机助手"
+    },
+    "apptuiguang": {
+      "channel": 504,
+      "source": "注册后下载-APP（推广）"
+    },
+    "appstore": {
+      "channel": 497,
+      "source": "苹果商店"
+    }
+  },
+  "debugCannel": {
+    "anzhi": {
+      "channel": 381,
+      "source": "安智"
+    },
+    "baidu": {
+      "channel": 381,
+      "source": "百度手机助手（91助手、安卓市场）"
+    },
+    "huawei": {
+      "channel": 381,
+      "source": "华为"
+    },
+    "lianxiangle": {
+      "channel": 381,
+      "source": "联想"
+    },
+    "meizu": {
+      "channel": 381,
+      "source": "魅族"
+    },
+    "oppo": {
+      "channel": 381,
+      "source": "oppo"
+    },
+    "shichang_360": {
+      "channel": 381,
+      "source": "360手机助手"
+    },
+    "vivo": {
+      "channel": 381,
+      "source": "vivo"
+    },
+    "wandoujia": {
+      "channel": 381,
+      "source": "阿里系列（豌豆荚、pp助手）"
+    },
+    "xiaomi": {
+      "channel": 381,
+      "source": "小米"
+    },
+    "yidong_mm": {
+      "channel": 381,
+      "source": "移动"
+    },
+    "yingyongbao": {
+      "channel": 381,
+      "source": "应用宝"
+    },
+    "sougou": {
+      "channel": 381,
+      "source": "搜狗手机助手"
+    },
+    "apptuiguang": {
+      "channel": 382,
+      "source": "注册后下载-APP（推广）"
+    },
+    "appstore": {
+      "channel": 381,
+      "source": "苹果商店"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+
+syntax = "proto3";
+
+import "data_define.proto";
+
+option cc_enable_arenas = true;
+
+package yuanda;
+
+//索引数据
+message Index{
+	string Label = 1;
+	int32 Count  = 2;
+}
+//多个索引数据
+message MultiIndex{
+	repeated Index Data = 1;
+}
+
+//分时文件头
+message MinChartHeader{
+	Index index 		= 1;     //索引
+	int32 time 		    = 2;	//数据时间
+}
+//K线文件头
+message CandleStickHeader{
+	Index index 		= 1;        //索引
+	PeriodT Period 		= 2;	    //周期
+	SplitT Split 		= 3;	    //除复权
+	int32 startTime 	= 4;	    //开始数据时间
+	int32 endTime 		= 5;	    //结束数据时间
+}
+

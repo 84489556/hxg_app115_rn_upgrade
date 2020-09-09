@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="dzhChartBgColor">#FFF</color>
+    <color name="dzhChartBorderColor">#FFF</color>
+    <color name="dzhChartGridLineColor">#d3d7d4</color>
+    <color name="dzhChartMinFixedGridLineColor">#ffcc33</color>
+    <color name="dzhChartMinFixedVolColor">#ff9933</color>
+    <color name="dzhChartKlineFixedVolumeDropColor">#5aa0f0</color>
+    <color name="dzhChartKlineFixedVolumeRiseColor">#ffa762</color>
+    <color name="dzhChartGridFontColor">#5B5B5B</color>
+    <color name="dzhChartDropColor">#0ec98e</color>
+    <color name="dzhChartRiseColor">#fc525a</color>
+    <color name="dzhChartDropColorArea">#3399FF</color>
+    <color name="dzhChartRiseColorArea">#FF6666</color>
+    <color name="dzhChartNormalColorArea">#FFF100</color>
+    <color name="dzhChartMinLineColor">#1F76E1</color>
+    <color name="dzhChartAvgLineColor">#fe9350</color>
+    <color name="dzhChartLegendTextColor">#0F828282</color>
+    <color name="dzhChartZuoShouColor">#8B8378</color>
+    <color name="dzhChartMinFillColor">#40A3C9F8</color>
+    <color name="dzhChartScaleColor">#FF555555</color>
+    <color name="chartKLineMinMaxSignColor">#FF262628</color>
+</resources>

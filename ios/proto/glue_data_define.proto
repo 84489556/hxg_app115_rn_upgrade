@@ -1,0 +1,94 @@
+
+syntax = "proto3";
+
+import "title_define.proto";
+import "data_define.proto";
+import "data_define_fund_flow.proto";
+import "data_define_req_rep.proto";	// TODO
+option cc_enable_arenas = true;
+
+package yuanda;
+
+
+
+/* 快照 */
+message GluedQuote{
+	yuanda.FullQuote quote = 1;
+	yuanda.BaseFundFlow fund_flow = 2;
+}
+
+
+
+/*****************************************************
+* K线
+*****************************************************/
+
+// K线
+message GluedK{
+	string	Label 		= 1; 		//股票代码
+	yuanda.PeriodT Period 		= 2;		//周期
+	yuanda.SplitT	Split 		= 3;		//除复权
+	repeated GluedKEntity Entities = 4; //k线数据
+}
+
+// K线数据
+message GluedKEntity
+{
+	yuanda.CandleStickEntity	sticks = 1;	
+	yuanda.MiniFundFlow fund_low = 2;
+}
+
+
+/*****************************************************
+* 分时
+*****************************************************/
+// 分时
+message GluedMinChart
+{
+	string	Label 		= 1; 		//股票代码
+	int64 	Time 		= 2;		//时间-日期
+	double 	LastClose 	= 3;		//昨收
+	repeated GluedMinChartEntity Entities = 4;	//分时数据
+}
+
+// 分时数据体
+message GluedMinChartEntity 
+{
+	yuanda.MinChartEntity	min_entity = 1;
+	yuanda.MiniFundFlow fund_flow = 2;
+
+}
+
+
+
+
+
+/*****************************************************
+* 排序
+*****************************************************/
+/** 排序数据请求(暂时废除) */
+message GluedSortRequest{
+	/// 板块ID
+	string BlockId = 1;
+
+	/// 抬头ID
+	oneof title{
+		yuanda.TitleId TitleId = 2;
+		yuanda.FundFlowTitleId fund_flow_title = 7;
+	}
+	
+
+	/// 排序方式, 可选项包括:false(升序),true(降序)
+	bool Desc = 3;
+
+	/// 行筛选，表示从第几行开始往后筛选. 从0开始计数。例如0表示从第1行开始
+	uint32 Start = 4;
+
+	/// 行筛选，大于0的数字，表示从start的位置往后筛选多少行数据(包括start)，当等于0时，
+	/// 忽略本次请求。
+	uint32 Count = 5;
+
+	/// 是否订阅最新的数据。当subscribe=true时, 服务器会推送最新的数据。
+	bool Subscribe = 6; 
+}
+

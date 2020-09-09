@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BC4EF001DBDFDDD00715730 /* RCTMIPushModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC4EEFF1DBDFDDD00715730 /* RCTMIPushModule.m */; };
+		2BC4EF011DBDFDDD00715730 /* RCTMIPushModule.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BC4EEFE1DBDFDDD00715730 /* RCTMIPushModule.h */; };
+		8295DD0E23B32F6D0083D30B /* libMiPushApnsAckSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8295DD0B23B32F6D0083D30B /* libMiPushApnsAckSDK.a */; };
+		8295DD0F23B32F6D0083D30B /* libMiPushSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8295DD0D23B32F6D0083D30B /* libMiPushSDK.a */; };
+		969CA71EFD67E28A75BA1BCE /* libPods-RCTMIPushModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AAE5CB23DAFACB6A46B83E /* libPods-RCTMIPushModule.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2BC4EEF91DBDFDDD00715730 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				2BC4EF011DBDFDDD00715730 /* RCTMIPushModule.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		043FB09D21AF7FF60058AA69 /* libRCTPushNotification.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRCTPushNotification.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B77788C734638EDE454AE3A /* Pods-RCTMIPushModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTMIPushModule.debug.xcconfig"; path = "Target Support Files/Pods-RCTMIPushModule/Pods-RCTMIPushModule.debug.xcconfig"; sourceTree = "<group>"; };
+		21AAE5CB23DAFACB6A46B83E /* libPods-RCTMIPushModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RCTMIPushModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BC4EEFB1DBDFDDD00715730 /* libRCTMIPushModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTMIPushModule.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BC4EEFE1DBDFDDD00715730 /* RCTMIPushModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTMIPushModule.h; sourceTree = "<group>"; };
+		2BC4EEFF1DBDFDDD00715730 /* RCTMIPushModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTMIPushModule.m; sourceTree = "<group>"; };
+		8295DD0A23B32F6D0083D30B /* MiPushApnsAckSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiPushApnsAckSDK.h; sourceTree = "<group>"; };
+		8295DD0B23B32F6D0083D30B /* libMiPushApnsAckSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMiPushApnsAckSDK.a; sourceTree = "<group>"; };
+		8295DD0C23B32F6D0083D30B /* MiPushSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiPushSDK.h; sourceTree = "<group>"; };
+		8295DD0D23B32F6D0083D30B /* libMiPushSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMiPushSDK.a; sourceTree = "<group>"; };
+		E8A93CA34DE5A352DE7FCEA4 /* Pods-RCTMIPushModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTMIPushModule.release.xcconfig"; path = "Target Support Files/Pods-RCTMIPushModule/Pods-RCTMIPushModule.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BC4EEF81DBDFDDD00715730 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8295DD0F23B32F6D0083D30B /* libMiPushSDK.a in Frameworks */,
+				8295DD0E23B32F6D0083D30B /* libMiPushApnsAckSDK.a in Frameworks */,
+				969CA71EFD67E28A75BA1BCE /* libPods-RCTMIPushModule.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		043FB09C21AF7FF60058AA69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				043FB09D21AF7FF60058AA69 /* libRCTPushNotification.a */,
+				21AAE5CB23DAFACB6A46B83E /* libPods-RCTMIPushModule.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		10513DE65151F12750FBC0E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B77788C734638EDE454AE3A /* Pods-RCTMIPushModule.debug.xcconfig */,
+				E8A93CA34DE5A352DE7FCEA4 /* Pods-RCTMIPushModule.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../ios/Pods;
+			sourceTree = "<group>";
+		};
+		2BC4EEF21DBDFDDD00715730 = {
+			isa = PBXGroup;
+			children = (
+				2BC4EEFD1DBDFDDD00715730 /* RCTMIPushModule */,
+				2BC4EEFC1DBDFDDD00715730 /* Products */,
+				043FB09C21AF7FF60058AA69 /* Frameworks */,
+				10513DE65151F12750FBC0E3 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		2BC4EEFC1DBDFDDD00715730 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BC4EEFB1DBDFDDD00715730 /* libRCTMIPushModule.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BC4EEFD1DBDFDDD00715730 /* RCTMIPushModule */ = {
+			isa = PBXGroup;
+			children = (
+				8295DD0B23B32F6D0083D30B /* libMiPushApnsAckSDK.a */,
+				8295DD0D23B32F6D0083D30B /* libMiPushSDK.a */,
+				8295DD0A23B32F6D0083D30B /* MiPushApnsAckSDK.h */,
+				8295DD0C23B32F6D0083D30B /* MiPushSDK.h */,
+				2BC4EEFE1DBDFDDD00715730 /* RCTMIPushModule.h */,
+				2BC4EEFF1DBDFDDD00715730 /* RCTMIPushModule.m */,
+			);
+			path = RCTMIPushModule;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BC4EEFA1DBDFDDD00715730 /* RCTMIPushModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BC4EF041DBDFDDD00715730 /* Build configuration list for PBXNativeTarget "RCTMIPushModule" */;
+			buildPhases = (
+				B55F1048D17B566420BA5022 /* [CP] Check Pods Manifest.lock */,
+				2BC4EEF71DBDFDDD00715730 /* Sources */,
+				2BC4EEF81DBDFDDD00715730 /* Frameworks */,
+				2BC4EEF91DBDFDDD00715730 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RCTMIPushModule;
+			productName = RCTMIPushModule;
+			productReference = 2BC4EEFB1DBDFDDD00715730 /* libRCTMIPushModule.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BC4EEF31DBDFDDD00715730 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = zzy;
+				TargetAttributes = {
+					2BC4EEFA1DBDFDDD00715730 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 33KGZ49A6U;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2BC4EEF61DBDFDDD00715730 /* Build configuration list for PBXProject "RCTMIPushModule" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 2BC4EEF21DBDFDDD00715730;
+			productRefGroup = 2BC4EEFC1DBDFDDD00715730 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BC4EEFA1DBDFDDD00715730 /* RCTMIPushModule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B55F1048D17B566420BA5022 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RCTMIPushModule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BC4EEF71DBDFDDD00715730 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BC4EF001DBDFDDD00715730 /* RCTMIPushModule.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2BC4EF021DBDFDDD00715730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2BC4EF031DBDFDDD00715730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BC4EF051DBDFDDD00715730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B77788C734638EDE454AE3A /* Pods-RCTMIPushModule.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 33KGZ49A6U;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RCTMIPushModule",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2BC4EF061DBDFDDD00715730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8A93CA34DE5A352DE7FCEA4 /* Pods-RCTMIPushModule.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 33KGZ49A6U;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RCTMIPushModule",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BC4EEF61DBDFDDD00715730 /* Build configuration list for PBXProject "RCTMIPushModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BC4EF021DBDFDDD00715730 /* Debug */,
+				2BC4EF031DBDFDDD00715730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BC4EF041DBDFDDD00715730 /* Build configuration list for PBXNativeTarget "RCTMIPushModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BC4EF051DBDFDDD00715730 /* Debug */,
+				2BC4EF061DBDFDDD00715730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BC4EEF31DBDFDDD00715730 /* Project object */;
+}
